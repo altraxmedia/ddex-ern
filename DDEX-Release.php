@@ -102,9 +102,18 @@ class Track
 {
     public $trackArtists = array();
     public $trackISRC = "";
+    public $trackTitle = "";
     public $trackMixversion = "";
     public $trackDuration = "";
     public $trackContributors = array();
+    public $trackExplicit = false;
+    public $trackPreviewTime = 30;
+    public $trackSHA1hashsum = "";
+    public $trackFilename = "";
+    public $trackPLineYear = 2022;
+    public $trackPLine: = "";
+    public $trackCLineYear = 2022;
+    public $trackCLine: = "";
 }
 
 /*
