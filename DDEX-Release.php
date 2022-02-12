@@ -55,10 +55,10 @@ class Release
     public $releaseArtists = array();
     public $releaseExplicit = false;
     public $releasePLineYear = 2022;
-    public $releasePLine: = "";
+    public $releasePLine = "";
     public $releaseCLineYear = 2022;
-    public $releaseCLine: = "";
-    public $releaseDeal = new Deal();
+    public $releaseCLine = "";
+    public $releaseDeal = null;
 }
 
 /*
@@ -111,9 +111,9 @@ class Track
     public $trackSHA1hashsum = "";
     public $trackFilename = "";
     public $trackPLineYear = 2022;
-    public $trackPLine: = "";
+    public $trackPLine = "";
     public $trackCLineYear = 2022;
-    public $trackCLine: = "";
+    public $trackCLine = "";
 }
 
 /*
@@ -142,9 +142,9 @@ Class Contributor
 
 class Deal
 {
-    public dealStartDate = "";
-    public dealPreOrderDate = "";
-    public dealTerritories = array();
+    public $dealStartDate = "";
+    public $dealPreOrderDate = "";
+    public $dealTerritories = array();
 }
 
 /*
