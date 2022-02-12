@@ -3,7 +3,7 @@
 /**
  * Release object.
  * 
- * @author sergi4ua
+ * @author sergi4ua; GeorgNation; s4one
  * @copyright Copyright (C) 2022 Al-Trax Media Limited
  * @package ddex-ern
  */
@@ -14,7 +14,7 @@ class Release
 	 * Sender DDEX Party ID
 	 * 
 	 * @access public
-	 * @var string DDEX Party ID
+	 * @var string $DPID DDEX Party ID
 	 */
     public $DPID = "";
 	
@@ -22,7 +22,7 @@ class Release
 	 * Message sender
 	 * 
 	 * @access public
-	 * @var string Company name
+	 * @var string $MessageSender Company name
 	 */
     public $MessageSender = "";
 	
@@ -30,7 +30,7 @@ class Release
 	 * Release ID
 	 * 
 	 * @access public
-	 * @var string Release ID (must to be unique)
+	 * @var string $releaseId Release ID (must to be unique)
 	 */
     public $releaseId = "";
 
@@ -38,7 +38,7 @@ class Release
 	 * Release Thread ID
 	 * 
 	 * @access public
-	 * @var string Release ID (must to be unique)
+	 * @var string $releaseThreadId Release ID (must to be unique)
 	 */
     public $releaseThreadId = "";
 	
@@ -46,7 +46,7 @@ class Release
 	 * Release Title
 	 * 
 	 * @access public
-	 * @var string Title
+	 * @var string $releaseTitle Title
 	 */
     public $releaseTitle = "";
 	
@@ -54,23 +54,23 @@ class Release
 	 * Release Subtitle
 	 * 
 	 * @access public
-	 * @var string Subtitle
+	 * @var string $releaseSubtitle Subtitle
 	 */
     public $releaseSubtitle = "";
 	
 	/**
-	 * Sender DDEX Party ID
+	 * Artwork
 	 * 
 	 * @access public
-	 * @var string DDEX Party ID
+	 * @var Image $releaseCoverArt Artwork
 	 */
-    public $releaseCoverArt = "";
+    public $releaseCoverArt;
 	
 	/**
-	 * Sender DDEX Party ID
+	 * Tracks
 	 * 
 	 * @access public
-	 * @var string DDEX Party ID
+	 * @var array $releaseTracks array of Track
 	 */
     public $releaseTracks = [];
 	
@@ -78,7 +78,7 @@ class Release
 	 * Sender DDEX Party ID
 	 * 
 	 * @access public
-	 * @var string DDEX Party ID
+	 * @var string $releaseRecordLabel DDEX Party ID
 	 */
     public $releaseRecordLabel = "";
 	
@@ -86,7 +86,7 @@ class Release
 	 * Sender DDEX Party ID
 	 * 
 	 * @access public
-	 * @var string DDEX Party ID
+	 * @var string $releaseDate DDEX Party ID
 	 */
     public $releaseDate = "";
 	
@@ -94,7 +94,7 @@ class Release
 	 * Sender DDEX Party ID
 	 * 
 	 * @access public
-	 * @var string DDEX Party ID
+	 * @var string $releaseEAN DDEX Party ID
 	 */
     public $releaseEAN = "";
 	
@@ -102,7 +102,7 @@ class Release
 	 * Sender DDEX Party ID
 	 * 
 	 * @access public
-	 * @var string DDEX Party ID
+	 * @var string $releaseCatalogNo DDEX Party ID
 	 */
     public $releaseCatalogNo = "";
 	

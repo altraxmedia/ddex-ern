@@ -12,6 +12,7 @@ require_once __DIR__ . '/DDEX-Release.php';
 class DDEX
 {
     public $release;
+    protected
 
     function __construct()
     {
