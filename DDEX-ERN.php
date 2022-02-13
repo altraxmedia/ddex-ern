@@ -15,6 +15,9 @@ class DDEX
     protected $xml;
     public $baseEntrypoint;
     protected $language;
+    public $resourceEntrypoint;
+    public $releasesEntrypoint;
+    public $dealsEntrypoint;
 
     protected function genGuid ()
     {
@@ -64,7 +67,7 @@ class DDEX
         $this->xml->appendChild ($this->baseEntrypoint);
     }
 
-    public function initHeader ()
+    public function writeHeader ()
     {
         $MessageHeader = $this->xml->createElement ("MessageHeader");
         $this->baseEntrypoint->appendChild ($MessageHeader);
@@ -101,12 +104,37 @@ class DDEX
 
         $UpdateIndicator = $this->xml->createElement ("UpdateIndicator", $this->release->updateIndicator);
         $this->baseEntrypoint->appendChild ($UpdateIndicator);
+
+        $IsBackfill = $this->xml->createElement ("IsBackfill", $this->release->isBackfill ? 'true' : 'false');
+        $this->baseEntrypoint->appendChild ($IsBackfill);
+    }
+
+    protected function initResourceEntrypoint ()
+    {
+        $this->resourceEntrypoint = $this->xml->createElement ("ResourceList");
+        $this->baseEntrypoint->appendChild ($this->resourceEntrypoint);
+    }
+
+    protected function initReleasesEntrypoint ()
+    {
+        $this->releasesEntrypoint = $this->xml->createElement ("ReleaseList");
+        $this->baseEntrypoint->appendChild ($this->releasesEntrypoint);
+    }
+
+    protected function initDealsEntrypoint ()
+    {
+        $this->dealsEntrypoint = $this->xml->createElement ("DealList");
+        $this->baseEntrypoint->appendChild ($this->dealsEntrypoint);
     }
 
     public function __toString ()
     {
         $this->initDom ();
-        $this->initHeader ();
+        $this->writeHeader ();
+        $this->initResourceEntrypoint ();
+        $this->initReleasesEntrypoint ();
+        $this->initDealsEntrypoint ();
+
         return $this->xml->saveXML();
     }
 
