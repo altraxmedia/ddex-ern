@@ -13,13 +13,36 @@
 */
 
 /*
+    CLASS: Party
+
+    CLASS MEMBERS:
+    (string) partyId: DPID
+    (string) partyName: Legal name of company
+    (string) tradingName: Trading name (in necessary)
+*/
+
+class Party
+{
+    public $partyId = '';
+    public $partyName = '';
+    public $tradingName = '';
+}
+
+/*
     CLASS: Release
     
     CLASS MEMBERS:
 
+    (Party) sender: who sends the message
+    (Party) sentOnBehalfOf: sent on behalf of (if necessary)
+    (Party) recipient: recipient
     (string) DPID: your DDEX DPID
     (string) MessageSender: who sends the message (your company name)
     (string) releaseId: the id of the release (must be unique)
+    (string) releaseThreadId: the thread id of the release (must be unique)
+    (boolean) isBackfill: release is backfill
+    (string) updateIndicator: is message original or update (OriginalMessage/UpdateMessage)
+    (string) messageControl: message control type (for compability) (LiveMessage/TestMessage)
     (string) releaseTitle: the main title of the release 
     (string) releaseMixVersion: sub title
     (string) releaseCoverArt: path to the image; will be the cover art of the release. Must be the format supported by your store/delivery platform! (ex. JPG, 3000x3000)
@@ -40,19 +63,24 @@
 
 class Release
 {
-    public $DPID = "";
-    public $MessageSender = "";
+    public $sender;
+    public $sentOnBehalfOf;
+    public $recipient;
     public $releaseId = "";
+    public $releaseThreadId = "";
+    public $isBackfill = false;
+    public $updateIndicator = 'OriginalMessage';
+    public $messageControl = 'LiveMessage';
     public $releaseTitle = "";
     public $releaseMixVersion = "";
     public $releaseCoverArt = "";
-    public $releaseTracks = array();
+    public $releaseTracks = [];
     public $releaseRecordLabel = "";
     public $releaseDate = "";
     public $releaseEAN = "";
     public $releaseCatalogNo = "";
     public $releaseGenre = 0;
-    public $releaseArtists = array();
+    public $releaseArtists = [];
     public $releaseExplicit = false;
     public $releasePLineYear = 2022;
     public $releasePLine = "";
@@ -87,7 +115,7 @@ class Artist
     (string) trackMixversion: the subtitle of the track
     (string) trackDuration: duration in DDEX compatible format
     (array Contributor) trackContributors: an array of track Contributors
-    (boolean) trackExplicit: track is explicit
+    (string no/yes/clean/noinfo) trackExplicit: track is explicit
     (integer) trackPreviewTime: TikTok/Instagram/etc Preview Time
     (string) trackSHA1hashsum: SHA-1 hash sum
     (string) trackFilename: path to compatible sound file
@@ -100,13 +128,13 @@ class Artist
 
 class Track
 {
-    public $trackArtists = array();
+    public $trackArtists = [];
     public $trackISRC = "";
     public $trackTitle = "";
     public $trackMixversion = "";
     public $trackDuration = "";
-    public $trackContributors = array();
-    public $trackExplicit = false;
+    public $trackContributors = [];
+    public $trackExplicit = 'no';
     public $trackPreviewTime = 30;
     public $trackSHA1hashsum = "";
     public $trackFilename = "";
@@ -144,7 +172,7 @@ class Deal
 {
     public $dealStartDate = "";
     public $dealPreOrderDate = "";
-    public $dealTerritories = array();
+    public $dealTerritories = [];
 }
 
 /*
