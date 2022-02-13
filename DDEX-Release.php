@@ -44,7 +44,7 @@ class Party
     (string) updateIndicator: is message original or update (OriginalMessage/UpdateMessage)
     (string) messageControl: message control type (for compability) (LiveMessage/TestMessage)
     (string) releaseTitle: the main title of the release 
-    (string) releaseMixVersion: sub title
+    (string) releaseSubtitle: sub title
     (string) releaseCoverArt: path to the image; will be the cover art of the release. Must be the format supported by your store/delivery platform! (ex. JPG, 3000x3000)
     (array Track) releaseTracks: an array of Track classes.
     (string) releaseRecordLabel: the record label
@@ -72,7 +72,7 @@ class Release
     public $updateIndicator = 'OriginalMessage';
     public $messageControl = 'LiveMessage';
     public $releaseTitle = "";
-    public $releaseMixVersion = "";
+    public $releaseSubtitle = "";
     public $releaseCoverArt = "";
     public $releaseTracks = [];
     public $releaseRecordLabel = "";
@@ -112,7 +112,7 @@ class Artist
     (array Artist) trackArtists: the array of artists
     (string) trackISRC: the ISRC code of the track
     (string) trackTitle: the title of the track
-    (string) trackMixversion: the subtitle of the track
+    (string) trackSubtitle: the subtitle of the track
     (string) trackDuration: duration in DDEX compatible format
     (array Contributor) trackContributors: an array of track Contributors
     (string no/yes/clean/noinfo) trackExplicit: track is explicit
@@ -131,7 +131,7 @@ class Track
     public $trackArtists = [];
     public $trackISRC = "";
     public $trackTitle = "";
-    public $trackMixversion = "";
+    public $trackSubtitle = "";
     public $trackDuration = "";
     public $trackContributors = [];
     public $trackExplicit = 'no';
