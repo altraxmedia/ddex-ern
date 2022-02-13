@@ -87,6 +87,30 @@ class DDEX
         $PartyName = $this->xml->createElement ("PartyName", $this->release->sender->partyName);
         $MessageSender->appendChild ($PartyName);
 
+        if ($this->release->sender->tradingName != '')
+        {
+            $TradingName = $this->xml->createElement ("TradingName", $this->release->sender->tradingName);
+            $MessageSender->appendChild ($TradingName);
+        }
+
+        if ($this->release->sentOnBehalfOf instanceof Party)
+        {
+            $SentOnBehalfOf = $this->xml->createElement ("SentOnBehalfOf");
+            $MessageHeader->appendChild ($SentOnBehalfOf);
+
+            $PartyId = $this->xml->createElement ("PartyId", $this->release->sentOnBehalfOf->partyId);
+            $SentOnBehalfOf->appendChild ($PartyId);
+
+            $PartyName = $this->xml->createElement ("PartyName", $this->release->sentOnBehalfOf->partyName);
+            $SentOnBehalfOf->appendChild ($PartyName);
+
+            if ($this->release->sentOnBehalfOf->tradingName != '')
+            {
+                $TradingName = $this->xml->createElement ("TradingName", $this->release->sentOnBehalfOf->tradingName);
+                $SentOnBehalfOf->appendChild ($TradingName);
+            }
+        }
+
         $MessageRecipient = $this->xml->createElement ("MessageRecipient");
         $MessageHeader->appendChild ($MessageRecipient);
 
@@ -95,6 +119,12 @@ class DDEX
 
         $PartyName = $this->xml->createElement ("PartyName", $this->release->recipient->partyName);
         $MessageRecipient->appendChild ($PartyName);
+
+        if ($this->release->recipient->tradingName != '')
+        {
+            $TradingName = $this->xml->createElement ("TradingName", $this->release->recipient->tradingName);
+            $MessageRecipient->appendChild ($TradingName);
+        }
 
         $MessageCreatedDateTime = $this->xml->createElement ("MessageCreatedDateTime", date (DATE_ATOM));
         $MessageHeader->appendChild ($MessageCreatedDateTime);
