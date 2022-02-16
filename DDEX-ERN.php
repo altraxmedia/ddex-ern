@@ -4,6 +4,8 @@
     (c) 2022 Al-Trax Media Limited
     This software is a trade secret. Do not distribute!
 
+    Standart: DDEX ERN v3.8.2 (Original)
+
     Written by Serhii Shmaida, Georgy Akhmetov, Saveliy Safonov on 12.02.2022
 */
 
@@ -164,7 +166,13 @@ class DDEX
 
     protected function frontCover ()
     {
-        // to do
+        $Image = $this->xml->createElement ("Image");
+        $this->resourceEntrypoint->appendChild ($Image);
+
+        $Type = $this->xml->createElement ("ImageType", "FrontCoverImage");
+        $Image->appendChild ($Type);
+
+
     }
 
     public function __toString ()
@@ -174,6 +182,8 @@ class DDEX
         $this->initResourceEntrypoint ();
         $this->initReleasesEntrypoint ();
         $this->initDealsEntrypoint ();
+        $this->soundRecordings ();
+        $this->frontCover ();
 
         return $this->xml->saveXML();
     }

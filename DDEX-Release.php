@@ -144,6 +144,16 @@ class Track
     public $trackCLine = "";
 }
 
+class Artwork
+{
+    public $width;
+    public $height;
+    public $filepath;
+    public $filename;
+    public $hash;
+    public $hashType = 'SHA1';
+}
+
 /*
     CLASS: Contributor
 
