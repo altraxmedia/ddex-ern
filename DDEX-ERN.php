@@ -42,6 +42,11 @@ class DDEX
         $this->language = $language;
     }
 
+    protected function getSenderDPID ()
+    {
+        return $this->release->sender->partyId;
+    }
+
     protected function initDom ()
     {
         $this->xml = new DOMDocument ('1.0', "utf-8");
@@ -171,6 +176,20 @@ class DDEX
 
         $Type = $this->xml->createElement ("ImageType", "FrontCoverImage");
         $Image->appendChild ($Type);
+
+        $ImageId = $this->xml->createElement ("ImageId");
+        $Image->appendChild ($ImageId);
+
+        $ProprietaryId = $this->xml->createElement ("ProprietaryId", $this->release->releaseCoverArt->proprietaryId);
+
+        $attr1 = $this->xml->createAttribute ('Namespace');
+        $attr1->value = 'DPID:' . $this->getSenderDPID ();
+
+        $ProprietaryId->appendChild ($attr1);
+        $ImageId->appendChild ($ProprietaryId);
+
+        $ResourceReference = $this->xml->createElement ("ResourceReference", "ARTWORK");
+        $Image->appendChild ($ResourceReference);
 
 
     }

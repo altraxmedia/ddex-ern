@@ -19,4 +19,9 @@ $ddex = new DDEX ('ru', $sender, $recipient);
 
 $ddex->release->sentOnBehalfOf = $sentOnBehalfOf;
 
+$cover = new Artwork;
+$cover->proprietaryId = 'qwertyuiopasdfghjklzxcvbnm';
+
+$ddex->release->releaseCoverArt = $cover;
+
 file_put_contents ('batch.xml', $ddex);
