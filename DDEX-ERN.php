@@ -157,6 +157,16 @@ class DDEX
         $this->baseEntrypoint->appendChild ($this->dealsEntrypoint);
     }
 
+    protected function soundRecordings ()
+    {
+        // to do
+    }
+
+    protected function frontCover ()
+    {
+        // to do
+    }
+
     public function __toString ()
     {
         $this->initDom ();
