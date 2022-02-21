@@ -20,6 +20,8 @@ class DDEX
     public $resourceEntrypoint;
     public $releasesEntrypoint;
     public $dealsEntrypoint;
+    protected $resourceReferences;
+    protected $releaseReferences;
 
     protected function genGuid ()
     {
@@ -164,6 +166,32 @@ class DDEX
         $this->baseEntrypoint->appendChild ($this->dealsEntrypoint);
     }
 
+    protected function enumResourceRefs ()
+    {
+        $resourceReferences = [];
+        
+        for ($i = 1; $i < count ($this->tracks); ++$i)
+            $resourceReferences[] = 'A' . $i;
+
+        $resourceReferences[] = 'A' . ($i + 1);
+
+        $this->resourceReferences = $resourceReferences;
+
+    }
+
+    protected function enumReleaseRefs ()
+    {
+        $releaseReferences = [];
+        
+        for ($i = 1; $i < count ($this->tracks); ++$i)
+            $releaseReferences[] = 'R' . $i;
+
+        $releaseReferences[] = 'R' . ($i + 1);
+
+        $this->releaseReferences = $releaseReferences;
+
+    }
+
     protected function soundRecordings ()
     {
         // to do
@@ -198,6 +226,8 @@ class DDEX
     {
         $this->initDom ();
         $this->writeHeader ();
+        $this->enumReleaseRefs ();
+        $this->enumResourceRefs ();
         $this->initResourceEntrypoint ();
         $this->initReleasesEntrypoint ();
         $this->initDealsEntrypoint ();
@@ -207,8 +237,4 @@ class DDEX
         return $this->xml->saveXML();
     }
 
-    public function returnDPID ()
-    {
-        return $this->release->DPID;
-    }
 }
