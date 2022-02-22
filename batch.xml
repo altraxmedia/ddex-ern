@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/382" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" LanguageAndScriptCode="ru" MessageSchemaVersionId="ern/382" xs:schemaLocation="http://ddex.net/xml/ern/382 http://ddex.net/xml/ern/382/release-notification.xsd">
   <MessageHeader>
-    <MessageThreadId>d71bfaad20ec4ca4877b34de1e3cabf1</MessageThreadId>
-    <MessageId>4d7274d2d446404ea49c4323898c825d</MessageId>
+    <MessageThreadId>276e5102bca94b398c8a1af20a5c48d5</MessageThreadId>
+    <MessageId>bbcf568d25844343895b646bfaf8367f</MessageId>
     <MessageSender>
       <PartyId>aboba</PartyId>
       <PartyName>when the impostor</PartyName>
@@ -15,7 +15,7 @@
       <PartyId>amogus</PartyId>
       <PartyName>is sus</PartyName>
     </MessageRecipient>
-    <MessageCreatedDateTime>2022-02-16T16:29:32+00:00</MessageCreatedDateTime>
+    <MessageCreatedDateTime>2022-02-22T13:10:34+00:00</MessageCreatedDateTime>
     <MessageControlType>LiveMessage</MessageControlType>
   </MessageHeader>
   <UpdateIndicator>OriginalMessage</UpdateIndicator>
@@ -26,7 +26,10 @@
       <ImageId>
         <ProprietaryId Namespace="DPID:aboba">qwertyuiopasdfghjklzxcvbnm</ProprietaryId>
       </ImageId>
-      <ResourceReference>ARTWORK</ResourceReference>
+      <ResourceReference>A2</ResourceReference>
+      <ImageDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+      </ImageDetailsByTerritory>
     </Image>
   </ResourceList>
   <ReleaseList/>

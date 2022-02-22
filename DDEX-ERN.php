@@ -170,7 +170,7 @@ class DDEX
     {
         $resourceReferences = [];
         
-        for ($i = 1; $i < count ($this->tracks); ++$i)
+        for ($i = 1; $i < count ($this->release->releaseTracks); ++$i)
             $resourceReferences[] = 'A' . $i;
 
         $resourceReferences[] = 'A' . ($i + 1);
@@ -183,7 +183,7 @@ class DDEX
     {
         $releaseReferences = [];
         
-        for ($i = 1; $i < count ($this->tracks); ++$i)
+        for ($i = 1; $i < count ($this->release->releaseTracks); ++$i)
             $releaseReferences[] = 'R' . $i;
 
         $releaseReferences[] = 'R' . ($i + 1);
@@ -216,8 +216,14 @@ class DDEX
         $ProprietaryId->appendChild ($attr1);
         $ImageId->appendChild ($ProprietaryId);
 
-        $ResourceReference = $this->xml->createElement ("ResourceReference", "ARTWORK");
+        $ResourceReference = $this->xml->createElement ("ResourceReference", end ($this->resourceReferences));
         $Image->appendChild ($ResourceReference);
+
+        $DetailsForTerritory = $this->xml->createElement ("ImageDetailsByTerritory");
+        $Image->appendChild ($DetailsForTerritory);
+
+        $Worldwide = $this->xml->createElement ("TerritoryCode", "Worldwide");
+        $DetailsForTerritory->appendChild ($Worldwide);
 
 
     }
