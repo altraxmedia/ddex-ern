@@ -206,7 +206,7 @@ class DDEX
 
     protected function soundRecordings ()
     {
-        // to do
+        foreach
     }
 
     protected function frontCover ()
