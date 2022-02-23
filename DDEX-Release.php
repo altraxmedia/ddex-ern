@@ -153,6 +153,7 @@ class Artwork
     public $hash;
     public $hashType = 'SHA1';
     public $proprietaryId;
+    public $imageCodec;
 }
 
 /*

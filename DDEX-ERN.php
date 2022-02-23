@@ -243,6 +243,18 @@ class DDEX
         $TechnicalID = $this->xml->createElement ("TechnicalResourceDetailsReference", end ($this->technicalReferences));
         $WorldwideImageDetails->appendChild ($TechnicalID);
 
+        $ImageCodecType = $this->xml->createElement ("ImageCodecType", $this->release->releaseCoverArt->imageCodec);
+        $WorldwideImageDetails->appendChild ($ImageCodecType);
+
+        $ImageHeight = $this->xml->createElement ("ImageHeight", $this->release->releaseCoverArt->height);
+        $WorldwideImageDetails->appendChild ($ImageHeight);
+        
+        $ImageWidth = $this->xml->createElement ("ImageWidth", $this->release->releaseCoverArt->width);
+        $WorldwideImageDetails->appendChild ($ImageWidth);
+
+        $File = $this->xml->createElement ("File");
+        $WorldwideImageDetails->appendChild ($File);
+
 
     }
 
