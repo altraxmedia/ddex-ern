@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/382" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" LanguageAndScriptCode="ru" MessageSchemaVersionId="ern/382" xs:schemaLocation="http://ddex.net/xml/ern/382 http://ddex.net/xml/ern/382/release-notification.xsd">
   <MessageHeader>
-    <MessageThreadId>c1a75ad731a74193ab86a53f432ff92a</MessageThreadId>
-    <MessageId>70c12338514a41378d84971dadbb8f73</MessageId>
+    <MessageThreadId>14637a8ec8ee486d9a65031112a8f2e4</MessageThreadId>
+    <MessageId>d4a7062864314deead51a7e3e67c3965</MessageId>
     <MessageSender>
       <PartyId>aboba</PartyId>
       <PartyName>when the impostor</PartyName>
@@ -15,7 +15,7 @@
       <PartyId>amogus</PartyId>
       <PartyName>is sus</PartyName>
     </MessageRecipient>
-    <MessageCreatedDateTime>2022-02-22T13:11:30+00:00</MessageCreatedDateTime>
+    <MessageCreatedDateTime>2022-02-23T07:42:27+00:00</MessageCreatedDateTime>
     <MessageControlType>LiveMessage</MessageControlType>
   </MessageHeader>
   <UpdateIndicator>OriginalMessage</UpdateIndicator>
@@ -29,6 +29,9 @@
       <ResourceReference>A2</ResourceReference>
       <ImageDetailsByTerritory>
         <TerritoryCode>Worldwide</TerritoryCode>
+        <TechnicalImageDetails>
+          <TechnicalResourceDetailsReference>T2</TechnicalResourceDetailsReference>
+        </TechnicalImageDetails>
       </ImageDetailsByTerritory>
     </Image>
   </ResourceList>
