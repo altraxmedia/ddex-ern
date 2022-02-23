@@ -255,6 +255,21 @@ class DDEX
         $File = $this->xml->createElement ("File");
         $WorldwideImageDetails->appendChild ($File);
 
+        $FileName = $this->xml->createElement ("FileName", $this->release->releaseCoverArt->filename);
+        $File->appendChild ($FileName);
+
+        $FilePath = $this->xml->createElement ("FilePath", $this->release->releaseCoverArt->filepath);
+        $File->appendChild ($FilePath);
+        
+        $HashSum = $this->xml->createElement ("HashSum");
+        $File->appendChild ($HashSum);
+
+        $HashSum2 = $this->xml->createElement ("HashSum", $this->release->releaseCoverArt->hash);
+        $HashSum->appendChild ($HashSum2);
+
+        $HashSumAlgorithmType = $this->xml->createElement ("HashSumAlgorithmType", $this->release->releaseCoverArt->hashType);
+        $HashSum->appendChild ($HashSumAlgorithmType);
+
 
     }
 

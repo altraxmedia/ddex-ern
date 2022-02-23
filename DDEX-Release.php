@@ -146,14 +146,14 @@ class Track
 
 class Artwork
 {
-    public $width;
-    public $height;
-    public $filepath;
-    public $filename;
+    public $width = 1080;
+    public $height = 1080;
+    public $filepath = '';
+    public $filename = '';
     public $hash;
     public $hashType = 'SHA1';
     public $proprietaryId;
-    public $imageCodec;
+    public $imageCodec = 'JPEG';
 }
 
 /*
