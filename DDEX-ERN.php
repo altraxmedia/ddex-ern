@@ -22,6 +22,7 @@ class DDEX
     public $dealsEntrypoint;
     protected $resourceReferences;
     protected $releaseReferences;
+    protected $technicalReferences;
 
     protected function genGuid ()
     {
@@ -176,7 +177,6 @@ class DDEX
         $resourceReferences[] = 'A' . ($i + 1);
 
         $this->resourceReferences = $resourceReferences;
-
     }
 
     protected function enumReleaseRefs ()
@@ -189,6 +189,18 @@ class DDEX
         $releaseReferences[] = 'R' . ($i + 1);
 
         $this->releaseReferences = $releaseReferences;
+    }
+
+    protected function enumTechnicalRefs ()
+    {
+        $technicalReferences = [];
+        
+        for ($i = 1; $i < count ($this->release->releaseTracks); ++$i)
+            $technicalReferences[] = 'T' . $i;
+
+        $technicalReferences[] = 'T' . ($i + 1);
+
+        $this->technicalReferences = $technicalReferences;
 
     }
 
@@ -225,6 +237,9 @@ class DDEX
         $Worldwide = $this->xml->createElement ("TerritoryCode", "Worldwide");
         $DetailsForTerritory->appendChild ($Worldwide);
 
+        $Worldwide = $this->xml->createElement ("TerritoryCode", "Worldwide");
+        $DetailsForTerritory->appendChild ($Worldwide);
+
 
     }
 
@@ -234,6 +249,7 @@ class DDEX
         $this->writeHeader ();
         $this->enumReleaseRefs ();
         $this->enumResourceRefs ();
+        $this->enumTechnicalRefs ();
         $this->initResourceEntrypoint ();
         $this->initReleasesEntrypoint ();
         $this->initDealsEntrypoint ();
