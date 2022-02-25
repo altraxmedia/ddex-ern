@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/382" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" LanguageAndScriptCode="ru" MessageSchemaVersionId="ern/382" xs:schemaLocation="http://ddex.net/xml/ern/382 http://ddex.net/xml/ern/382/release-notification.xsd">
   <MessageHeader>
-    <MessageThreadId>6badab3bf4f1491282e3e5b6c1e5bdf0</MessageThreadId>
-    <MessageId>341ab21ca2214b6abcd0d71f95b827ce</MessageId>
+    <MessageThreadId>89246869641646e9a95591f72e141731</MessageThreadId>
+    <MessageId>81d2632f97244ba9ab84c99a1145fbec</MessageId>
     <MessageSender>
       <PartyId>aboba</PartyId>
       <PartyName>when the impostor</PartyName>
@@ -15,22 +15,97 @@
       <PartyId>amogus</PartyId>
       <PartyName>is sus</PartyName>
     </MessageRecipient>
-    <MessageCreatedDateTime>2022-02-23T07:58:25+00:00</MessageCreatedDateTime>
+    <MessageCreatedDateTime>2022-02-25T09:08:17+00:00</MessageCreatedDateTime>
     <MessageControlType>LiveMessage</MessageControlType>
   </MessageHeader>
   <UpdateIndicator>OriginalMessage</UpdateIndicator>
   <IsBackfill>false</IsBackfill>
   <ResourceList>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC/>
+      </SoundRecordingId>
+      <ResourceReference>A1</ResourceReference>
+      <ReferenceTitle>
+        <TitleText/>
+        <SubTitle/>
+      </ReferenceTitle>
+      <Duration/>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+      </SoundRecordingDetailsByTerritory>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC/>
+      </SoundRecordingId>
+      <ResourceReference>A2</ResourceReference>
+      <ReferenceTitle>
+        <TitleText/>
+        <SubTitle/>
+      </ReferenceTitle>
+      <Duration/>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+      </SoundRecordingDetailsByTerritory>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC/>
+      </SoundRecordingId>
+      <ResourceReference>A3</ResourceReference>
+      <ReferenceTitle>
+        <TitleText/>
+        <SubTitle/>
+      </ReferenceTitle>
+      <Duration/>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+      </SoundRecordingDetailsByTerritory>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC/>
+      </SoundRecordingId>
+      <ResourceReference>A4</ResourceReference>
+      <ReferenceTitle>
+        <TitleText/>
+        <SubTitle/>
+      </ReferenceTitle>
+      <Duration/>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+      </SoundRecordingDetailsByTerritory>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC/>
+      </SoundRecordingId>
+      <ResourceReference>A5</ResourceReference>
+      <ReferenceTitle>
+        <TitleText/>
+        <SubTitle/>
+      </ReferenceTitle>
+      <Duration/>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+      </SoundRecordingDetailsByTerritory>
+    </SoundRecording>
     <Image>
       <ImageType>FrontCoverImage</ImageType>
       <ImageId>
         <ProprietaryId Namespace="DPID:aboba">qwertyuiopasdfghjklzxcvbnm</ProprietaryId>
       </ImageId>
-      <ResourceReference>A2</ResourceReference>
+      <ResourceReference>A6</ResourceReference>
       <ImageDetailsByTerritory>
         <TerritoryCode>Worldwide</TerritoryCode>
         <TechnicalImageDetails>
-          <TechnicalResourceDetailsReference>T2</TechnicalResourceDetailsReference>
+          <TechnicalResourceDetailsReference>T6</TechnicalResourceDetailsReference>
           <ImageCodecType>JPEG</ImageCodecType>
           <ImageHeight>1080</ImageHeight>
           <ImageWidth>1080</ImageWidth>

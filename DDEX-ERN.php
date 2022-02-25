@@ -171,10 +171,10 @@ class DDEX
     {
         $resourceReferences = [];
         
-        for ($i = 1; $i < count ($this->release->releaseTracks); ++$i)
+        for ($i = 1; $i <= count ($this->release->releaseTracks); ++$i)
             $resourceReferences[] = 'A' . $i;
 
-        $resourceReferences[] = 'A' . ($i + 1);
+        $resourceReferences[] = 'A' . $i;
 
         $this->resourceReferences = $resourceReferences;
     }
@@ -183,10 +183,10 @@ class DDEX
     {
         $releaseReferences = [];
         
-        for ($i = 1; $i < count ($this->release->releaseTracks); ++$i)
+        for ($i = 1; $i <= count ($this->release->releaseTracks); ++$i)
             $releaseReferences[] = 'R' . $i;
 
-        $releaseReferences[] = 'R' . ($i + 1);
+        $releaseReferences[] = 'R' . $i;
 
         $this->releaseReferences = $releaseReferences;
     }
@@ -195,10 +195,10 @@ class DDEX
     {
         $technicalReferences = [];
         
-        for ($i = 1; $i < count ($this->release->releaseTracks); ++$i)
+        for ($i = 1; $i <= count ($this->release->releaseTracks); ++$i)
             $technicalReferences[] = 'T' . $i;
 
-        $technicalReferences[] = 'T' . ($i + 1);
+        $technicalReferences[] = 'T' . $i;
 
         $this->technicalReferences = $technicalReferences;
 
@@ -206,7 +206,48 @@ class DDEX
 
     protected function soundRecordings ()
     {
-        foreach
+        $pos = -1;
+        foreach ($this->release->releaseTracks as $trackData)
+        {
+            ++$pos;
+            
+            $SoundRecording = $this->xml->createElement ("SoundRecording");
+            $this->resourceEntrypoint->appendChild ($SoundRecording);
+
+            $SoundRecordingType = $this->xml->createElement ("SoundRecordingType", "MusicalWorkSoundRecording");
+            $SoundRecording->appendChild ($SoundRecordingType);
+
+            $SoundRecordingId = $this->xml->createElement ("SoundRecordingId");
+            $SoundRecording->appendChild ($SoundRecordingId);
+
+            $ISRC = $this->xml->createElement ("ISRC", $trackData->trackISRC);
+            $SoundRecordingId->appendChild ($ISRC);
+
+            $ResourceReference = $this->xml->createElement ("ResourceReference", $this->resourceReferences[$pos]);
+            $SoundRecording->appendChild ($ResourceReference);
+
+            $ReferenceTitle = $this->xml->createElement ("ReferenceTitle");
+            $SoundRecording->appendChild ($ReferenceTitle);
+
+            $TitleText = $this->xml->createElement ("TitleText", $trackData->trackTitle);
+            $ReferenceTitle->appendChild ($TitleText);
+
+            $SubTitle = $this->xml->createElement ("SubTitle", $trackData->trackSubtitle);
+            $ReferenceTitle->appendChild ($SubTitle);
+
+            $Duration = $this->xml->createElement ("Duration", $trackData->trackDuration);
+            $SoundRecording->appendChild ($Duration);
+
+            $DetailsForTerritory = $this->xml->createElement ("SoundRecordingDetailsByTerritory");
+            $SoundRecording->appendChild ($DetailsForTerritory);
+
+            $Worldwide = $this->xml->createElement ("TerritoryCode", "Worldwide");
+            $DetailsForTerritory->appendChild ($Worldwide);
+
+            $trackTitle = $trackData->trackTitle;
+            if ($trackData->trackSubtitle != NULL)
+                $trackTitle .= ' (' . $trackData->trackSubtitle . ')';
+        }
     }
 
     protected function frontCover ()

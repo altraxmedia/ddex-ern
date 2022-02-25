@@ -81,7 +81,7 @@ class Release
     public $releaseCatalogNo = "";
     public $releaseGenre = 0;
     public $releaseArtists = [];
-    public $releaseExplicit = false;
+    public $releaseExplicit = '';
     public $releasePLineYear = 2022;
     public $releasePLine = "";
     public $releaseCLineYear = 2022;

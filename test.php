@@ -24,4 +24,7 @@ $cover->proprietaryId = 'qwertyuiopasdfghjklzxcvbnm';
 
 $ddex->release->releaseCoverArt = $cover;
 
+for ($i = 0; $i < 5; ++$i)
+	$ddex->release->releaseTracks[] = new Track;
+
 file_put_contents ('batch.xml', $ddex);
