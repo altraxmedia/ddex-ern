@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/382" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" LanguageAndScriptCode="ru" MessageSchemaVersionId="ern/382" xs:schemaLocation="http://ddex.net/xml/ern/382 http://ddex.net/xml/ern/382/release-notification.xsd">
   <MessageHeader>
-    <MessageThreadId>14490b1bef604cfa992bd2fb0fe1e413</MessageThreadId>
-    <MessageId>a87274e1457445a097e1e05015718c17</MessageId>
+    <MessageThreadId>ff6df90ea5334e818f374cadfdeddc4f</MessageThreadId>
+    <MessageId>1fdb1b6691904b249b746971974fb187</MessageId>
     <MessageSender>
       <PartyId>aboba</PartyId>
       <PartyName>when the impostor</PartyName>
@@ -15,7 +15,7 @@
       <PartyId>amogus</PartyId>
       <PartyName>is sus</PartyName>
     </MessageRecipient>
-    <MessageCreatedDateTime>2022-02-26T18:45:10+00:00</MessageCreatedDateTime>
+    <MessageCreatedDateTime>2022-02-26T19:01:51+00:00</MessageCreatedDateTime>
     <MessageControlType>LiveMessage</MessageControlType>
   </MessageHeader>
   <UpdateIndicator>OriginalMessage</UpdateIndicator>
@@ -48,6 +48,23 @@
           <Year>2022</Year>
           <PLineText/>
         </PLine>
+        <Genre>
+          <GenreText/>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T6</TechnicalResourceDetailsReference>
+          <AudioCodecType>PCM</AudioCodecType>
+          <IsPreview/>
+          <File>
+            <FileName/>
+            <FilePath/>
+            <HashSum>
+              <HashSum/>
+              <HashSumAlgorithmType>SHA1</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
       </SoundRecordingDetailsByTerritory>
     </SoundRecording>
     <SoundRecording>
@@ -77,6 +94,23 @@
           <Year>2022</Year>
           <PLineText/>
         </PLine>
+        <Genre>
+          <GenreText/>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T6</TechnicalResourceDetailsReference>
+          <AudioCodecType>PCM</AudioCodecType>
+          <IsPreview/>
+          <File>
+            <FileName/>
+            <FilePath/>
+            <HashSum>
+              <HashSum/>
+              <HashSumAlgorithmType>SHA1</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
       </SoundRecordingDetailsByTerritory>
     </SoundRecording>
     <SoundRecording>
@@ -106,6 +140,23 @@
           <Year>2022</Year>
           <PLineText/>
         </PLine>
+        <Genre>
+          <GenreText/>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T6</TechnicalResourceDetailsReference>
+          <AudioCodecType>PCM</AudioCodecType>
+          <IsPreview/>
+          <File>
+            <FileName/>
+            <FilePath/>
+            <HashSum>
+              <HashSum/>
+              <HashSumAlgorithmType>SHA1</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
       </SoundRecordingDetailsByTerritory>
     </SoundRecording>
     <SoundRecording>
@@ -135,6 +186,23 @@
           <Year>2022</Year>
           <PLineText/>
         </PLine>
+        <Genre>
+          <GenreText/>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T6</TechnicalResourceDetailsReference>
+          <AudioCodecType>PCM</AudioCodecType>
+          <IsPreview/>
+          <File>
+            <FileName/>
+            <FilePath/>
+            <HashSum>
+              <HashSum/>
+              <HashSumAlgorithmType>SHA1</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
       </SoundRecordingDetailsByTerritory>
     </SoundRecording>
     <SoundRecording>
@@ -164,6 +232,23 @@
           <Year>2022</Year>
           <PLineText/>
         </PLine>
+        <Genre>
+          <GenreText/>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T6</TechnicalResourceDetailsReference>
+          <AudioCodecType>PCM</AudioCodecType>
+          <IsPreview/>
+          <File>
+            <FileName/>
+            <FilePath/>
+            <HashSum>
+              <HashSum/>
+              <HashSumAlgorithmType>SHA1</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
       </SoundRecordingDetailsByTerritory>
     </SoundRecording>
     <Image>

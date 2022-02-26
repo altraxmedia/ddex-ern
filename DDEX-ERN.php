@@ -331,7 +331,40 @@ class DDEX
 
             # Parental Advisory (Explicit Content)
 
+            $ParentalWarningType = $this->xml->createElement ("ParentalWarningType", $trackData->getExplicit ());
+            $DetailsForTerritory->appendChild ($ParentalWarningType);
+
             # File specifications
+
+            $WorldwideSoundRecordingDetails = $this->xml->createElement ("TechnicalSoundRecordingDetails");
+            $DetailsForTerritory->appendChild ($WorldwideSoundRecordingDetails);
+
+            $TechnicalID = $this->xml->createElement ("TechnicalResourceDetailsReference", end ($this->technicalReferences));
+            $WorldwideSoundRecordingDetails->appendChild ($TechnicalID);
+
+            $AudioCodecType = $this->xml->createElement ("AudioCodecType", $trackData->trackCodecType);
+            $WorldwideSoundRecordingDetails->appendChild ($AudioCodecType);
+
+            $IsPreview = $this->xml->createElement ("IsPreview", $trackData->trackIsPreview);
+            $WorldwideSoundRecordingDetails->appendChild ($IsPreview);
+
+            $File = $this->xml->createElement ("File");
+            $WorldwideSoundRecordingDetails->appendChild ($File);
+
+            $FileName = $this->xml->createElement ("FileName", $trackData->filename);
+            $File->appendChild ($FileName);
+
+            $FilePath = $this->xml->createElement ("FilePath", $trackData->filepath);
+            $File->appendChild ($FilePath);
+            
+            $HashSum = $this->xml->createElement ("HashSum");
+            $File->appendChild ($HashSum);
+
+            $HashSum2 = $this->xml->createElement ("HashSum", $trackData->hash);
+            $HashSum->appendChild ($HashSum2);
+
+            $HashSumAlgorithmType = $this->xml->createElement ("HashSumAlgorithmType", $trackData->hashType);
+            $HashSum->appendChild ($HashSumAlgorithmType);
         }
     }
 

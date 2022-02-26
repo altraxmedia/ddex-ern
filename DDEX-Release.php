@@ -170,6 +170,34 @@ class Track
     #public $trackCLine = "";
     public $trackTitleLang = 'en';
     public $trackGenre = '';
+    public $trackCodecType = 'PCM';
+    public $trackIsPreview = false;
+    public $filepath = '';
+    public $filename = '';
+    public $hash;
+    public $hashType = 'SHA1';
+
+    public function getExplicit ()
+    {
+        switch ($this->trackExplicit)
+        {
+            case 'no':
+                return 'NotExplicit';
+            break;
+
+            case 'yes':
+                return 'Explicit';
+            break;
+
+            case 'clean':
+                return 'ExplicitContentEdited';
+            break;
+
+            case 'noinfo':
+                return 'NoAdviceAvailable';
+            break;
+        }
+    }
 }
 
 class Artwork
