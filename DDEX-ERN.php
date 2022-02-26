@@ -209,11 +209,15 @@ class DDEX
             $SoundRecordingId = $this->xml->createElement ("SoundRecordingId");
             $SoundRecording->appendChild ($SoundRecordingId);
 
+            # ISRC
+
             $ISRC = $this->xml->createElement ("ISRC", $trackData->trackISRC);
             $SoundRecordingId->appendChild ($ISRC);
 
             $ResourceReference = $this->xml->createElement ("ResourceReference", $this->resourceReferences[$pos]);
             $SoundRecording->appendChild ($ResourceReference);
+
+            # Title
 
             $ReferenceTitle = $this->xml->createElement ("ReferenceTitle");
             $SoundRecording->appendChild ($ReferenceTitle);
@@ -223,6 +227,8 @@ class DDEX
 
             $SubTitle = $this->xml->createElement ("SubTitle", $trackData->trackSubtitle);
             $ReferenceTitle->appendChild ($SubTitle);
+
+            #D uration
 
             $Duration = $this->xml->createElement ("Duration", $trackData->trackDuration);
             $SoundRecording->appendChild ($Duration);
@@ -269,6 +275,34 @@ class DDEX
 
             $TitleText = $this->xml->createElement ("TitleText", $trackTitle);
             $Title->appendChild ($TitleText);
+
+            # Display artists
+
+            $pointer = 0;
+
+            foreach ($trackData->trackArtists as $art)
+            {
+                ++$pointer;
+
+                $DisplayArtist = $this->xml->createElement ("DisplayArtist");
+                $DetailsForTerritory->appendChild ($DisplayArtist);
+
+                $DisplayArtist->setAttribute ('SequenceNumber', strval ($pointer));
+
+                # Artist name
+
+                foreach ($art->artistName as $pName)
+                {
+                    $PartyName = $this->xml->createElement ("PartyName", $pName->artistName);
+                    $PartyName->setAttribute ('LanguageAndScriptCode', $pName->artistLanguage);
+                    $DisplayArtist->appendChild ($PartyName);
+                }
+
+                # Artist role
+
+                $ArtistRole = $this->xml->createElement ("ArtistRole", $art->getRole ());
+                $DisplayArtist->appendChild ($ArtistRole);
+            }
         }
     }
 

@@ -100,8 +100,33 @@ class Release
 
 class Artist
 {
-    public $artistName = "";
+    public $artistName = [];
     public $artistRole = 0;
+
+    public function getRole ()
+    {
+        switch ($this->artistRole)
+        {
+            case 0:
+                return 'MainArtist';
+            break;
+
+            case 1:
+                return 'FeaturedArtist';
+            break;
+
+            case 2:
+                return 'Artist';
+            break;
+        }
+    }
+
+}
+
+class ArtistLanguage
+{
+    public $artistName;
+    public $artistLanguage;
 }
 
 /*
