@@ -56,23 +56,12 @@ class DDEX
         $this->xml->formatOutput = true;
 
         $this->baseEntrypoint = $this->xml->createElement ("ern:NewReleaseMessage");
-        $attr1 = $this->xml->createAttribute ('xmlns:ern');
-        $attr2 = $this->xml->createAttribute ('xmlns:xs');
-        $attr3 = $this->xml->createAttribute ('LanguageAndScriptCode');
-        $attr4 = $this->xml->createAttribute ('MessageSchemaVersionId');
-        $attr5 = $this->xml->createAttribute ('xs:schemaLocation');
-
-        $attr1->value = 'http://ddex.net/xml/ern/382';
-        $attr2->value = 'http://www.w3.org/2001/XMLSchema-instance';
-        $attr3->value = $this->language;
-        $attr4->value = 'ern/382';
-        $attr5->value = 'http://ddex.net/xml/ern/382 http://ddex.net/xml/ern/382/release-notification.xsd';
-
-        $this->baseEntrypoint->appendChild ($attr1);
-        $this->baseEntrypoint->appendChild ($attr2);
-        $this->baseEntrypoint->appendChild ($attr3);
-        $this->baseEntrypoint->appendChild ($attr4);
-        $this->baseEntrypoint->appendChild ($attr5);
+        
+        $this->baseEntrypoint->setAttribute ('xmlns:ern', 'http://ddex.net/xml/ern/382');
+        $this->baseEntrypoint->setAttribute ('xmlns:xs', 'http://www.w3.org/2001/XMLSchema-instance');
+        $this->baseEntrypoint->setAttribute ('LanguageAndScriptCode', $this->language);
+        $this->baseEntrypoint->setAttribute ('MessageSchemaVersionId', 'ern/382');
+        $this->baseEntrypoint->setAttribute ('xs:schemaLocation', 'http://ddex.net/xml/ern/382 http://ddex.net/xml/ern/382/release-notification.xsd');
 
         $this->xml->appendChild ($this->baseEntrypoint);
     }
@@ -247,6 +236,39 @@ class DDEX
             $trackTitle = $trackData->trackTitle;
             if ($trackData->trackSubtitle != NULL)
                 $trackTitle .= ' (' . $trackData->trackSubtitle . ')';
+
+            # Formal title
+
+            $Title = $this->xml->createElement ("Title");
+            $DetailsForTerritory->appendChild ($Title);
+
+            $Title->setAttribute ('LanguageAndScriptCode', $trackData->trackTitleLang);
+            $Title->setAttribute ('TitleType', 'FormalTitle');
+
+            $TitleText = $this->xml->createElement ("TitleText", $trackTitle);
+            $Title->appendChild ($TitleText);
+
+            # Display title
+
+            $Title = $this->xml->createElement ("Title");
+            $DetailsForTerritory->appendChild ($Title);
+
+            $Title->setAttribute ('LanguageAndScriptCode', $trackData->trackTitleLang);
+            $Title->setAttribute ('TitleType', 'DisplayTitle');
+
+            $TitleText = $this->xml->createElement ("TitleText", $trackTitle);
+            $Title->appendChild ($TitleText);
+
+            # Abbreviated display title
+
+            $Title = $this->xml->createElement ("Title");
+            $DetailsForTerritory->appendChild ($Title);
+
+            $Title->setAttribute ('LanguageAndScriptCode', $trackData->trackTitleLang);
+            $Title->setAttribute ('TitleType', 'AbbreviatedDisplayTitle');
+
+            $TitleText = $this->xml->createElement ("TitleText", $trackTitle);
+            $Title->appendChild ($TitleText);
         }
     }
 

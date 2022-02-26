@@ -134,6 +134,7 @@ class Track
     public $trackSubtitle = "";
     public $trackDuration = "";
     public $trackContributors = [];
+    public $trackIndirectContributors = [];
     public $trackExplicit = 'no';
     public $trackPreviewTime = 30;
     public $trackSHA1hashsum = "";
@@ -142,6 +143,7 @@ class Track
     public $trackPLine = "";
     public $trackCLineYear = 2022;
     public $trackCLine = "";
+    public $trackTitleLang = 'en';
 }
 
 class Artwork
@@ -260,12 +262,13 @@ class Deal
 1   Featured Artist
 2   Artist
 
-    MEMO: Contributor Role IDs
+    MEMO: Indirect Contributor Role IDs
 
 0   Lyricist
 1   MusicPublisher
 2   Remixer
 3   Producer
-4   Composer (required)
+4   Composer
+
 
 */

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/382" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" LanguageAndScriptCode="ru" MessageSchemaVersionId="ern/382" xs:schemaLocation="http://ddex.net/xml/ern/382 http://ddex.net/xml/ern/382/release-notification.xsd">
   <MessageHeader>
-    <MessageThreadId>89246869641646e9a95591f72e141731</MessageThreadId>
-    <MessageId>81d2632f97244ba9ab84c99a1145fbec</MessageId>
+    <MessageThreadId>aa4d848ec4a54618b9caaed36bfbffee</MessageThreadId>
+    <MessageId>23b951b5467543bfb301a343ebf555e0</MessageId>
     <MessageSender>
       <PartyId>aboba</PartyId>
       <PartyName>when the impostor</PartyName>
@@ -15,7 +15,7 @@
       <PartyId>amogus</PartyId>
       <PartyName>is sus</PartyName>
     </MessageRecipient>
-    <MessageCreatedDateTime>2022-02-25T09:08:17+00:00</MessageCreatedDateTime>
+    <MessageCreatedDateTime>2022-02-26T10:32:57+00:00</MessageCreatedDateTime>
     <MessageControlType>LiveMessage</MessageControlType>
   </MessageHeader>
   <UpdateIndicator>OriginalMessage</UpdateIndicator>
@@ -34,6 +34,15 @@
       <Duration/>
       <SoundRecordingDetailsByTerritory>
         <TerritoryCode>Worldwide</TerritoryCode>
+        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
+          <TitleText/>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="DisplayTitle">
+          <TitleText/>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
+          <TitleText/>
+        </Title>
       </SoundRecordingDetailsByTerritory>
     </SoundRecording>
     <SoundRecording>
@@ -49,6 +58,15 @@
       <Duration/>
       <SoundRecordingDetailsByTerritory>
         <TerritoryCode>Worldwide</TerritoryCode>
+        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
+          <TitleText/>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="DisplayTitle">
+          <TitleText/>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
+          <TitleText/>
+        </Title>
       </SoundRecordingDetailsByTerritory>
     </SoundRecording>
     <SoundRecording>
@@ -64,6 +82,15 @@
       <Duration/>
       <SoundRecordingDetailsByTerritory>
         <TerritoryCode>Worldwide</TerritoryCode>
+        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
+          <TitleText/>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="DisplayTitle">
+          <TitleText/>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
+          <TitleText/>
+        </Title>
       </SoundRecordingDetailsByTerritory>
     </SoundRecording>
     <SoundRecording>
@@ -79,6 +106,15 @@
       <Duration/>
       <SoundRecordingDetailsByTerritory>
         <TerritoryCode>Worldwide</TerritoryCode>
+        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
+          <TitleText/>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="DisplayTitle">
+          <TitleText/>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
+          <TitleText/>
+        </Title>
       </SoundRecordingDetailsByTerritory>
     </SoundRecording>
     <SoundRecording>
@@ -94,6 +130,15 @@
       <Duration/>
       <SoundRecordingDetailsByTerritory>
         <TerritoryCode>Worldwide</TerritoryCode>
+        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
+          <TitleText/>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="DisplayTitle">
+          <TitleText/>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
+          <TitleText/>
+        </Title>
       </SoundRecordingDetailsByTerritory>
     </SoundRecording>
     <Image>
