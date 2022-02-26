@@ -192,10 +192,35 @@ class Artwork
     (integer) contributorRoleId: the contributor's role in all this release
 */
 
-Class Contributor
+class Contributor
 {
-    public $contributorName = "";
-    public $contributorRoleId = 0;
+    public $artistName = [];
+    public $artistRole = 0;
+
+    public function getRole ()
+    {
+        switch ($this->artistRole)
+        {
+            case 0:
+                return 'MainArtist';
+            break;
+
+            case 1:
+                return 'FeaturedArtist';
+            break;
+
+            case 2:
+                return 'Artist';
+            break;
+        }
+    }
+
+}
+
+class ContributorLanguage
+{
+    public $artistName;
+    public $artistLanguage;
 }
 
 /*
