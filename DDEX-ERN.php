@@ -303,6 +303,35 @@ class DDEX
                 $ArtistRole = $this->xml->createElement ("ArtistRole", $art->getRole ());
                 $DisplayArtist->appendChild ($ArtistRole);
             }
+
+            # Label name
+
+            $LabelName = $this->xml->createElement ("LabelName", $this->release->releaseRecordLabel);
+            $DetailsForTerritory->appendChild ($LabelName);
+
+            # P-Line (Phonogram or Producer)
+
+            $PLine = $this->xml->createElement ("PLine");
+            $DetailsForTerritory->appendChild ($PLine);
+
+            $Year = $this->xml->createElement ("Year", strval ($trackData->trackPLineYear));
+            $PLineText = $this->xml->createElement ("PLineText", $trackData->trackPLine);
+
+            $PLine->appendChild ($Year);
+            $PLine->appendChild ($PLineText);
+
+            # Genre text
+
+            $Genre = $this->xml->createElement ("Genre");
+            $DetailsForTerritory->appendChild ($Genre);
+
+            $GenreText = $this->xml->createElement ("GenreText", $trackData->trackGenre);
+
+            $Genre->appendChild ($GenreText);
+
+            # Parental Advisory (Explicit Content)
+
+            # File specifications
         }
     }
 

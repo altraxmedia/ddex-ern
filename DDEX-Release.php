@@ -166,9 +166,10 @@ class Track
     public $trackFilename = "";
     public $trackPLineYear = 2022;
     public $trackPLine = "";
-    public $trackCLineYear = 2022;
-    public $trackCLine = "";
+    #public $trackCLineYear = 2022;
+    #public $trackCLine = "";
     public $trackTitleLang = 'en';
+    public $trackGenre = '';
 }
 
 class Artwork

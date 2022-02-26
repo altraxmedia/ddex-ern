@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/382" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" LanguageAndScriptCode="ru" MessageSchemaVersionId="ern/382" xs:schemaLocation="http://ddex.net/xml/ern/382 http://ddex.net/xml/ern/382/release-notification.xsd">
   <MessageHeader>
-    <MessageThreadId>aa4d848ec4a54618b9caaed36bfbffee</MessageThreadId>
-    <MessageId>23b951b5467543bfb301a343ebf555e0</MessageId>
+    <MessageThreadId>14490b1bef604cfa992bd2fb0fe1e413</MessageThreadId>
+    <MessageId>a87274e1457445a097e1e05015718c17</MessageId>
     <MessageSender>
       <PartyId>aboba</PartyId>
       <PartyName>when the impostor</PartyName>
@@ -15,7 +15,7 @@
       <PartyId>amogus</PartyId>
       <PartyName>is sus</PartyName>
     </MessageRecipient>
-    <MessageCreatedDateTime>2022-02-26T10:32:57+00:00</MessageCreatedDateTime>
+    <MessageCreatedDateTime>2022-02-26T18:45:10+00:00</MessageCreatedDateTime>
     <MessageControlType>LiveMessage</MessageControlType>
   </MessageHeader>
   <UpdateIndicator>OriginalMessage</UpdateIndicator>
@@ -43,6 +43,11 @@
         <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
           <TitleText/>
         </Title>
+        <LabelName/>
+        <PLine>
+          <Year>2022</Year>
+          <PLineText/>
+        </PLine>
       </SoundRecordingDetailsByTerritory>
     </SoundRecording>
     <SoundRecording>
@@ -67,6 +72,11 @@
         <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
           <TitleText/>
         </Title>
+        <LabelName/>
+        <PLine>
+          <Year>2022</Year>
+          <PLineText/>
+        </PLine>
       </SoundRecordingDetailsByTerritory>
     </SoundRecording>
     <SoundRecording>
@@ -91,6 +101,11 @@
         <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
           <TitleText/>
         </Title>
+        <LabelName/>
+        <PLine>
+          <Year>2022</Year>
+          <PLineText/>
+        </PLine>
       </SoundRecordingDetailsByTerritory>
     </SoundRecording>
     <SoundRecording>
@@ -115,6 +130,11 @@
         <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
           <TitleText/>
         </Title>
+        <LabelName/>
+        <PLine>
+          <Year>2022</Year>
+          <PLineText/>
+        </PLine>
       </SoundRecordingDetailsByTerritory>
     </SoundRecording>
     <SoundRecording>
@@ -139,6 +159,11 @@
         <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
           <TitleText/>
         </Title>
+        <LabelName/>
+        <PLine>
+          <Year>2022</Year>
+          <PLineText/>
+        </PLine>
       </SoundRecordingDetailsByTerritory>
     </SoundRecording>
     <Image>
