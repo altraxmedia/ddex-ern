@@ -665,7 +665,33 @@ class DDEX
         $Release->setAttribute ('isMainRelease', 'true');
         $this->releasesEntrypoint->appendChild ($Release);
 
-        # START!
+        # Track IDs
+
+        $ReleaseId = $this->xml->createElement ("ReleaseId");
+        $Release->appendChild ($ReleaseId);
+
+        # ISRC
+
+        $ISRC = $this->xml->createElement ("ISRC", $trackData->trackISRC);
+        $ReleaseId->appendChild ($ISRC);
+
+        # Proprietary ID
+
+        $ProprietaryId = $this->xml->createElement ("ProprietaryId", $trackData->trackProprietaryID);
+
+        $ProprietaryId->setAttribute ('Namespace', 'DPID:' . $this->getSenderDPID ());
+
+        $ReleaseId->appendChild ($ProprietaryId);
+
+        # Release Reference
+
+        $ReleaseReference = $this->xml->createElement ("ReleaseReference", $this->releaseReferences[$pos]);
+        $Release->appendChild ($ReleaseReference);
+
+        # TrackRelease
+
+        $ReleaseType = $this->xml->createElement ("ReleaseType", 'TrackRelease');
+        $Release->appendChild ($ReleaseType);
     }
 
     protected function deals ()
