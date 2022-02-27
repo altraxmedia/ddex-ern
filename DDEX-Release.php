@@ -88,8 +88,10 @@ class Release
     public $releaseTracks = [];
     public $releaseRecordLabel = "";
     public $releaseDate = "";
-    public $releaseEAN = "";
+    public $releaseICPN = "";
+    public $releaseICPNIsEan = true;
     public $releaseCatalogNo = "";
+    public $releaseProprietaryId = '';
     public $releaseGenre = 0;
     public $releaseArtists = [];
     public $releaseExplicit = '';
