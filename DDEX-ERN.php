@@ -339,7 +339,7 @@ class DDEX
             $WorldwideSoundRecordingDetails = $this->xml->createElement ("TechnicalSoundRecordingDetails");
             $DetailsForTerritory->appendChild ($WorldwideSoundRecordingDetails);
 
-            $TechnicalID = $this->xml->createElement ("TechnicalResourceDetailsReference", end ($this->technicalReferences));
+            $TechnicalID = $this->xml->createElement ("TechnicalResourceDetailsReference", $this->technicalReferences[$pos]);
             $WorldwideSoundRecordingDetails->appendChild ($TechnicalID);
 
             $AudioCodecType = $this->xml->createElement ("AudioCodecType", $trackData->trackCodecType);
@@ -381,10 +381,8 @@ class DDEX
 
         $ProprietaryId = $this->xml->createElement ("ProprietaryId", $this->release->releaseCoverArt->proprietaryId);
 
-        $attr1 = $this->xml->createAttribute ('Namespace');
-        $attr1->value = 'DPID:' . $this->getSenderDPID ();
+        $ProprietaryId->setAttribute ('Namespace', 'DPID:' . $this->getSenderDPID ());
 
-        $ProprietaryId->appendChild ($attr1);
         $ImageId->appendChild ($ProprietaryId);
 
         $ResourceReference = $this->xml->createElement ("ResourceReference", end ($this->resourceReferences));
