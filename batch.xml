@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/382" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" LanguageAndScriptCode="ru" MessageSchemaVersionId="ern/382" xs:schemaLocation="http://ddex.net/xml/ern/382 http://ddex.net/xml/ern/382/release-notification.xsd">
   <MessageHeader>
-    <MessageThreadId>05eb29ef487a41c58a574617f6fcb4e2</MessageThreadId>
-    <MessageId>1fba6c2bd7574e788830b6ff7fac72af</MessageId>
+    <MessageThreadId>b802f43b39244ef6a5bfd6d78bf91cba</MessageThreadId>
+    <MessageId>53a986754c6847a48e8aceb0ef346d6b</MessageId>
     <MessageSender>
       <PartyId>aboba</PartyId>
       <PartyName>when the impostor</PartyName>
@@ -15,7 +15,7 @@
       <PartyId>amogus</PartyId>
       <PartyName>is sus</PartyName>
     </MessageRecipient>
-    <MessageCreatedDateTime>2022-02-27T09:35:07+00:00</MessageCreatedDateTime>
+    <MessageCreatedDateTime>2022-02-27T11:10:01+00:00</MessageCreatedDateTime>
     <MessageControlType>LiveMessage</MessageControlType>
   </MessageHeader>
   <UpdateIndicator>OriginalMessage</UpdateIndicator>
@@ -552,7 +552,46 @@
         <CLineText></CLineText>
       </CLine>
     </Release>
-    <Release isMainRelease="true"></Release>
+    <Release isMainRelease="true">
+      <ReleaseId>
+        <ICPN isEan="true"></ICPN>
+        <CatalogNumber Namespace="DPID:aboba"></CatalogNumber>
+        <ProprietaryId Namespace="DPID:aboba"></ProprietaryId>
+      </ReleaseId>
+      <ReleaseReference>R0</ReleaseReference>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A1</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A2</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A3</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A4</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A5</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="SecondaryResource">A6</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>Album</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName></DisplayArtistName>
+        <LabelName></LabelName>
+        <ParentalWarningType></ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroup>
+            <SequenceNumber>1</SequenceNumber>
+          </ResourceGroup>
+        </ResourceGroup>
+        <Genre>
+          <GenreText></GenreText>
+        </Genre>
+        <OriginalReleaseDate></OriginalReleaseDate>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2022</Year>
+        <PLineText></PLineText>
+      </PLine>
+      <CLine>
+        <Year>2022</Year>
+        <CLineText></CLineText>
+      </CLine>
+    </Release>
   </ReleaseList>
   <DealList></DealList>
 </ern:NewReleaseMessage>

@@ -181,7 +181,7 @@ class DDEX
     {
         $releaseReferences = [];
         
-        for ($i = 1; $i <= count ($this->release->releaseTracks); ++$i)
+        for ($i = 0; $i <= count ($this->release->releaseTracks); ++$i)
             $releaseReferences[] = 'R' . $i;
 
         $releaseReferences[] = 'R' . $i;
@@ -441,7 +441,7 @@ class DDEX
 
     protected function writeTrackReleases ()
     {
-        $pos = -1;
+        $pos = 0;
         foreach ($this->release->releaseTracks as $trackData)
         {
             ++$pos;
@@ -489,7 +489,7 @@ class DDEX
             $ReleaseResourceReferenceList = $this->xml->createElement ("ReleaseResourceReferenceList");
             $Release->appendChild ($ReleaseResourceReferenceList);
 
-            $ReleaseResourceReference = $this->xml->createElement ("ReleaseResourceReference", $this->resourceReferences[$pos]);
+            $ReleaseResourceReference = $this->xml->createElement ("ReleaseResourceReference", $this->resourceReferences[$pos - 1]);
             $ReleaseResourceReference->setAttribute ('ReleaseResourceType', 'PrimaryResource');
             $ReleaseResourceReferenceList->appendChild ($ReleaseResourceReference);
 
@@ -608,7 +608,7 @@ class DDEX
             $ResourceType = $this->xml->createElement ("ResourceType", 'SoundRecording');
             $ResourceGroupContentItem->appendChild ($ResourceType);
 
-            $ReleaseResourceReference = $this->xml->createElement ("ReleaseResourceReference", $this->resourceReferences[$pos]);
+            $ReleaseResourceReference = $this->xml->createElement ("ReleaseResourceReference", $this->resourceReferences[$pos - 1]);
             $ResourceGroupContentItem->appendChild ($ReleaseResourceReference);
 
             # Genre text
@@ -670,28 +670,169 @@ class DDEX
         $ReleaseId = $this->xml->createElement ("ReleaseId");
         $Release->appendChild ($ReleaseId);
 
-        # ISRC
+        # ICPN
 
-        $ISRC = $this->xml->createElement ("ISRC", $trackData->trackISRC);
-        $ReleaseId->appendChild ($ISRC);
+        $ICPN = $this->xml->createElement ("ICPN", $this->release->releaseICPN);
+        $ICPN->setAttribute ('isEan', $this->release->releaseICPNIsEan ? 'true' : 'false');
+        $ReleaseId->appendChild ($ICPN);
+
+        # Catalog ID
+
+        $CatalogNumber = $this->xml->createElement ("CatalogNumber", $this->release->releaseCatalogNo);
+        $CatalogNumber->setAttribute ('Namespace', 'DPID:' . $this->getSenderDPID ());
+        $ReleaseId->appendChild ($CatalogNumber);
 
         # Proprietary ID
 
-        $ProprietaryId = $this->xml->createElement ("ProprietaryId", $trackData->trackProprietaryID);
-
+        $ProprietaryId = $this->xml->createElement ("ProprietaryId", $this->release->releaseProprietaryId);
         $ProprietaryId->setAttribute ('Namespace', 'DPID:' . $this->getSenderDPID ());
-
         $ReleaseId->appendChild ($ProprietaryId);
 
         # Release Reference
 
-        $ReleaseReference = $this->xml->createElement ("ReleaseReference", $this->releaseReferences[$pos]);
+        $ReleaseReference = $this->xml->createElement ("ReleaseReference", $this->releaseReferences[0]);
         $Release->appendChild ($ReleaseReference);
 
-        # TrackRelease
+        # Resource Reference
 
-        $ReleaseType = $this->xml->createElement ("ReleaseType", 'TrackRelease');
+        $ReleaseResourceReferenceList = $this->xml->createElement ("ReleaseResourceReferenceList");
+        $Release->appendChild ($ReleaseResourceReferenceList);
+
+        $resourceReferencesNew = $this->resourceReferences;
+
+        $artwork = array_pop ($resourceReferencesNew);
+
+        foreach ($resourceReferencesNew as $resourceRef)
+        {
+            $ReleaseResourceReference = $this->xml->createElement ("ReleaseResourceReference", $resourceRef);
+            $ReleaseResourceReference->setAttribute ('ReleaseResourceType', 'PrimaryResource');
+            $ReleaseResourceReferenceList->appendChild ($ReleaseResourceReference);
+        }
+
+        $ReleaseResourceReference = $this->xml->createElement ("ReleaseResourceReference", $artwork);
+        $ReleaseResourceReference->setAttribute ('ReleaseResourceType', 'SecondaryResource');
+        $ReleaseResourceReferenceList->appendChild ($ReleaseResourceReference);
+
+        # ReleaseType
+
+        $ReleaseType = $this->xml->createElement ("ReleaseType", $this->release->releaseType);
         $Release->appendChild ($ReleaseType);
+
+        # Territory entrypoint
+
+        $DetailsForTerritory = $this->xml->createElement ("ReleaseDetailsByTerritory");
+        $Release->appendChild ($DetailsForTerritory);
+
+        # Territory code Worldwide
+
+        $Worldwide = $this->xml->createElement ("TerritoryCode", "Worldwide");
+        $DetailsForTerritory->appendChild ($Worldwide);
+
+        # Display artist name
+
+        $DisplayArtistName = $this->xml->createElement ("DisplayArtistName", $this->release->releaseDisplayArtist);
+        $DetailsForTerritory->appendChild ($DisplayArtistName);
+
+        # Label name
+
+        $LabelName = $this->xml->createElement ("LabelName", $this->release->releaseRecordLabel);
+        $DetailsForTerritory->appendChild ($LabelName);
+
+        # DisplayArtist
+
+        $pointer = 0;
+
+        foreach ($this->release->releaseArtists as $art)
+        {
+            ++$pointer;
+
+            $DisplayArtist = $this->xml->createElement ("DisplayArtist");
+            $DetailsForTerritory->appendChild ($DisplayArtist);
+
+            $DisplayArtist->setAttribute ('SequenceNumber', strval ($pointer));
+
+            # Artist name
+
+            foreach ($art->artistName as $pName)
+            {
+                $PartyName = $this->xml->createElement ("PartyName", $pName->artistName);
+                $PartyName->setAttribute ('LanguageAndScriptCode', $pName->artistLanguage);
+                $DisplayArtist->appendChild ($PartyName);
+            }
+
+            # Artist role
+
+            $ArtistRole = $this->xml->createElement ("ArtistRole", $art->getRole ());
+            $DisplayArtist->appendChild ($ArtistRole);
+        }
+
+        # Parental Advisory (Explicit Content)
+
+        $ParentalWarningType = $this->xml->createElement ("ParentalWarningType", $this->release->getExplicit ());
+        $DetailsForTerritory->appendChild ($ParentalWarningType);
+
+        # Resource group
+
+        $ResourceGroup = $this->xml->createElement ("ResourceGroup");
+        $DetailsForTerritory->appendChild ($ResourceGroup);
+
+        $ResourceGroup2 = $this->xml->createElement ("ResourceGroup");
+        $ResourceGroup->appendChild ($ResourceGroup2);
+
+        $SequenceNumber = $this->xml->createElement ("SequenceNumber", 1);
+        $ResourceGroup2->appendChild ($SequenceNumber);
+
+        $resPointer = 0;
+
+        #foreach ($resourceReferencesNew as $resRef2)
+
+        /* $ResourceGroupContentItem = $this->xml->createElement ("ResourceGroupContentItem");
+        $ResourceGroup2->appendChild ($ResourceGroupContentItem);
+
+        $SequenceNumber1 = $this->xml->createElement ("SequenceNumber", 1);
+        $ResourceGroupContentItem->appendChild ($SequenceNumber1);
+
+        $ResourceType = $this->xml->createElement ("ResourceType", 'SoundRecording');
+        $ResourceGroupContentItem->appendChild ($ResourceType);
+
+        $ReleaseResourceReference = $this->xml->createElement ("ReleaseResourceReference", $this->resourceReferences[$pos - 1]);
+        $ResourceGroupContentItem->appendChild ($ReleaseResourceReference); */
+
+        # Genre
+
+        $Genre = $this->xml->createElement ("Genre");
+        $DetailsForTerritory->appendChild ($Genre);
+
+        $GenreText = $this->xml->createElement ("GenreText", $this->release->releaseGenre);
+
+        $Genre->appendChild ($GenreText);
+
+        # Original release date (NOT A DEAL)
+
+        $OriginalReleaseDate = $this->xml->createElement ("OriginalReleaseDate", $this->release->releaseDate);
+        $DetailsForTerritory->appendChild ($OriginalReleaseDate);
+
+        # P-Line (Phonogram or Producer)
+
+        $PLine = $this->xml->createElement ("PLine");
+        $Release->appendChild ($PLine);
+
+        $Year = $this->xml->createElement ("Year", strval ($this->release->releasePLineYear));
+        $PLineText = $this->xml->createElement ("PLineText", $this->release->releasePLine);
+
+        $PLine->appendChild ($Year);
+        $PLine->appendChild ($PLineText);
+
+        # C-Line (Copyright)
+
+        $CLine = $this->xml->createElement ("CLine");
+        $Release->appendChild ($CLine);
+
+        $Year = $this->xml->createElement ("Year", strval ($this->release->releaseCLineYear));
+        $CLineText = $this->xml->createElement ("CLineText", $this->release->releaseCLine);
+
+        $CLine->appendChild ($Year);
+        $CLine->appendChild ($CLineText);
     }
 
     protected function deals ()

@@ -64,7 +64,7 @@ class Party
     (string) releaseCatalogNo: the catalog number of the release
     (integer) releaseGenre: the ID of the genre supported by this library (please use the memo)
     (array Artist) releaseArtists: an array of artists and their roles
-    (boolean) releaseExplicit: is release explicit or not
+    (string no/yes/clean/noinfo/unk) releaseExplicit: is release explicit or not
     (integer) releasePLineYear: p line year
     (string) releasePLine: p line (must start with a year!)
     (integer) releaseCLineYear: c line year
@@ -92,7 +92,7 @@ class Release
     public $releaseICPNIsEan = true;
     public $releaseCatalogNo = "";
     public $releaseProprietaryId = '';
-    public $releaseGenre = 0;
+    public $releaseGenre = '';
     public $releaseArtists = [];
     public $releaseExplicit = '';
     public $releasePLineYear = 2022;
@@ -100,6 +100,34 @@ class Release
     public $releaseCLineYear = 2022;
     public $releaseCLine = "";
     public $releaseDeal = null;
+    public $releaseType = 'Album';
+    public $releaseDisplayArtist = '';
+
+    public function getExplicit ()
+    {
+        switch ($this->releaseExplicit)
+        {
+            case 'no':
+                return 'NotExplicit';
+            break;
+
+            case 'yes':
+                return 'Explicit';
+            break;
+
+            case 'clean':
+                return 'ExplicitContentEdited';
+            break;
+
+            case 'noinfo':
+                return 'NoAdviceAvailable';
+            break;
+
+            case 'unk':
+                return 'Unknown';
+            break;
+        }
+    }
 }
 
 /*
@@ -153,7 +181,7 @@ class ArtistLanguage
     (string) trackSubtitle: the subtitle of the track
     (string) trackDuration: duration in DDEX compatible format
     (array Contributor) trackContributors: an array of track Contributors
-    (string no/yes/clean/noinfo) trackExplicit: track is explicit
+    (string no/yes/clean/noinfo/unk) trackExplicit: track is explicit
     (integer) trackPreviewTime: TikTok/Instagram/etc Preview Time
     (string) trackSHA1hashsum: SHA-1 hash sum
     (string) trackFilename: path to compatible sound file
@@ -213,6 +241,10 @@ class Track
 
             case 'noinfo':
                 return 'NoAdviceAvailable';
+            break;
+
+            case 'unk':
+                return 'Unknown';
             break;
         }
     }
