@@ -1,5 +1,5 @@
 # DDEX ERN 3.8.2
-A library to generate DDEX ERN XML files from pre-defined PHP classes. Required PHP 7 with DOM extension.  
+A library to generate DDEX ERN XML files from pre-defined PHP classes.  
 Required PHP >= 7.4 with DOM extension.  
 ## Licensing
 >THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
