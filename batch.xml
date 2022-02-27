@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/382" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" LanguageAndScriptCode="ru" MessageSchemaVersionId="ern/382" xs:schemaLocation="http://ddex.net/xml/ern/382 http://ddex.net/xml/ern/382/release-notification.xsd">
   <MessageHeader>
-    <MessageThreadId>effd28c37f7e4d4ca720040a1f566225</MessageThreadId>
-    <MessageId>07ed48efb601409b82de17a45f8587af</MessageId>
+    <MessageThreadId>dbc6cb26f465476da13f0a76e7de9cf1</MessageThreadId>
+    <MessageId>d0076abd9e3948159030e9516795c931</MessageId>
     <MessageSender>
       <PartyId>aboba</PartyId>
       <PartyName>when the impostor</PartyName>
@@ -15,7 +15,7 @@
       <PartyId>amogus</PartyId>
       <PartyName>is sus</PartyName>
     </MessageRecipient>
-    <MessageCreatedDateTime>2022-02-27T08:43:40+00:00</MessageCreatedDateTime>
+    <MessageCreatedDateTime>2022-02-27T09:14:14+00:00</MessageCreatedDateTime>
     <MessageControlType>LiveMessage</MessageControlType>
   </MessageHeader>
   <UpdateIndicator>OriginalMessage</UpdateIndicator>
@@ -24,43 +24,43 @@
     <SoundRecording>
       <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
       <SoundRecordingId>
-        <ISRC/>
+        <ISRC></ISRC>
       </SoundRecordingId>
       <ResourceReference>A0</ResourceReference>
       <ReferenceTitle>
-        <TitleText/>
-        <SubTitle/>
+        <TitleText></TitleText>
+        <SubTitle></SubTitle>
       </ReferenceTitle>
-      <Duration/>
+      <Duration></Duration>
       <SoundRecordingDetailsByTerritory>
         <TerritoryCode>Worldwide</TerritoryCode>
         <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
-          <TitleText/>
+          <TitleText></TitleText>
         </Title>
         <Title LanguageAndScriptCode="en" TitleType="DisplayTitle">
-          <TitleText/>
+          <TitleText></TitleText>
         </Title>
         <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
-          <TitleText/>
+          <TitleText></TitleText>
         </Title>
-        <LabelName/>
+        <LabelName></LabelName>
         <PLine>
           <Year>2022</Year>
-          <PLineText/>
+          <PLineText></PLineText>
         </PLine>
         <Genre>
-          <GenreText/>
+          <GenreText></GenreText>
         </Genre>
         <ParentalWarningType>NotExplicit</ParentalWarningType>
         <TechnicalSoundRecordingDetails>
           <TechnicalResourceDetailsReference>T0</TechnicalResourceDetailsReference>
           <AudioCodecType>PCM</AudioCodecType>
-          <IsPreview/>
+          <IsPreview></IsPreview>
           <File>
-            <FileName/>
-            <FilePath/>
+            <FileName></FileName>
+            <FilePath></FilePath>
             <HashSum>
-              <HashSum/>
+              <HashSum></HashSum>
               <HashSumAlgorithmType>SHA1</HashSumAlgorithmType>
             </HashSum>
           </File>
@@ -70,43 +70,43 @@
     <SoundRecording>
       <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
       <SoundRecordingId>
-        <ISRC/>
+        <ISRC></ISRC>
       </SoundRecordingId>
       <ResourceReference>A1</ResourceReference>
       <ReferenceTitle>
-        <TitleText/>
-        <SubTitle/>
+        <TitleText></TitleText>
+        <SubTitle></SubTitle>
       </ReferenceTitle>
-      <Duration/>
+      <Duration></Duration>
       <SoundRecordingDetailsByTerritory>
         <TerritoryCode>Worldwide</TerritoryCode>
         <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
-          <TitleText/>
+          <TitleText></TitleText>
         </Title>
         <Title LanguageAndScriptCode="en" TitleType="DisplayTitle">
-          <TitleText/>
+          <TitleText></TitleText>
         </Title>
         <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
-          <TitleText/>
+          <TitleText></TitleText>
         </Title>
-        <LabelName/>
+        <LabelName></LabelName>
         <PLine>
           <Year>2022</Year>
-          <PLineText/>
+          <PLineText></PLineText>
         </PLine>
         <Genre>
-          <GenreText/>
+          <GenreText></GenreText>
         </Genre>
         <ParentalWarningType>NotExplicit</ParentalWarningType>
         <TechnicalSoundRecordingDetails>
           <TechnicalResourceDetailsReference>T1</TechnicalResourceDetailsReference>
           <AudioCodecType>PCM</AudioCodecType>
-          <IsPreview/>
+          <IsPreview></IsPreview>
           <File>
-            <FileName/>
-            <FilePath/>
+            <FileName></FileName>
+            <FilePath></FilePath>
             <HashSum>
-              <HashSum/>
+              <HashSum></HashSum>
               <HashSumAlgorithmType>SHA1</HashSumAlgorithmType>
             </HashSum>
           </File>
@@ -116,43 +116,43 @@
     <SoundRecording>
       <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
       <SoundRecordingId>
-        <ISRC/>
+        <ISRC></ISRC>
       </SoundRecordingId>
       <ResourceReference>A2</ResourceReference>
       <ReferenceTitle>
-        <TitleText/>
-        <SubTitle/>
+        <TitleText></TitleText>
+        <SubTitle></SubTitle>
       </ReferenceTitle>
-      <Duration/>
+      <Duration></Duration>
       <SoundRecordingDetailsByTerritory>
         <TerritoryCode>Worldwide</TerritoryCode>
         <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
-          <TitleText/>
+          <TitleText></TitleText>
         </Title>
         <Title LanguageAndScriptCode="en" TitleType="DisplayTitle">
-          <TitleText/>
+          <TitleText></TitleText>
         </Title>
         <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
-          <TitleText/>
+          <TitleText></TitleText>
         </Title>
-        <LabelName/>
+        <LabelName></LabelName>
         <PLine>
           <Year>2022</Year>
-          <PLineText/>
+          <PLineText></PLineText>
         </PLine>
         <Genre>
-          <GenreText/>
+          <GenreText></GenreText>
         </Genre>
         <ParentalWarningType>NotExplicit</ParentalWarningType>
         <TechnicalSoundRecordingDetails>
           <TechnicalResourceDetailsReference>T2</TechnicalResourceDetailsReference>
           <AudioCodecType>PCM</AudioCodecType>
-          <IsPreview/>
+          <IsPreview></IsPreview>
           <File>
-            <FileName/>
-            <FilePath/>
+            <FileName></FileName>
+            <FilePath></FilePath>
             <HashSum>
-              <HashSum/>
+              <HashSum></HashSum>
               <HashSumAlgorithmType>SHA1</HashSumAlgorithmType>
             </HashSum>
           </File>
@@ -162,43 +162,43 @@
     <SoundRecording>
       <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
       <SoundRecordingId>
-        <ISRC/>
+        <ISRC></ISRC>
       </SoundRecordingId>
       <ResourceReference>A3</ResourceReference>
       <ReferenceTitle>
-        <TitleText/>
-        <SubTitle/>
+        <TitleText></TitleText>
+        <SubTitle></SubTitle>
       </ReferenceTitle>
-      <Duration/>
+      <Duration></Duration>
       <SoundRecordingDetailsByTerritory>
         <TerritoryCode>Worldwide</TerritoryCode>
         <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
-          <TitleText/>
+          <TitleText></TitleText>
         </Title>
         <Title LanguageAndScriptCode="en" TitleType="DisplayTitle">
-          <TitleText/>
+          <TitleText></TitleText>
         </Title>
         <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
-          <TitleText/>
+          <TitleText></TitleText>
         </Title>
-        <LabelName/>
+        <LabelName></LabelName>
         <PLine>
           <Year>2022</Year>
-          <PLineText/>
+          <PLineText></PLineText>
         </PLine>
         <Genre>
-          <GenreText/>
+          <GenreText></GenreText>
         </Genre>
         <ParentalWarningType>NotExplicit</ParentalWarningType>
         <TechnicalSoundRecordingDetails>
           <TechnicalResourceDetailsReference>T3</TechnicalResourceDetailsReference>
           <AudioCodecType>PCM</AudioCodecType>
-          <IsPreview/>
+          <IsPreview></IsPreview>
           <File>
-            <FileName/>
-            <FilePath/>
+            <FileName></FileName>
+            <FilePath></FilePath>
             <HashSum>
-              <HashSum/>
+              <HashSum></HashSum>
               <HashSumAlgorithmType>SHA1</HashSumAlgorithmType>
             </HashSum>
           </File>
@@ -208,43 +208,43 @@
     <SoundRecording>
       <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
       <SoundRecordingId>
-        <ISRC/>
+        <ISRC></ISRC>
       </SoundRecordingId>
       <ResourceReference>A4</ResourceReference>
       <ReferenceTitle>
-        <TitleText/>
-        <SubTitle/>
+        <TitleText></TitleText>
+        <SubTitle></SubTitle>
       </ReferenceTitle>
-      <Duration/>
+      <Duration></Duration>
       <SoundRecordingDetailsByTerritory>
         <TerritoryCode>Worldwide</TerritoryCode>
         <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
-          <TitleText/>
+          <TitleText></TitleText>
         </Title>
         <Title LanguageAndScriptCode="en" TitleType="DisplayTitle">
-          <TitleText/>
+          <TitleText></TitleText>
         </Title>
         <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
-          <TitleText/>
+          <TitleText></TitleText>
         </Title>
-        <LabelName/>
+        <LabelName></LabelName>
         <PLine>
           <Year>2022</Year>
-          <PLineText/>
+          <PLineText></PLineText>
         </PLine>
         <Genre>
-          <GenreText/>
+          <GenreText></GenreText>
         </Genre>
         <ParentalWarningType>NotExplicit</ParentalWarningType>
         <TechnicalSoundRecordingDetails>
           <TechnicalResourceDetailsReference>T4</TechnicalResourceDetailsReference>
           <AudioCodecType>PCM</AudioCodecType>
-          <IsPreview/>
+          <IsPreview></IsPreview>
           <File>
-            <FileName/>
-            <FilePath/>
+            <FileName></FileName>
+            <FilePath></FilePath>
             <HashSum>
-              <HashSum/>
+              <HashSum></HashSum>
               <HashSumAlgorithmType>SHA1</HashSumAlgorithmType>
             </HashSum>
           </File>
@@ -265,10 +265,10 @@
           <ImageHeight>1080</ImageHeight>
           <ImageWidth>1080</ImageWidth>
           <File>
-            <FileName/>
-            <FilePath/>
+            <FileName></FileName>
+            <FilePath></FilePath>
             <HashSum>
-              <HashSum/>
+              <HashSum></HashSum>
               <HashSumAlgorithmType>SHA1</HashSumAlgorithmType>
             </HashSum>
           </File>
@@ -279,55 +279,155 @@
   <ReleaseList>
     <Release>
       <ReleaseId>
-        <ISRC/>
-        <ProprietaryId Namespace="DPID:aboba"/>
+        <ISRC></ISRC>
+        <ProprietaryId Namespace="DPID:aboba"></ProprietaryId>
       </ReleaseId>
       <ReleaseReference>R1</ReleaseReference>
       <ReferenceTitle>
-        <TitleText/>
+        <TitleText></TitleText>
       </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A0</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName></DisplayArtistName>
+        <LabelName></LabelName>
+        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
+          <TitleText></TitleText>
+          <SubTitle></SubTitle>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText></TitleText>
+        </Title>
+        <Title TitleType="GroupingTitle">
+          <TitleText></TitleText>
+          <SubTitle></SubTitle>
+        </Title>
+      </ReleaseDetailsByTerritory>
     </Release>
     <Release>
       <ReleaseId>
-        <ISRC/>
-        <ProprietaryId Namespace="DPID:aboba"/>
+        <ISRC></ISRC>
+        <ProprietaryId Namespace="DPID:aboba"></ProprietaryId>
       </ReleaseId>
       <ReleaseReference>R2</ReleaseReference>
       <ReferenceTitle>
-        <TitleText/>
+        <TitleText></TitleText>
       </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A1</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName></DisplayArtistName>
+        <LabelName></LabelName>
+        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
+          <TitleText></TitleText>
+          <SubTitle></SubTitle>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText></TitleText>
+        </Title>
+        <Title TitleType="GroupingTitle">
+          <TitleText></TitleText>
+          <SubTitle></SubTitle>
+        </Title>
+      </ReleaseDetailsByTerritory>
     </Release>
     <Release>
       <ReleaseId>
-        <ISRC/>
-        <ProprietaryId Namespace="DPID:aboba"/>
+        <ISRC></ISRC>
+        <ProprietaryId Namespace="DPID:aboba"></ProprietaryId>
       </ReleaseId>
       <ReleaseReference>R3</ReleaseReference>
       <ReferenceTitle>
-        <TitleText/>
+        <TitleText></TitleText>
       </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A2</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName></DisplayArtistName>
+        <LabelName></LabelName>
+        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
+          <TitleText></TitleText>
+          <SubTitle></SubTitle>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText></TitleText>
+        </Title>
+        <Title TitleType="GroupingTitle">
+          <TitleText></TitleText>
+          <SubTitle></SubTitle>
+        </Title>
+      </ReleaseDetailsByTerritory>
     </Release>
     <Release>
       <ReleaseId>
-        <ISRC/>
-        <ProprietaryId Namespace="DPID:aboba"/>
+        <ISRC></ISRC>
+        <ProprietaryId Namespace="DPID:aboba"></ProprietaryId>
       </ReleaseId>
       <ReleaseReference>R4</ReleaseReference>
       <ReferenceTitle>
-        <TitleText/>
+        <TitleText></TitleText>
       </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A3</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName></DisplayArtistName>
+        <LabelName></LabelName>
+        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
+          <TitleText></TitleText>
+          <SubTitle></SubTitle>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText></TitleText>
+        </Title>
+        <Title TitleType="GroupingTitle">
+          <TitleText></TitleText>
+          <SubTitle></SubTitle>
+        </Title>
+      </ReleaseDetailsByTerritory>
     </Release>
     <Release>
       <ReleaseId>
-        <ISRC/>
-        <ProprietaryId Namespace="DPID:aboba"/>
+        <ISRC></ISRC>
+        <ProprietaryId Namespace="DPID:aboba"></ProprietaryId>
       </ReleaseId>
       <ReleaseReference>R5</ReleaseReference>
       <ReferenceTitle>
-        <TitleText/>
+        <TitleText></TitleText>
       </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A4</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName></DisplayArtistName>
+        <LabelName></LabelName>
+        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
+          <TitleText></TitleText>
+          <SubTitle></SubTitle>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText></TitleText>
+        </Title>
+        <Title TitleType="GroupingTitle">
+          <TitleText></TitleText>
+          <SubTitle></SubTitle>
+        </Title>
+      </ReleaseDetailsByTerritory>
     </Release>
-    <Release isMainRelease="true"/>
+    <Release isMainRelease="true"></Release>
   </ReleaseList>
-  <DealList/>
+  <DealList></DealList>
 </ern:NewReleaseMessage>

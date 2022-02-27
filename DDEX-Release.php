@@ -188,6 +188,7 @@ class Track
     public $hash;
     public $hashType = 'SHA1';
     public $trackProprietaryID = '';
+    public $trackDisplayArtist = '';
 
     public function getExplicit ()
     {

@@ -488,21 +488,74 @@ class DDEX
 
             # Reference List
 
+            $ReleaseResourceReferenceList = $this->xml->createElement ("ReleaseResourceReferenceList");
+            $Release->appendChild ($ReleaseResourceReferenceList);
+
+            $ReleaseResourceReference = $this->xml->createElement ("ReleaseResourceReference", $this->resourceReferences[$pos]);
+            $ReleaseResourceReference->setAttribute ('ReleaseResourceType', 'PrimaryResource');
+            $ReleaseResourceReferenceList->appendChild ($ReleaseResourceReference);
+
             # TrackRelease
+
+            $ReleaseType = $this->xml->createElement ("ReleaseType", 'TrackRelease');
+            $Release->appendChild ($ReleaseType);
 
             # Territory entrypoint
 
+            $DetailsForTerritory = $this->xml->createElement ("ReleaseDetailsByTerritory");
+            $Release->appendChild ($DetailsForTerritory);
+
             # Territory code Worldwide
+
+            $Worldwide = $this->xml->createElement ("TerritoryCode", "Worldwide");
+            $DetailsForTerritory->appendChild ($Worldwide);
 
             # Display artist
 
+            $DisplayArtistName = $this->xml->createElement ("DisplayArtistName", $trackData->trackDisplayArtist);
+            $DetailsForTerritory->appendChild ($DisplayArtistName);
+
             # Label name
 
-            # FormalTitle
+            $LabelName = $this->xml->createElement ("LabelName", $this->release->releaseRecordLabel);
+            $DetailsForTerritory->appendChild ($LabelName);
 
-            # DisplayTitle
+            # Formal title
 
-            # GroupingTitle
+            $Title = $this->xml->createElement ("Title");
+            $DetailsForTerritory->appendChild ($Title);
+
+            $Title->setAttribute ('LanguageAndScriptCode', $trackData->trackTitleLang);
+            $Title->setAttribute ('TitleType', 'FormalTitle');
+
+            $TitleText = $this->xml->createElement ("TitleText", $trackData->trackTitle);
+            $SubTitle = $this->xml->createElement ("SubTitle", $trackData->trackSubtitle);
+
+            $Title->appendChild ($TitleText);
+            $Title->appendChild ($SubTitle);
+
+            # Display title
+
+            $Title = $this->xml->createElement ("Title");
+            $DetailsForTerritory->appendChild ($Title);
+
+            $Title->setAttribute ('TitleType', 'DisplayTitle');
+
+            $TitleText = $this->xml->createElement ("TitleText", $trackTitle);
+            $Title->appendChild ($TitleText);
+
+            # Grouping Title
+
+            $Title = $this->xml->createElement ("Title");
+            $DetailsForTerritory->appendChild ($Title);
+            
+            $Title->setAttribute ('TitleType', 'GroupingTitle');
+
+            $TitleText = $this->xml->createElement ("TitleText", $trackData->trackTitle);
+            $SubTitle = $this->xml->createElement ("SubTitle", $trackData->trackSubtitle);
+
+            $Title->appendChild ($TitleText);
+            $Title->appendChild ($SubTitle);
 
             # Display artists
 
@@ -559,7 +612,7 @@ class DDEX
         $this->writeAlbumRelease ();
         $this->deals ();
 
-        return $this->xml->saveXML();
+        return $this->xml->saveXML(null, LIBXML_NOEMPTYTAG);
     }
 
 }
