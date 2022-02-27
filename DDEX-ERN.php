@@ -160,7 +160,7 @@ class DDEX
     {
         $resourceReferences = [];
         
-        for ($i = 1; $i <= count ($this->release->releaseTracks); ++$i)
+        for ($i = 0; $i <= count ($this->release->releaseTracks); ++$i)
             $resourceReferences[] = 'A' . $i;
 
         $resourceReferences[] = 'A' . $i;
@@ -172,7 +172,7 @@ class DDEX
     {
         $releaseReferences = [];
         
-        for ($i = 1; $i <= count ($this->release->releaseTracks); ++$i)
+        for ($i = 0; $i <= count ($this->release->releaseTracks); ++$i)
             $releaseReferences[] = 'R' . $i;
 
         $releaseReferences[] = 'R' . $i;
@@ -184,7 +184,7 @@ class DDEX
     {
         $technicalReferences = [];
         
-        for ($i = 1; $i <= count ($this->release->releaseTracks); ++$i)
+        for ($i = 0; $i <= count ($this->release->releaseTracks); ++$i)
             $technicalReferences[] = 'T' . $i;
 
         $technicalReferences[] = 'T' . $i;
@@ -438,13 +438,15 @@ class DDEX
             ++$pos;
             
             $Release = $this->xml->createElement ("Release");
-            $this->resourceEntrypoint->appendChild ($Release);
+            $this->releasesEntrypoint->appendChild ($Release);
         }
     }
 
     protected function writeAlbumRelease ()
     {
-        # Todo
+        $Release = $this->xml->createElement ("Release");
+        $Release->setAttribute ('isMainRelease', 'true');
+        $this->releasesEntrypoint->appendChild ($Release);
     }
 
     protected function deals ()

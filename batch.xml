@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/382" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" LanguageAndScriptCode="ru" MessageSchemaVersionId="ern/382" xs:schemaLocation="http://ddex.net/xml/ern/382 http://ddex.net/xml/ern/382/release-notification.xsd">
   <MessageHeader>
-    <MessageThreadId>ff6df90ea5334e818f374cadfdeddc4f</MessageThreadId>
-    <MessageId>1fdb1b6691904b249b746971974fb187</MessageId>
+    <MessageThreadId>b0d69bc59b6b45a5b0055c547034fb30</MessageThreadId>
+    <MessageId>62aee17e34c0427eb2e36dbf7ab76b55</MessageId>
     <MessageSender>
       <PartyId>aboba</PartyId>
       <PartyName>when the impostor</PartyName>
@@ -15,12 +15,58 @@
       <PartyId>amogus</PartyId>
       <PartyName>is sus</PartyName>
     </MessageRecipient>
-    <MessageCreatedDateTime>2022-02-26T19:01:51+00:00</MessageCreatedDateTime>
+    <MessageCreatedDateTime>2022-02-27T06:47:46+00:00</MessageCreatedDateTime>
     <MessageControlType>LiveMessage</MessageControlType>
   </MessageHeader>
   <UpdateIndicator>OriginalMessage</UpdateIndicator>
   <IsBackfill>false</IsBackfill>
   <ResourceList>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC/>
+      </SoundRecordingId>
+      <ResourceReference>A0</ResourceReference>
+      <ReferenceTitle>
+        <TitleText/>
+        <SubTitle/>
+      </ReferenceTitle>
+      <Duration/>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
+          <TitleText/>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="DisplayTitle">
+          <TitleText/>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
+          <TitleText/>
+        </Title>
+        <LabelName/>
+        <PLine>
+          <Year>2022</Year>
+          <PLineText/>
+        </PLine>
+        <Genre>
+          <GenreText/>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T0</TechnicalResourceDetailsReference>
+          <AudioCodecType>PCM</AudioCodecType>
+          <IsPreview/>
+          <File>
+            <FileName/>
+            <FilePath/>
+            <HashSum>
+              <HashSum/>
+              <HashSumAlgorithmType>SHA1</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
+      </SoundRecordingDetailsByTerritory>
+    </SoundRecording>
     <SoundRecording>
       <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
       <SoundRecordingId>
@@ -53,7 +99,7 @@
         </Genre>
         <ParentalWarningType>NotExplicit</ParentalWarningType>
         <TechnicalSoundRecordingDetails>
-          <TechnicalResourceDetailsReference>T6</TechnicalResourceDetailsReference>
+          <TechnicalResourceDetailsReference>T1</TechnicalResourceDetailsReference>
           <AudioCodecType>PCM</AudioCodecType>
           <IsPreview/>
           <File>
@@ -99,7 +145,7 @@
         </Genre>
         <ParentalWarningType>NotExplicit</ParentalWarningType>
         <TechnicalSoundRecordingDetails>
-          <TechnicalResourceDetailsReference>T6</TechnicalResourceDetailsReference>
+          <TechnicalResourceDetailsReference>T2</TechnicalResourceDetailsReference>
           <AudioCodecType>PCM</AudioCodecType>
           <IsPreview/>
           <File>
@@ -145,7 +191,7 @@
         </Genre>
         <ParentalWarningType>NotExplicit</ParentalWarningType>
         <TechnicalSoundRecordingDetails>
-          <TechnicalResourceDetailsReference>T6</TechnicalResourceDetailsReference>
+          <TechnicalResourceDetailsReference>T3</TechnicalResourceDetailsReference>
           <AudioCodecType>PCM</AudioCodecType>
           <IsPreview/>
           <File>
@@ -191,53 +237,7 @@
         </Genre>
         <ParentalWarningType>NotExplicit</ParentalWarningType>
         <TechnicalSoundRecordingDetails>
-          <TechnicalResourceDetailsReference>T6</TechnicalResourceDetailsReference>
-          <AudioCodecType>PCM</AudioCodecType>
-          <IsPreview/>
-          <File>
-            <FileName/>
-            <FilePath/>
-            <HashSum>
-              <HashSum/>
-              <HashSumAlgorithmType>SHA1</HashSumAlgorithmType>
-            </HashSum>
-          </File>
-        </TechnicalSoundRecordingDetails>
-      </SoundRecordingDetailsByTerritory>
-    </SoundRecording>
-    <SoundRecording>
-      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
-      <SoundRecordingId>
-        <ISRC/>
-      </SoundRecordingId>
-      <ResourceReference>A5</ResourceReference>
-      <ReferenceTitle>
-        <TitleText/>
-        <SubTitle/>
-      </ReferenceTitle>
-      <Duration/>
-      <SoundRecordingDetailsByTerritory>
-        <TerritoryCode>Worldwide</TerritoryCode>
-        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
-          <TitleText/>
-        </Title>
-        <Title LanguageAndScriptCode="en" TitleType="DisplayTitle">
-          <TitleText/>
-        </Title>
-        <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
-          <TitleText/>
-        </Title>
-        <LabelName/>
-        <PLine>
-          <Year>2022</Year>
-          <PLineText/>
-        </PLine>
-        <Genre>
-          <GenreText/>
-        </Genre>
-        <ParentalWarningType>NotExplicit</ParentalWarningType>
-        <TechnicalSoundRecordingDetails>
-          <TechnicalResourceDetailsReference>T6</TechnicalResourceDetailsReference>
+          <TechnicalResourceDetailsReference>T4</TechnicalResourceDetailsReference>
           <AudioCodecType>PCM</AudioCodecType>
           <IsPreview/>
           <File>
@@ -276,6 +276,13 @@
       </ImageDetailsByTerritory>
     </Image>
   </ResourceList>
-  <ReleaseList/>
+  <ReleaseList>
+    <Release/>
+    <Release/>
+    <Release/>
+    <Release/>
+    <Release/>
+    <Release isMainRelease="true"/>
+  </ReleaseList>
   <DealList/>
 </ern:NewReleaseMessage>
