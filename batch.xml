@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/382" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" LanguageAndScriptCode="ru" MessageSchemaVersionId="ern/382" xs:schemaLocation="http://ddex.net/xml/ern/382 http://ddex.net/xml/ern/382/release-notification.xsd">
   <MessageHeader>
-    <MessageThreadId>36cc1e2b302e4aedbe2d6e1eb4227ff4</MessageThreadId>
-    <MessageId>cdd1a42007fe4401ae20df544741de0c</MessageId>
+    <MessageThreadId>effd28c37f7e4d4ca720040a1f566225</MessageThreadId>
+    <MessageId>07ed48efb601409b82de17a45f8587af</MessageId>
     <MessageSender>
       <PartyId>aboba</PartyId>
       <PartyName>when the impostor</PartyName>
@@ -15,7 +15,7 @@
       <PartyId>amogus</PartyId>
       <PartyName>is sus</PartyName>
     </MessageRecipient>
-    <MessageCreatedDateTime>2022-02-27T08:10:21+00:00</MessageCreatedDateTime>
+    <MessageCreatedDateTime>2022-02-27T08:43:40+00:00</MessageCreatedDateTime>
     <MessageControlType>LiveMessage</MessageControlType>
   </MessageHeader>
   <UpdateIndicator>OriginalMessage</UpdateIndicator>
@@ -283,6 +283,9 @@
         <ProprietaryId Namespace="DPID:aboba"/>
       </ReleaseId>
       <ReleaseReference>R1</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText/>
+      </ReferenceTitle>
     </Release>
     <Release>
       <ReleaseId>
@@ -290,6 +293,9 @@
         <ProprietaryId Namespace="DPID:aboba"/>
       </ReleaseId>
       <ReleaseReference>R2</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText/>
+      </ReferenceTitle>
     </Release>
     <Release>
       <ReleaseId>
@@ -297,6 +303,9 @@
         <ProprietaryId Namespace="DPID:aboba"/>
       </ReleaseId>
       <ReleaseReference>R3</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText/>
+      </ReferenceTitle>
     </Release>
     <Release>
       <ReleaseId>
@@ -304,6 +313,9 @@
         <ProprietaryId Namespace="DPID:aboba"/>
       </ReleaseId>
       <ReleaseReference>R4</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText/>
+      </ReferenceTitle>
     </Release>
     <Release>
       <ReleaseId>
@@ -311,6 +323,9 @@
         <ProprietaryId Namespace="DPID:aboba"/>
       </ReleaseId>
       <ReleaseReference>R5</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText/>
+      </ReferenceTitle>
     </Release>
     <Release isMainRelease="true"/>
   </ReleaseList>
