@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/382" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" LanguageAndScriptCode="ru" MessageSchemaVersionId="ern/382" xs:schemaLocation="http://ddex.net/xml/ern/382 http://ddex.net/xml/ern/382/release-notification.xsd">
   <MessageHeader>
-    <MessageThreadId>b0d69bc59b6b45a5b0055c547034fb30</MessageThreadId>
-    <MessageId>62aee17e34c0427eb2e36dbf7ab76b55</MessageId>
+    <MessageThreadId>36cc1e2b302e4aedbe2d6e1eb4227ff4</MessageThreadId>
+    <MessageId>cdd1a42007fe4401ae20df544741de0c</MessageId>
     <MessageSender>
       <PartyId>aboba</PartyId>
       <PartyName>when the impostor</PartyName>
@@ -15,7 +15,7 @@
       <PartyId>amogus</PartyId>
       <PartyName>is sus</PartyName>
     </MessageRecipient>
-    <MessageCreatedDateTime>2022-02-27T06:47:46+00:00</MessageCreatedDateTime>
+    <MessageCreatedDateTime>2022-02-27T08:10:21+00:00</MessageCreatedDateTime>
     <MessageControlType>LiveMessage</MessageControlType>
   </MessageHeader>
   <UpdateIndicator>OriginalMessage</UpdateIndicator>
@@ -277,11 +277,41 @@
     </Image>
   </ResourceList>
   <ReleaseList>
-    <Release/>
-    <Release/>
-    <Release/>
-    <Release/>
-    <Release/>
+    <Release>
+      <ReleaseId>
+        <ISRC/>
+        <ProprietaryId Namespace="DPID:aboba"/>
+      </ReleaseId>
+      <ReleaseReference>R1</ReleaseReference>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC/>
+        <ProprietaryId Namespace="DPID:aboba"/>
+      </ReleaseId>
+      <ReleaseReference>R2</ReleaseReference>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC/>
+        <ProprietaryId Namespace="DPID:aboba"/>
+      </ReleaseId>
+      <ReleaseReference>R3</ReleaseReference>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC/>
+        <ProprietaryId Namespace="DPID:aboba"/>
+      </ReleaseId>
+      <ReleaseReference>R4</ReleaseReference>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC/>
+        <ProprietaryId Namespace="DPID:aboba"/>
+      </ReleaseId>
+      <ReleaseReference>R5</ReleaseReference>
+    </Release>
     <Release isMainRelease="true"/>
   </ReleaseList>
   <DealList/>

@@ -1,12 +1,21 @@
 <?php
 
 /*
-    (c) 2022 Al-Trax Media Limited
-    This software is a trade secret. Do not distribute!
+    A library to generate DDEX ERN XML files from pre-defined PHP classes
 
-    Standart: DDEX ERN v3.8.2 (Original)
+    Format: DDEX ERN 3.8.2 (Standart).
 
-    Written by Serhii Shmaida, Georgy Akhmetov, Saveliy Safonov on 12.02.2022
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+
+    This library licensed under the MIT License.
+
+    Copyright (c) 2022 Georgy Akhmetov, Serhii Shmaida, Saveliy Safonov, Al-Trax Media Limited
 */
 
 require_once __DIR__ . '/DDEX-Release.php';
@@ -432,13 +441,86 @@ class DDEX
 
     protected function writeTrackReleases ()
     {
+        $releasePos = 0;
         $pos = -1;
         foreach ($this->release->releaseTracks as $trackData)
         {
+            ++$releasePos;
             ++$pos;
             
             $Release = $this->xml->createElement ("Release");
             $this->releasesEntrypoint->appendChild ($Release);
+
+            # Track IDs
+
+            $ReleaseId = $this->xml->createElement ("ReleaseId");
+            $Release->appendChild ($ReleaseId);
+
+            # ISRC
+
+            $ISRC = $this->xml->createElement ("ISRC", $trackData->trackISRC);
+            $ReleaseId->appendChild ($ISRC);
+
+            # Proprietary ID
+
+            $ProprietaryId = $this->xml->createElement ("ProprietaryId", $trackData->trackProprietaryID);
+
+            $ProprietaryId->setAttribute ('Namespace', 'DPID:' . $this->getSenderDPID ());
+
+            $ReleaseId->appendChild ($ProprietaryId);
+
+            # Release Reference
+
+            $ReleaseReference = $this->xml->createElement ("ReleaseReference", $this->releaseReferences[$releasePos]);
+            $Release->appendChild ($ReleaseReference);
+
+            # Reference Title
+
+            $trackTitle = $trackData->trackTitle;
+            if ($trackData->trackSubtitle != NULL)
+                $trackTitle .= ' (' . $trackData->trackSubtitle . ')';
+
+            $ReferenceTitle = $this->xml->createElement ("ReferenceTitle");
+            $Release->appendChild ($ReferenceTitle);
+
+            $TitleText = $this->xml->createElement ("TitleText", $trackTitle);
+            $ReferenceTitle->appendChild ($TitleText);
+
+            # Reference List
+
+            # TrackRelease
+
+            # Territory entrypoint
+
+            # Territory code Worldwide
+
+            # Display artist
+
+            # Label name
+
+            # FormalTitle
+
+            # DisplayTitle
+
+            # GroupingTitle
+
+            # Display artists
+
+            # Parental Advisory (Explicit Content)
+
+            # Link to SoundRecording
+
+            # Genre text
+
+            # Release Date (NOT A DEAL)
+
+            # Original release date (NOT A DEAL)
+
+            # Keywords (SEO)
+
+            # P-Line (Phonogram or Producer)
+
+            # C-Line (Copyright)
         }
     }
 
