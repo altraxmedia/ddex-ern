@@ -664,6 +664,8 @@ class DDEX
         $Release = $this->xml->createElement ("Release");
         $Release->setAttribute ('isMainRelease', 'true');
         $this->releasesEntrypoint->appendChild ($Release);
+
+        # START!
     }
 
     protected function deals ()
