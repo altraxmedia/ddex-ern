@@ -228,7 +228,7 @@ class DDEX
             $SubTitle = $this->xml->createElement ("SubTitle", $trackData->trackSubtitle);
             $ReferenceTitle->appendChild ($SubTitle);
 
-            #D uration
+            # Duration
 
             $Duration = $this->xml->createElement ("Duration", $trackData->trackDuration);
             $SoundRecording->appendChild ($Duration);
@@ -430,6 +430,21 @@ class DDEX
 
     }
 
+    protected function writeTrackReleases ()
+    {
+        # Todo
+    }
+
+    protected function writeAlbumRelease ()
+    {
+        # Todo
+    }
+
+    protected function deals ()
+    {
+        # Todo
+    }
+
     public function __toString ()
     {
 
@@ -449,6 +464,9 @@ class DDEX
         $this->initDealsEntrypoint ();
         $this->soundRecordings ();
         $this->frontCover ();
+        $this->writeTrackReleases ();
+        $this->writeAlbumRelease ();
+        $this->deals ();
 
         return $this->xml->saveXML();
     }
