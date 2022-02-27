@@ -177,8 +177,8 @@ class Track
     public $trackFilename = "";
     public $trackPLineYear = 2022;
     public $trackPLine = "";
-    #public $trackCLineYear = 2022;
-    #public $trackCLine = "";
+    public $trackCLineYear = 2022;
+    public $trackCLine = "";
     public $trackTitleLang = 'en';
     public $trackGenre = '';
     public $trackCodecType = 'PCM';
@@ -189,6 +189,9 @@ class Track
     public $hashType = 'SHA1';
     public $trackProprietaryID = '';
     public $trackDisplayArtist = '';
+    public $trackReleaseDate = '';
+    public $trackOriginalReleaseDate = '';
+    public $trackKeywords = '';
 
     public function getExplicit ()
     {

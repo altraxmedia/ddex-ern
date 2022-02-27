@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/382" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" LanguageAndScriptCode="ru" MessageSchemaVersionId="ern/382" xs:schemaLocation="http://ddex.net/xml/ern/382 http://ddex.net/xml/ern/382/release-notification.xsd">
   <MessageHeader>
-    <MessageThreadId>dbc6cb26f465476da13f0a76e7de9cf1</MessageThreadId>
-    <MessageId>d0076abd9e3948159030e9516795c931</MessageId>
+    <MessageThreadId>05eb29ef487a41c58a574617f6fcb4e2</MessageThreadId>
+    <MessageId>1fba6c2bd7574e788830b6ff7fac72af</MessageId>
     <MessageSender>
       <PartyId>aboba</PartyId>
       <PartyName>when the impostor</PartyName>
@@ -15,58 +15,12 @@
       <PartyId>amogus</PartyId>
       <PartyName>is sus</PartyName>
     </MessageRecipient>
-    <MessageCreatedDateTime>2022-02-27T09:14:14+00:00</MessageCreatedDateTime>
+    <MessageCreatedDateTime>2022-02-27T09:35:07+00:00</MessageCreatedDateTime>
     <MessageControlType>LiveMessage</MessageControlType>
   </MessageHeader>
   <UpdateIndicator>OriginalMessage</UpdateIndicator>
   <IsBackfill>false</IsBackfill>
   <ResourceList>
-    <SoundRecording>
-      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
-      <SoundRecordingId>
-        <ISRC></ISRC>
-      </SoundRecordingId>
-      <ResourceReference>A0</ResourceReference>
-      <ReferenceTitle>
-        <TitleText></TitleText>
-        <SubTitle></SubTitle>
-      </ReferenceTitle>
-      <Duration></Duration>
-      <SoundRecordingDetailsByTerritory>
-        <TerritoryCode>Worldwide</TerritoryCode>
-        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
-          <TitleText></TitleText>
-        </Title>
-        <Title LanguageAndScriptCode="en" TitleType="DisplayTitle">
-          <TitleText></TitleText>
-        </Title>
-        <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
-          <TitleText></TitleText>
-        </Title>
-        <LabelName></LabelName>
-        <PLine>
-          <Year>2022</Year>
-          <PLineText></PLineText>
-        </PLine>
-        <Genre>
-          <GenreText></GenreText>
-        </Genre>
-        <ParentalWarningType>NotExplicit</ParentalWarningType>
-        <TechnicalSoundRecordingDetails>
-          <TechnicalResourceDetailsReference>T0</TechnicalResourceDetailsReference>
-          <AudioCodecType>PCM</AudioCodecType>
-          <IsPreview></IsPreview>
-          <File>
-            <FileName></FileName>
-            <FilePath></FilePath>
-            <HashSum>
-              <HashSum></HashSum>
-              <HashSumAlgorithmType>SHA1</HashSumAlgorithmType>
-            </HashSum>
-          </File>
-        </TechnicalSoundRecordingDetails>
-      </SoundRecordingDetailsByTerritory>
-    </SoundRecording>
     <SoundRecording>
       <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
       <SoundRecordingId>
@@ -251,6 +205,52 @@
         </TechnicalSoundRecordingDetails>
       </SoundRecordingDetailsByTerritory>
     </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC></ISRC>
+      </SoundRecordingId>
+      <ResourceReference>A5</ResourceReference>
+      <ReferenceTitle>
+        <TitleText></TitleText>
+        <SubTitle></SubTitle>
+      </ReferenceTitle>
+      <Duration></Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
+          <TitleText></TitleText>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="DisplayTitle">
+          <TitleText></TitleText>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
+          <TitleText></TitleText>
+        </Title>
+        <LabelName></LabelName>
+        <PLine>
+          <Year>2022</Year>
+          <PLineText></PLineText>
+        </PLine>
+        <Genre>
+          <GenreText></GenreText>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <TechnicalSoundRecordingDetails>
+          <TechnicalResourceDetailsReference>T5</TechnicalResourceDetailsReference>
+          <AudioCodecType>PCM</AudioCodecType>
+          <IsPreview></IsPreview>
+          <File>
+            <FileName></FileName>
+            <FilePath></FilePath>
+            <HashSum>
+              <HashSum></HashSum>
+              <HashSumAlgorithmType>SHA1</HashSumAlgorithmType>
+            </HashSum>
+          </File>
+        </TechnicalSoundRecordingDetails>
+      </SoundRecordingDetailsByTerritory>
+    </SoundRecording>
     <Image>
       <ImageType>FrontCoverImage</ImageType>
       <ImageId>
@@ -287,36 +287,6 @@
         <TitleText></TitleText>
       </ReferenceTitle>
       <ReleaseResourceReferenceList>
-        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A0</ReleaseResourceReference>
-      </ReleaseResourceReferenceList>
-      <ReleaseType>TrackRelease</ReleaseType>
-      <ReleaseDetailsByTerritory>
-        <TerritoryCode>Worldwide</TerritoryCode>
-        <DisplayArtistName></DisplayArtistName>
-        <LabelName></LabelName>
-        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
-          <TitleText></TitleText>
-          <SubTitle></SubTitle>
-        </Title>
-        <Title TitleType="DisplayTitle">
-          <TitleText></TitleText>
-        </Title>
-        <Title TitleType="GroupingTitle">
-          <TitleText></TitleText>
-          <SubTitle></SubTitle>
-        </Title>
-      </ReleaseDetailsByTerritory>
-    </Release>
-    <Release>
-      <ReleaseId>
-        <ISRC></ISRC>
-        <ProprietaryId Namespace="DPID:aboba"></ProprietaryId>
-      </ReleaseId>
-      <ReleaseReference>R2</ReleaseReference>
-      <ReferenceTitle>
-        <TitleText></TitleText>
-      </ReferenceTitle>
-      <ReleaseResourceReferenceList>
         <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A1</ReleaseResourceReference>
       </ReleaseResourceReferenceList>
       <ReleaseType>TrackRelease</ReleaseType>
@@ -335,14 +305,39 @@
           <TitleText></TitleText>
           <SubTitle></SubTitle>
         </Title>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroup>
+            <SequenceNumber>1</SequenceNumber>
+            <ResourceGroupContentItem>
+              <SequenceNumber>1</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference>A1</ReleaseResourceReference>
+            </ResourceGroupContentItem>
+          </ResourceGroup>
+        </ResourceGroup>
+        <Genre>
+          <GenreText></GenreText>
+        </Genre>
+        <ReleaseDate></ReleaseDate>
+        <OriginalReleaseDate></OriginalReleaseDate>
+        <Keywords></Keywords>
       </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2022</Year>
+        <PLineText></PLineText>
+      </PLine>
+      <CLine>
+        <Year>2022</Year>
+        <CLineText></CLineText>
+      </CLine>
     </Release>
     <Release>
       <ReleaseId>
         <ISRC></ISRC>
         <ProprietaryId Namespace="DPID:aboba"></ProprietaryId>
       </ReleaseId>
-      <ReleaseReference>R3</ReleaseReference>
+      <ReleaseReference>R2</ReleaseReference>
       <ReferenceTitle>
         <TitleText></TitleText>
       </ReferenceTitle>
@@ -365,14 +360,39 @@
           <TitleText></TitleText>
           <SubTitle></SubTitle>
         </Title>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroup>
+            <SequenceNumber>1</SequenceNumber>
+            <ResourceGroupContentItem>
+              <SequenceNumber>1</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference>A2</ReleaseResourceReference>
+            </ResourceGroupContentItem>
+          </ResourceGroup>
+        </ResourceGroup>
+        <Genre>
+          <GenreText></GenreText>
+        </Genre>
+        <ReleaseDate></ReleaseDate>
+        <OriginalReleaseDate></OriginalReleaseDate>
+        <Keywords></Keywords>
       </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2022</Year>
+        <PLineText></PLineText>
+      </PLine>
+      <CLine>
+        <Year>2022</Year>
+        <CLineText></CLineText>
+      </CLine>
     </Release>
     <Release>
       <ReleaseId>
         <ISRC></ISRC>
         <ProprietaryId Namespace="DPID:aboba"></ProprietaryId>
       </ReleaseId>
-      <ReleaseReference>R4</ReleaseReference>
+      <ReleaseReference>R3</ReleaseReference>
       <ReferenceTitle>
         <TitleText></TitleText>
       </ReferenceTitle>
@@ -395,14 +415,39 @@
           <TitleText></TitleText>
           <SubTitle></SubTitle>
         </Title>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroup>
+            <SequenceNumber>1</SequenceNumber>
+            <ResourceGroupContentItem>
+              <SequenceNumber>1</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference>A3</ReleaseResourceReference>
+            </ResourceGroupContentItem>
+          </ResourceGroup>
+        </ResourceGroup>
+        <Genre>
+          <GenreText></GenreText>
+        </Genre>
+        <ReleaseDate></ReleaseDate>
+        <OriginalReleaseDate></OriginalReleaseDate>
+        <Keywords></Keywords>
       </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2022</Year>
+        <PLineText></PLineText>
+      </PLine>
+      <CLine>
+        <Year>2022</Year>
+        <CLineText></CLineText>
+      </CLine>
     </Release>
     <Release>
       <ReleaseId>
         <ISRC></ISRC>
         <ProprietaryId Namespace="DPID:aboba"></ProprietaryId>
       </ReleaseId>
-      <ReleaseReference>R5</ReleaseReference>
+      <ReleaseReference>R4</ReleaseReference>
       <ReferenceTitle>
         <TitleText></TitleText>
       </ReferenceTitle>
@@ -425,7 +470,87 @@
           <TitleText></TitleText>
           <SubTitle></SubTitle>
         </Title>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroup>
+            <SequenceNumber>1</SequenceNumber>
+            <ResourceGroupContentItem>
+              <SequenceNumber>1</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference>A4</ReleaseResourceReference>
+            </ResourceGroupContentItem>
+          </ResourceGroup>
+        </ResourceGroup>
+        <Genre>
+          <GenreText></GenreText>
+        </Genre>
+        <ReleaseDate></ReleaseDate>
+        <OriginalReleaseDate></OriginalReleaseDate>
+        <Keywords></Keywords>
       </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2022</Year>
+        <PLineText></PLineText>
+      </PLine>
+      <CLine>
+        <Year>2022</Year>
+        <CLineText></CLineText>
+      </CLine>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC></ISRC>
+        <ProprietaryId Namespace="DPID:aboba"></ProprietaryId>
+      </ReleaseId>
+      <ReleaseReference>R5</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText></TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A5</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName></DisplayArtistName>
+        <LabelName></LabelName>
+        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
+          <TitleText></TitleText>
+          <SubTitle></SubTitle>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText></TitleText>
+        </Title>
+        <Title TitleType="GroupingTitle">
+          <TitleText></TitleText>
+          <SubTitle></SubTitle>
+        </Title>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroup>
+            <SequenceNumber>1</SequenceNumber>
+            <ResourceGroupContentItem>
+              <SequenceNumber>1</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference>A5</ReleaseResourceReference>
+            </ResourceGroupContentItem>
+          </ResourceGroup>
+        </ResourceGroup>
+        <Genre>
+          <GenreText></GenreText>
+        </Genre>
+        <ReleaseDate></ReleaseDate>
+        <OriginalReleaseDate></OriginalReleaseDate>
+        <Keywords></Keywords>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2022</Year>
+        <PLineText></PLineText>
+      </PLine>
+      <CLine>
+        <Year>2022</Year>
+        <CLineText></CLineText>
+      </CLine>
     </Release>
     <Release isMainRelease="true"></Release>
   </ReleaseList>

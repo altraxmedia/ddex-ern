@@ -169,7 +169,7 @@ class DDEX
     {
         $resourceReferences = [];
         
-        for ($i = 0; $i <= count ($this->release->releaseTracks); ++$i)
+        for ($i = 1; $i <= count ($this->release->releaseTracks); ++$i)
             $resourceReferences[] = 'A' . $i;
 
         $resourceReferences[] = 'A' . $i;
@@ -181,7 +181,7 @@ class DDEX
     {
         $releaseReferences = [];
         
-        for ($i = 0; $i <= count ($this->release->releaseTracks); ++$i)
+        for ($i = 1; $i <= count ($this->release->releaseTracks); ++$i)
             $releaseReferences[] = 'R' . $i;
 
         $releaseReferences[] = 'R' . $i;
@@ -193,7 +193,7 @@ class DDEX
     {
         $technicalReferences = [];
         
-        for ($i = 0; $i <= count ($this->release->releaseTracks); ++$i)
+        for ($i = 1; $i <= count ($this->release->releaseTracks); ++$i)
             $technicalReferences[] = 'T' . $i;
 
         $technicalReferences[] = 'T' . $i;
@@ -441,11 +441,9 @@ class DDEX
 
     protected function writeTrackReleases ()
     {
-        $releasePos = 0;
         $pos = -1;
         foreach ($this->release->releaseTracks as $trackData)
         {
-            ++$releasePos;
             ++$pos;
             
             $Release = $this->xml->createElement ("Release");
@@ -471,7 +469,7 @@ class DDEX
 
             # Release Reference
 
-            $ReleaseReference = $this->xml->createElement ("ReleaseReference", $this->releaseReferences[$releasePos]);
+            $ReleaseReference = $this->xml->createElement ("ReleaseReference", $this->releaseReferences[$pos]);
             $Release->appendChild ($ReleaseReference);
 
             # Reference Title
@@ -548,7 +546,7 @@ class DDEX
 
             $Title = $this->xml->createElement ("Title");
             $DetailsForTerritory->appendChild ($Title);
-            
+
             $Title->setAttribute ('TitleType', 'GroupingTitle');
 
             $TitleText = $this->xml->createElement ("TitleText", $trackData->trackTitle);
@@ -559,21 +557,105 @@ class DDEX
 
             # Display artists
 
+            $pointer = 0;
+
+            foreach ($trackData->trackArtists as $art)
+            {
+                ++$pointer;
+
+                $DisplayArtist = $this->xml->createElement ("DisplayArtist");
+                $DetailsForTerritory->appendChild ($DisplayArtist);
+
+                $DisplayArtist->setAttribute ('SequenceNumber', strval ($pointer));
+
+                # Artist name
+
+                foreach ($art->artistName as $pName)
+                {
+                    $PartyName = $this->xml->createElement ("PartyName", $pName->artistName);
+                    $PartyName->setAttribute ('LanguageAndScriptCode', $pName->artistLanguage);
+                    $DisplayArtist->appendChild ($PartyName);
+                }
+
+                # Artist role
+
+                $ArtistRole = $this->xml->createElement ("ArtistRole", $art->getRole ());
+                $DisplayArtist->appendChild ($ArtistRole);
+            }
+
             # Parental Advisory (Explicit Content)
+
+            $ParentalWarningType = $this->xml->createElement ("ParentalWarningType", $trackData->getExplicit ());
+            $DetailsForTerritory->appendChild ($ParentalWarningType);
 
             # Link to SoundRecording
 
+            $ResourceGroup = $this->xml->createElement ("ResourceGroup");
+            $DetailsForTerritory->appendChild ($ResourceGroup);
+
+            $ResourceGroup2 = $this->xml->createElement ("ResourceGroup");
+            $ResourceGroup->appendChild ($ResourceGroup2);
+
+            $SequenceNumber = $this->xml->createElement ("SequenceNumber", 1);
+            $ResourceGroup2->appendChild ($SequenceNumber);
+
+            $ResourceGroupContentItem = $this->xml->createElement ("ResourceGroupContentItem");
+            $ResourceGroup2->appendChild ($ResourceGroupContentItem);
+
+            $SequenceNumber1 = $this->xml->createElement ("SequenceNumber", 1);
+            $ResourceGroupContentItem->appendChild ($SequenceNumber1);
+
+            $ResourceType = $this->xml->createElement ("ResourceType", 'SoundRecording');
+            $ResourceGroupContentItem->appendChild ($ResourceType);
+
+            $ReleaseResourceReference = $this->xml->createElement ("ReleaseResourceReference", $this->resourceReferences[$pos]);
+            $ResourceGroupContentItem->appendChild ($ReleaseResourceReference);
+
             # Genre text
+
+            $Genre = $this->xml->createElement ("Genre");
+            $DetailsForTerritory->appendChild ($Genre);
+
+            $GenreText = $this->xml->createElement ("GenreText", $trackData->trackGenre);
+
+            $Genre->appendChild ($GenreText);
 
             # Release Date (NOT A DEAL)
 
+            $ReleaseDate = $this->xml->createElement ("ReleaseDate", $trackData->trackReleaseDate);
+            $DetailsForTerritory->appendChild ($ReleaseDate);
+
             # Original release date (NOT A DEAL)
+
+            $OriginalReleaseDate = $this->xml->createElement ("OriginalReleaseDate", $trackData->trackOriginalReleaseDate);
+            $DetailsForTerritory->appendChild ($OriginalReleaseDate);
 
             # Keywords (SEO)
 
+            $Keywords = $this->xml->createElement ("Keywords", $trackData->trackKeywords);
+            $DetailsForTerritory->appendChild ($Keywords);
+
             # P-Line (Phonogram or Producer)
 
+            $PLine = $this->xml->createElement ("PLine");
+            $Release->appendChild ($PLine);
+
+            $Year = $this->xml->createElement ("Year", strval ($trackData->trackPLineYear));
+            $PLineText = $this->xml->createElement ("PLineText", $trackData->trackPLine);
+
+            $PLine->appendChild ($Year);
+            $PLine->appendChild ($PLineText);
+
             # C-Line (Copyright)
+
+            $CLine = $this->xml->createElement ("CLine");
+            $Release->appendChild ($CLine);
+
+            $Year = $this->xml->createElement ("Year", strval ($trackData->trackCLineYear));
+            $CLineText = $this->xml->createElement ("CLineText", $trackData->trackCLine);
+
+            $CLine->appendChild ($Year);
+            $CLine->appendChild ($CLineText);
         }
     }
 
