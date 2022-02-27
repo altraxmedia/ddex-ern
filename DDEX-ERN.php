@@ -432,7 +432,14 @@ class DDEX
 
     protected function writeTrackReleases ()
     {
-        # Todo
+        $pos = -1;
+        foreach ($this->release->releaseTracks as $trackData)
+        {
+            ++$pos;
+            
+            $Release = $this->xml->createElement ("Release");
+            $this->resourceEntrypoint->appendChild ($Release);
+        }
     }
 
     protected function writeAlbumRelease ()
