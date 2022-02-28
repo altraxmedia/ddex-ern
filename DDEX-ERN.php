@@ -784,19 +784,22 @@ class DDEX
 
         $resPointer = 0;
 
-        #foreach ($resourceReferencesNew as $resRef2)
+        foreach ($resourceReferencesNew as $resRef2)
+        {
+            ++$resPointer;
 
-        /* $ResourceGroupContentItem = $this->xml->createElement ("ResourceGroupContentItem");
-        $ResourceGroup2->appendChild ($ResourceGroupContentItem);
+            $ResourceGroupContentItem = $this->xml->createElement ("ResourceGroupContentItem");
+            $ResourceGroup2->appendChild ($ResourceGroupContentItem);
 
-        $SequenceNumber1 = $this->xml->createElement ("SequenceNumber", 1);
-        $ResourceGroupContentItem->appendChild ($SequenceNumber1);
+            $SequenceNumber1 = $this->xml->createElement ("SequenceNumber", $resPointer);
+            $ResourceGroupContentItem->appendChild ($SequenceNumber1);
 
-        $ResourceType = $this->xml->createElement ("ResourceType", 'SoundRecording');
-        $ResourceGroupContentItem->appendChild ($ResourceType);
+            $ResourceType = $this->xml->createElement ("ResourceType", 'SoundRecording');
+            $ResourceGroupContentItem->appendChild ($ResourceType);
 
-        $ReleaseResourceReference = $this->xml->createElement ("ReleaseResourceReference", $this->resourceReferences[$pos - 1]);
-        $ResourceGroupContentItem->appendChild ($ReleaseResourceReference); */
+            $ReleaseResourceReference = $this->xml->createElement ("ReleaseResourceReference", $this->resourceReferences[$resPointer]);
+            $ResourceGroupContentItem->appendChild ($ReleaseResourceReference);
+        }
 
         # Genre
 

@@ -222,6 +222,7 @@ class Track
     public $trackReleaseDate = '';
     public $trackOriginalReleaseDate = '';
     public $trackKeywords = '';
+    public $trackDeal = null;
 
     public function getExplicit ()
     {
@@ -316,6 +317,11 @@ class Deal
     public $dealStartDate = "";
     public $dealPreOrderDate = "";
     public $dealTerritories = [];
+    public $subscriptionAvailable = true;
+    public $adSupportAvailable = true;
+    public $onDemandStream = true;
+    public $permanentDownload = false;
+    public $takedown = false;
 }
 
 /*
