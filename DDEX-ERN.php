@@ -943,11 +943,11 @@ class DDEX
     public function __toString ()
     {
 
-        #if (sizeof ($this->release->releaseTracks) < 1)
-        #    throw new LengthException ('Tracks count must to be 1 or more.');
+        if (sizeof ($this->release->releaseTracks) < 1)
+            throw new LengthException ('Tracks count must to be 1 or more.');
 
-        #if (!($this->release->releaseCoverArt instanceof Artwork))
-        #    throw new InvalidArgumentException ('Artwork for release is not defined.');
+        if (!($this->release->releaseCoverArt instanceof Artwork))
+            throw new InvalidArgumentException ('Artwork for release is not defined.');
 
         $this->initDom (); # Init XML document
         $this->writeHeader (); # Write MessageHeader
