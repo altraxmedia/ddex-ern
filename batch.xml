@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/382" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" LanguageAndScriptCode="ru" MessageSchemaVersionId="ern/382" xs:schemaLocation="http://ddex.net/xml/ern/382 http://ddex.net/xml/ern/382/release-notification.xsd">
   <MessageHeader>
-    <MessageThreadId>f9bdba6b7750460abd4e68f79e2e97ff</MessageThreadId>
-    <MessageId>b8d9b31e2a2d49a7820159b2559ea3c0</MessageId>
+    <MessageThreadId>69b4942828444aea9add9dbfa1194d5e</MessageThreadId>
+    <MessageId>c904adbe35c141078a8e36c30539f05f</MessageId>
     <MessageSender>
       <PartyId>aboba</PartyId>
       <PartyName>when the impostor</PartyName>
@@ -15,7 +15,7 @@
       <PartyId>amogus</PartyId>
       <PartyName>is sus</PartyName>
     </MessageRecipient>
-    <MessageCreatedDateTime>2022-03-01T20:08:02+00:00</MessageCreatedDateTime>
+    <MessageCreatedDateTime>2022-03-01T20:52:09+00:00</MessageCreatedDateTime>
     <MessageControlType>LiveMessage</MessageControlType>
   </MessageHeader>
   <UpdateIndicator>OriginalMessage</UpdateIndicator>
@@ -586,6 +586,7 @@
           <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
           <CommercialModelType>PayAsYouGoModel</CommercialModelType>
           <Usage>
+            <UseType>PermanentDownload</UseType>
             <UseType>OnDemandStream</UseType>
           </Usage>
           <TerritoryCode>Worldwide</TerritoryCode>
@@ -604,6 +605,7 @@
           <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
           <CommercialModelType>PayAsYouGoModel</CommercialModelType>
           <Usage>
+            <UseType>PermanentDownload</UseType>
             <UseType>OnDemandStream</UseType>
           </Usage>
           <TerritoryCode>Worldwide</TerritoryCode>
@@ -622,6 +624,7 @@
           <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
           <CommercialModelType>PayAsYouGoModel</CommercialModelType>
           <Usage>
+            <UseType>PermanentDownload</UseType>
             <UseType>OnDemandStream</UseType>
           </Usage>
           <TerritoryCode>Worldwide</TerritoryCode>
@@ -640,6 +643,7 @@
           <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
           <CommercialModelType>PayAsYouGoModel</CommercialModelType>
           <Usage>
+            <UseType>PermanentDownload</UseType>
             <UseType>OnDemandStream</UseType>
           </Usage>
           <TerritoryCode>Worldwide</TerritoryCode>
@@ -658,6 +662,7 @@
           <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
           <CommercialModelType>PayAsYouGoModel</CommercialModelType>
           <Usage>
+            <UseType>PermanentDownload</UseType>
             <UseType>OnDemandStream</UseType>
           </Usage>
           <TerritoryCode>Worldwide</TerritoryCode>

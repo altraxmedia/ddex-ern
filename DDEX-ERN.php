@@ -887,7 +887,7 @@ class DDEX
 
                     if ($oneDeal->permanentDownload == true)
                     {
-                        $UseType = $this->xml->createElement ("UseType", "permanentDownload");
+                        $UseType = $this->xml->createElement ("UseType", "PermanentDownload");
                         $Usage->appendChild ($UseType);
                     }
 

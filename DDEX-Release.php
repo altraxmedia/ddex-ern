@@ -321,7 +321,7 @@ class Deal
     public $adSupportAvailable = true;
     public $payAsYouGoAvailable = true;
     public $onDemandStream = true;
-    public $permanentDownload = false;
+    public $permanentDownload = true;
     public $takedown = false;
 }
 
