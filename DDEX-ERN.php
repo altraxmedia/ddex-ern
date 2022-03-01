@@ -588,29 +588,6 @@ class DDEX
             $ParentalWarningType = $this->xml->createElement ("ParentalWarningType", $trackData->getExplicit ());
             $DetailsForTerritory->appendChild ($ParentalWarningType);
 
-            # Link to SoundRecording
-
-            $ResourceGroup = $this->xml->createElement ("ResourceGroup");
-            $DetailsForTerritory->appendChild ($ResourceGroup);
-
-            $ResourceGroup2 = $this->xml->createElement ("ResourceGroup");
-            $ResourceGroup->appendChild ($ResourceGroup2);
-
-            $SequenceNumber = $this->xml->createElement ("SequenceNumber", 1);
-            $ResourceGroup2->appendChild ($SequenceNumber);
-
-            $ResourceGroupContentItem = $this->xml->createElement ("ResourceGroupContentItem");
-            $ResourceGroup2->appendChild ($ResourceGroupContentItem);
-
-            $SequenceNumber1 = $this->xml->createElement ("SequenceNumber", 1);
-            $ResourceGroupContentItem->appendChild ($SequenceNumber1);
-
-            $ResourceType = $this->xml->createElement ("ResourceType", 'SoundRecording');
-            $ResourceGroupContentItem->appendChild ($ResourceType);
-
-            $ReleaseResourceReference = $this->xml->createElement ("ReleaseResourceReference", $this->resourceReferences[$pos - 1]);
-            $ResourceGroupContentItem->appendChild ($ReleaseResourceReference);
-
             # Genre text
 
             $Genre = $this->xml->createElement ("Genre");
@@ -782,7 +759,7 @@ class DDEX
         $SequenceNumber = $this->xml->createElement ("SequenceNumber", 1);
         $ResourceGroup2->appendChild ($SequenceNumber);
 
-        $resPointer = 0;
+        $resPointer = -1;
 
         foreach ($resourceReferencesNew as $resRef2)
         {

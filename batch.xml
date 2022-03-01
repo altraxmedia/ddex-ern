@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/382" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" LanguageAndScriptCode="ru" MessageSchemaVersionId="ern/382" xs:schemaLocation="http://ddex.net/xml/ern/382 http://ddex.net/xml/ern/382/release-notification.xsd">
   <MessageHeader>
-    <MessageThreadId>0e186b0831934cfeb3f6c52f5bd07eb4</MessageThreadId>
-    <MessageId>4da56a08ee0b452397a988127c8dc8e2</MessageId>
+    <MessageThreadId>3e841b505e1545239422b570125575b7</MessageThreadId>
+    <MessageId>bfa77cb9bdd8484cb02e2dd9cdab04df</MessageId>
     <MessageSender>
       <PartyId>aboba</PartyId>
       <PartyName>when the impostor</PartyName>
@@ -15,7 +15,7 @@
       <PartyId>amogus</PartyId>
       <PartyName>is sus</PartyName>
     </MessageRecipient>
-    <MessageCreatedDateTime>2022-02-27T16:01:52+00:00</MessageCreatedDateTime>
+    <MessageCreatedDateTime>2022-03-01T19:05:20+00:00</MessageCreatedDateTime>
     <MessageControlType>LiveMessage</MessageControlType>
   </MessageHeader>
   <UpdateIndicator>OriginalMessage</UpdateIndicator>
@@ -306,16 +306,6 @@
           <SubTitle></SubTitle>
         </Title>
         <ParentalWarningType>NotExplicit</ParentalWarningType>
-        <ResourceGroup>
-          <ResourceGroup>
-            <SequenceNumber>1</SequenceNumber>
-            <ResourceGroupContentItem>
-              <SequenceNumber>1</SequenceNumber>
-              <ResourceType>SoundRecording</ResourceType>
-              <ReleaseResourceReference>A1</ReleaseResourceReference>
-            </ResourceGroupContentItem>
-          </ResourceGroup>
-        </ResourceGroup>
         <Genre>
           <GenreText></GenreText>
         </Genre>
@@ -361,16 +351,6 @@
           <SubTitle></SubTitle>
         </Title>
         <ParentalWarningType>NotExplicit</ParentalWarningType>
-        <ResourceGroup>
-          <ResourceGroup>
-            <SequenceNumber>1</SequenceNumber>
-            <ResourceGroupContentItem>
-              <SequenceNumber>1</SequenceNumber>
-              <ResourceType>SoundRecording</ResourceType>
-              <ReleaseResourceReference>A2</ReleaseResourceReference>
-            </ResourceGroupContentItem>
-          </ResourceGroup>
-        </ResourceGroup>
         <Genre>
           <GenreText></GenreText>
         </Genre>
@@ -416,16 +396,6 @@
           <SubTitle></SubTitle>
         </Title>
         <ParentalWarningType>NotExplicit</ParentalWarningType>
-        <ResourceGroup>
-          <ResourceGroup>
-            <SequenceNumber>1</SequenceNumber>
-            <ResourceGroupContentItem>
-              <SequenceNumber>1</SequenceNumber>
-              <ResourceType>SoundRecording</ResourceType>
-              <ReleaseResourceReference>A3</ReleaseResourceReference>
-            </ResourceGroupContentItem>
-          </ResourceGroup>
-        </ResourceGroup>
         <Genre>
           <GenreText></GenreText>
         </Genre>
@@ -471,16 +441,6 @@
           <SubTitle></SubTitle>
         </Title>
         <ParentalWarningType>NotExplicit</ParentalWarningType>
-        <ResourceGroup>
-          <ResourceGroup>
-            <SequenceNumber>1</SequenceNumber>
-            <ResourceGroupContentItem>
-              <SequenceNumber>1</SequenceNumber>
-              <ResourceType>SoundRecording</ResourceType>
-              <ReleaseResourceReference>A4</ReleaseResourceReference>
-            </ResourceGroupContentItem>
-          </ResourceGroup>
-        </ResourceGroup>
         <Genre>
           <GenreText></GenreText>
         </Genre>
@@ -526,16 +486,6 @@
           <SubTitle></SubTitle>
         </Title>
         <ParentalWarningType>NotExplicit</ParentalWarningType>
-        <ResourceGroup>
-          <ResourceGroup>
-            <SequenceNumber>1</SequenceNumber>
-            <ResourceGroupContentItem>
-              <SequenceNumber>1</SequenceNumber>
-              <ResourceType>SoundRecording</ResourceType>
-              <ReleaseResourceReference>A5</ReleaseResourceReference>
-            </ResourceGroupContentItem>
-          </ResourceGroup>
-        </ResourceGroup>
         <Genre>
           <GenreText></GenreText>
         </Genre>
