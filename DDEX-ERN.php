@@ -848,7 +848,8 @@ class DDEX
     {
         foreach ($this->dealsFromRelease as $ref => $deals)
         {
-            
+            $ReleaseDeal = $this->xml->createElement ("ReleaseDeal");
+            $this->dealsEntrypoint->appendChild ($ReleaseDeal);
         }
     }
 
