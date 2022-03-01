@@ -2,8 +2,8 @@
 A **first PHP** library* to generate DDEX ERN XML files from pre-defined PHP classes.  
 Required PHP >= 7.4 with DOM extension.  
 *-in public access on GitHub
-## Development
-Library is current on alpha-developing stage, and may contain bugs.
+## Developing
+Library is unfinished, and may contain bugs.
 ## Documentation
 Documentation isn't finished, yet. Sorry for inconvience.
 ## Contribution 
