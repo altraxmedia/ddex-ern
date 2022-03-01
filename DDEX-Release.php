@@ -99,7 +99,7 @@ class Release
     public $releasePLine = "";
     public $releaseCLineYear = 2022;
     public $releaseCLine = "";
-    public $releaseDeal = null;
+    public $releaseDeal = [];
     public $releaseType = 'Album';
     public $releaseDisplayArtist = '';
 
@@ -222,7 +222,7 @@ class Track
     public $trackReleaseDate = '';
     public $trackOriginalReleaseDate = '';
     public $trackKeywords = '';
-    public $trackDeal = null;
+    public $trackDeal = [];
 
     public function getExplicit ()
     {
