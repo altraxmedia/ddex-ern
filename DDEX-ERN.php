@@ -32,6 +32,7 @@ class DDEX
     protected $resourceReferences;
     protected $releaseReferences;
     protected $technicalReferences;
+    protected $dealsFromRelease;
 
     protected function genGuid ()
     {
@@ -827,9 +828,22 @@ class DDEX
         $CLine->appendChild ($CLineText);
     }
 
-    public function getDealsFromReleases ()
+    public function enumDeals ()
     {
-        # To do
+        $deals = ['R0' => $this->release->releaseDeal];
+        
+        $pointer = 0;
+
+        foreach ($this->release->releaseTracks as $track)
+        {
+            ++$pointer;
+
+            $deals['R' . $pointer] = $track->trackDeal;
+        }
+
+        $this->dealsFromRelease = $deals;
+
+        var_dump ($deals);
     }
 
     protected function deals ()
@@ -858,7 +872,7 @@ class DDEX
         $this->frontCover ();
         $this->writeTrackReleases ();
         $this->writeAlbumRelease ();
-        $this->getDealsFromReleases ();
+        $this->enumDeals ();
         $this->deals ();
 
         return $this->xml->saveXML(null, LIBXML_NOEMPTYTAG);
