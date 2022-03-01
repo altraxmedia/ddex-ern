@@ -850,6 +850,9 @@ class DDEX
         {
             $ReleaseDeal = $this->xml->createElement ("ReleaseDeal");
             $this->dealsEntrypoint->appendChild ($ReleaseDeal);
+
+            $DealReleaseReference = $this->xml->createElement ("DealReleaseReference", $ref);
+            $ReleaseDeal->appendChild ($DealReleaseReference);
         }
     }
 
