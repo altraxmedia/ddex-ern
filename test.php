@@ -25,6 +25,10 @@ $cover->proprietaryId = 'qwertyuiopasdfghjklzxcvbnm';
 $ddex->release->releaseCoverArt = $cover;
 
 for ($i = 0; $i < 5; ++$i)
-	$ddex->release->releaseTracks[] = new Track;
+{
+	$track = new Track;
+	$track->trackDeal[] = md5 (time () . random_int (0, 928492) . random_bytes (64)) . '_aboba';
+	$ddex->release->releaseTracks[] = $track;
+}
 
 file_put_contents ('batch.xml', $ddex);
