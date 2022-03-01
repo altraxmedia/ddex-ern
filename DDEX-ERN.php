@@ -853,6 +853,90 @@ class DDEX
 
             $DealReleaseReference = $this->xml->createElement ("DealReleaseReference", $ref);
             $ReleaseDeal->appendChild ($DealReleaseReference);
+
+            foreach ($deals as $oneDeal)
+            {
+                $Deal = $this->xml->createElement ("Deal");
+                $ReleaseDeal->appendChild ($Deal);
+
+                $DealTerms = $this->xml->createElement ("DealTerms");
+                $Deal->appendChild ($DealTerms);
+
+                if ($oneDeal->subscriptionAvailable == true)
+                {
+                    $CommercialModelType = $this->xml->createElement ("CommercialModelType", "SubscriptionModel");
+                    $DealTerms->appendChild ($CommercialModelType);
+                }
+
+                if ($oneDeal->adSupportAvailable == true)
+                {
+                    $CommercialModelType = $this->xml->createElement ("CommercialModelType", "AdvertisementSupportedModel");
+                    $DealTerms->appendChild ($CommercialModelType);
+                }
+
+                if ($oneDeal->payAsYouGoAvailable == true)
+                {
+                    $CommercialModelType = $this->xml->createElement ("CommercialModelType", "PayAsYouGoModel");
+                    $DealTerms->appendChild ($CommercialModelType);
+                }
+
+                if ($oneDeal->onDemandStream == true || $oneDeal->permanentDownload == true)
+                {
+                    $Usage = $this->xml->createElement ("Usage");
+                    $DealTerms->appendChild ($Usage);
+
+                    if ($oneDeal->permanentDownload == true)
+                    {
+                        $UseType = $this->xml->createElement ("UseType", "permanentDownload");
+                        $Usage->appendChild ($UseType);
+                    }
+
+                    if ($oneDeal->onDemandStream == true)
+                    {
+                        $UseType = $this->xml->createElement ("UseType", "OnDemandStream");
+                        $Usage->appendChild ($UseType);
+                    }
+                }
+
+                if ($oneDeal->takedown == true)
+                {
+                    $TakeDown = $this->xml->createElement ("TakeDown", "true");
+                    $DealTerms->appendChild ($TakeDown);
+                }
+
+                foreach ($oneDeal->dealTerritories as $terCode)
+                {
+                    $TerritoryCode = $this->xml->createElement ("TerritoryCode", "$terCode");
+                    $DealTerms->appendChild ($TerritoryCode);
+                }
+
+                if ($oneDeal->takedown == true)
+                {
+                    $ValidityPeriod = $this->xml->createElement ("ValidityPeriod");
+                    $DealTerms->appendChild ($ValidityPeriod);
+
+                    $EndDate = $this->xml->createElement ("EndDate", date ("Y-m-d", strtotime ("-1 week")));
+                    $ValidityPeriod->appendChild ($EndDate);
+                }
+                else
+                {
+                    $ValidityPeriod = $this->xml->createElement ("ValidityPeriod");
+                    $DealTerms->appendChild ($ValidityPeriod);
+
+                    $StartDate = $this->xml->createElement ("StartDate", $oneDeal->dealStartDate);
+                    $ValidityPeriod->appendChild ($StartDate);
+                }
+
+                if ($oneDeal->dealPreOrderDate != '')
+                {
+                    $PreOrderReleaseDate = $this->xml->createElement ("PreOrderReleaseDate", $oneDeal->dealPreOrderDate);
+                    $DealTerms->appendChild ($PreOrderReleaseDate);
+                }
+
+            }
+
+            $EffectiveDate = $this->xml->createElement ("EffectiveDate", $this->release->releaseDate);
+            $ReleaseDeal->appendChild ($EffectiveDate);
         }
     }
 

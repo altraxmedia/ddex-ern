@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/382" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" LanguageAndScriptCode="ru" MessageSchemaVersionId="ern/382" xs:schemaLocation="http://ddex.net/xml/ern/382 http://ddex.net/xml/ern/382/release-notification.xsd">
   <MessageHeader>
-    <MessageThreadId>8a57f46fd5d74ca2823af21105243c86</MessageThreadId>
-    <MessageId>354b8399a6ac4bb484f4cc68000ba827</MessageId>
+    <MessageThreadId>f9bdba6b7750460abd4e68f79e2e97ff</MessageThreadId>
+    <MessageId>b8d9b31e2a2d49a7820159b2559ea3c0</MessageId>
     <MessageSender>
       <PartyId>aboba</PartyId>
       <PartyName>when the impostor</PartyName>
@@ -15,7 +15,7 @@
       <PartyId>amogus</PartyId>
       <PartyName>is sus</PartyName>
     </MessageRecipient>
-    <MessageCreatedDateTime>2022-03-01T19:37:20+00:00</MessageCreatedDateTime>
+    <MessageCreatedDateTime>2022-03-01T20:08:02+00:00</MessageCreatedDateTime>
     <MessageControlType>LiveMessage</MessageControlType>
   </MessageHeader>
   <UpdateIndicator>OriginalMessage</UpdateIndicator>
@@ -574,11 +574,99 @@
     </Release>
   </ReleaseList>
   <DealList>
-    <ReleaseDeal></ReleaseDeal>
-    <ReleaseDeal></ReleaseDeal>
-    <ReleaseDeal></ReleaseDeal>
-    <ReleaseDeal></ReleaseDeal>
-    <ReleaseDeal></ReleaseDeal>
-    <ReleaseDeal></ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R0</DealReleaseReference>
+      <EffectiveDate></EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R1</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <ValidityPeriod>
+            <StartDate></StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate></EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R2</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <ValidityPeriod>
+            <StartDate></StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate></EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R3</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <ValidityPeriod>
+            <StartDate></StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate></EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R4</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <ValidityPeriod>
+            <StartDate></StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate></EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R5</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <ValidityPeriod>
+            <StartDate></StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate></EffectiveDate>
+    </ReleaseDeal>
   </DealList>
 </ern:NewReleaseMessage>

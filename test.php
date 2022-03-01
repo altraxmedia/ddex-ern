@@ -27,7 +27,9 @@ $ddex->release->releaseCoverArt = $cover;
 for ($i = 0; $i < 5; ++$i)
 {
 	$track = new Track;
-	$track->trackDeal[] = new Deal;
+	$deal = new Deal;
+	$deal->dealTerritories[] = 'Worldwide';
+	$track->trackDeal[] = $deal;
 	$ddex->release->releaseTracks[] = $track;
 }
 
