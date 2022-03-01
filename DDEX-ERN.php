@@ -781,7 +781,7 @@ class DDEX
         $ResourceGroupContentItem = $this->xml->createElement ("ResourceGroupContentItem");
         $ResourceGroup->appendChild ($ResourceGroupContentItem);
 
-        $SequenceNumber1 = $this->xml->createElement ("SequenceNumber", $resPointer + 1);
+        $SequenceNumber1 = $this->xml->createElement ("SequenceNumber", $resPointer + 2);
         $ResourceGroupContentItem->appendChild ($SequenceNumber1);
 
         $ResourceType = $this->xml->createElement ("ResourceType", 'Image');
@@ -827,6 +827,11 @@ class DDEX
         $CLine->appendChild ($CLineText);
     }
 
+    public function getDealsFromReleases ()
+    {
+        # To do
+    }
+
     protected function deals ()
     {
         # Todo
@@ -853,6 +858,7 @@ class DDEX
         $this->frontCover ();
         $this->writeTrackReleases ();
         $this->writeAlbumRelease ();
+        $this->getDealsFromReleases ();
         $this->deals ();
 
         return $this->xml->saveXML(null, LIBXML_NOEMPTYTAG);

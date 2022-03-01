@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/382" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" LanguageAndScriptCode="ru" MessageSchemaVersionId="ern/382" xs:schemaLocation="http://ddex.net/xml/ern/382 http://ddex.net/xml/ern/382/release-notification.xsd">
   <MessageHeader>
-    <MessageThreadId>df7d4755ec2648298e705838b324da61</MessageThreadId>
-    <MessageId>5a90a0a16db74331b1304d023462363d</MessageId>
+    <MessageThreadId>b998e1ebd3fa46d2bc980ef19f83147c</MessageThreadId>
+    <MessageId>5423fae9de8742eda598582dfe7a2ff0</MessageId>
     <MessageSender>
       <PartyId>aboba</PartyId>
       <PartyName>when the impostor</PartyName>
@@ -15,7 +15,7 @@
       <PartyId>amogus</PartyId>
       <PartyName>is sus</PartyName>
     </MessageRecipient>
-    <MessageCreatedDateTime>2022-03-01T19:07:19+00:00</MessageCreatedDateTime>
+    <MessageCreatedDateTime>2022-03-01T19:09:32+00:00</MessageCreatedDateTime>
     <MessageControlType>LiveMessage</MessageControlType>
   </MessageHeader>
   <UpdateIndicator>OriginalMessage</UpdateIndicator>
@@ -552,6 +552,11 @@
               <ReleaseResourceReference>A5</ReleaseResourceReference>
             </ResourceGroupContentItem>
           </ResourceGroup>
+          <ResourceGroupContentItem>
+            <SequenceNumber>5</SequenceNumber>
+            <ResourceType>Image</ResourceType>
+            <ReleaseResourceReference>A6</ReleaseResourceReference>
+          </ResourceGroupContentItem>
         </ResourceGroup>
         <Genre>
           <GenreText></GenreText>
