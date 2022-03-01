@@ -778,6 +778,18 @@ class DDEX
             $ResourceGroupContentItem->appendChild ($ReleaseResourceReference);
         }
 
+        $ResourceGroupContentItem = $this->xml->createElement ("ResourceGroupContentItem");
+        $ResourceGroup->appendChild ($ResourceGroupContentItem);
+
+        $SequenceNumber1 = $this->xml->createElement ("SequenceNumber", $resPointer + 1);
+        $ResourceGroupContentItem->appendChild ($SequenceNumber1);
+
+        $ResourceType = $this->xml->createElement ("ResourceType", 'Image');
+        $ResourceGroupContentItem->appendChild ($ResourceType);
+
+        $ReleaseResourceReference = $this->xml->createElement ("ReleaseResourceReference", $this->resourceReferences[$resPointer + 1]);
+        $ResourceGroupContentItem->appendChild ($ReleaseResourceReference);
+
         # Genre
 
         $Genre = $this->xml->createElement ("Genre");

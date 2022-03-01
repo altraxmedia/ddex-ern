@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/382" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" LanguageAndScriptCode="ru" MessageSchemaVersionId="ern/382" xs:schemaLocation="http://ddex.net/xml/ern/382 http://ddex.net/xml/ern/382/release-notification.xsd">
   <MessageHeader>
-    <MessageThreadId>b99b38fc4d0c4471b83be6eca6b555c2</MessageThreadId>
-    <MessageId>996b052cd79e4e2ba4c11a9d536233d3</MessageId>
+    <MessageThreadId>df7d4755ec2648298e705838b324da61</MessageThreadId>
+    <MessageId>5a90a0a16db74331b1304d023462363d</MessageId>
     <MessageSender>
       <PartyId>aboba</PartyId>
       <PartyName>when the impostor</PartyName>
@@ -15,7 +15,7 @@
       <PartyId>amogus</PartyId>
       <PartyName>is sus</PartyName>
     </MessageRecipient>
-    <MessageCreatedDateTime>2022-03-01T19:06:29+00:00</MessageCreatedDateTime>
+    <MessageCreatedDateTime>2022-03-01T19:07:19+00:00</MessageCreatedDateTime>
     <MessageControlType>LiveMessage</MessageControlType>
   </MessageHeader>
   <UpdateIndicator>OriginalMessage</UpdateIndicator>
@@ -527,27 +527,27 @@
           <ResourceGroup>
             <SequenceNumber>1</SequenceNumber>
             <ResourceGroupContentItem>
-              <SequenceNumber>0</SequenceNumber>
+              <SequenceNumber>1</SequenceNumber>
               <ResourceType>SoundRecording</ResourceType>
               <ReleaseResourceReference>A1</ReleaseResourceReference>
             </ResourceGroupContentItem>
             <ResourceGroupContentItem>
-              <SequenceNumber>1</SequenceNumber>
+              <SequenceNumber>2</SequenceNumber>
               <ResourceType>SoundRecording</ResourceType>
               <ReleaseResourceReference>A2</ReleaseResourceReference>
             </ResourceGroupContentItem>
             <ResourceGroupContentItem>
-              <SequenceNumber>2</SequenceNumber>
+              <SequenceNumber>3</SequenceNumber>
               <ResourceType>SoundRecording</ResourceType>
               <ReleaseResourceReference>A3</ReleaseResourceReference>
             </ResourceGroupContentItem>
             <ResourceGroupContentItem>
-              <SequenceNumber>3</SequenceNumber>
+              <SequenceNumber>4</SequenceNumber>
               <ResourceType>SoundRecording</ResourceType>
               <ReleaseResourceReference>A4</ReleaseResourceReference>
             </ResourceGroupContentItem>
             <ResourceGroupContentItem>
-              <SequenceNumber>4</SequenceNumber>
+              <SequenceNumber>5</SequenceNumber>
               <ResourceType>SoundRecording</ResourceType>
               <ReleaseResourceReference>A5</ReleaseResourceReference>
             </ResourceGroupContentItem>
