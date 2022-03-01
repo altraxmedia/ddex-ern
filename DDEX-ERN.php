@@ -768,7 +768,7 @@ class DDEX
             $ResourceGroupContentItem = $this->xml->createElement ("ResourceGroupContentItem");
             $ResourceGroup2->appendChild ($ResourceGroupContentItem);
 
-            $SequenceNumber1 = $this->xml->createElement ("SequenceNumber", $resPointer);
+            $SequenceNumber1 = $this->xml->createElement ("SequenceNumber", $resPointer + 1);
             $ResourceGroupContentItem->appendChild ($SequenceNumber1);
 
             $ResourceType = $this->xml->createElement ("ResourceType", 'SoundRecording');
