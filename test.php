@@ -27,7 +27,7 @@ $ddex->release->releaseCoverArt = $cover;
 for ($i = 0; $i < 5; ++$i)
 {
 	$track = new Track;
-	$track->trackDeal[] = md5 (time () . random_int (0, 928492) . random_bytes (64)) . '_aboba';
+	$track->trackDeal[] = new Deal;
 	$ddex->release->releaseTracks[] = $track;
 }
 

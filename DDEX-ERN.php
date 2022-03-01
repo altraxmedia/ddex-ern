@@ -842,13 +842,14 @@ class DDEX
         }
 
         $this->dealsFromRelease = $deals;
-
-        var_dump ($deals);
     }
 
     protected function deals ()
     {
-        # Todo
+        foreach ($this->dealsFromRelease as $ref => $deals)
+        {
+            
+        }
     }
 
     public function __toString ()
@@ -860,20 +861,20 @@ class DDEX
         #if (!($this->release->releaseCoverArt instanceof Artwork))
         #    throw new InvalidArgumentException ('Artwork for release is not defined.');
 
-        $this->initDom ();
-        $this->writeHeader ();
-        $this->enumReleaseRefs ();
-        $this->enumResourceRefs ();
-        $this->enumTechnicalRefs ();
-        $this->initResourceEntrypoint ();
-        $this->initReleasesEntrypoint ();
-        $this->initDealsEntrypoint ();
-        $this->soundRecordings ();
-        $this->frontCover ();
-        $this->writeTrackReleases ();
-        $this->writeAlbumRelease ();
-        $this->enumDeals ();
-        $this->deals ();
+        $this->initDom (); # Init XML document
+        $this->writeHeader (); # Write MessageHeader
+        $this->enumReleaseRefs (); # Enumerate release references
+        $this->enumResourceRefs (); # Enumerate resource references
+        $this->enumTechnicalRefs (); # Enumerate technical file specification references
+        $this->initResourceEntrypoint (); # Init ResourceList
+        $this->initReleasesEntrypoint (); # Init ReleaseList
+        $this->initDealsEntrypoint (); # Init DealList
+        $this->soundRecordings (); # Write SoundRecording resources
+        $this->frontCover (); # Write artwork Image resource
+        $this->writeTrackReleases (); # Write track releases
+        $this->writeAlbumRelease (); # Write album release
+        $this->enumDeals (); # Enumerate deals in releases
+        $this->deals (); # Write deals for releases
 
         return $this->xml->saveXML(null, LIBXML_NOEMPTYTAG);
     }
