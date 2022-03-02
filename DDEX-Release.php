@@ -137,7 +137,7 @@ class Release
     CLASS MEMBERS:
     
     (string) artistName: name of the artist
-    (integer) artistRole: Role ID
+    (integer) artistRole: Role ID (0 - Main Artist, 1 - Feat, 2 - Artist)
 */
 
 class Artist
@@ -271,35 +271,30 @@ class Artwork
     CLASS MEMBERS:
 
     (string) contributorName: the contributor's name
-    (integer) contributorRoleId: the contributor's role in all this release
+    (string) contributorRole: the contributor's role in all this release
 */
 
 class Contributor
 {
     public $artistName = [];
-    public $artistRole = 0;
-
-    public function getRole ()
-    {
-        switch ($this->artistRole)
-        {
-            case 0:
-                return 'MainArtist';
-            break;
-
-            case 1:
-                return 'FeaturedArtist';
-            break;
-
-            case 2:
-                return 'Artist';
-            break;
-        }
-    }
+    public $artistRole = '';
 
 }
 
 class ContributorLanguage
+{
+    public $artistName;
+    public $artistLanguage;
+}
+
+class IndirectContributor
+{
+    public $artistName = [];
+    public $artistRole = '';
+
+}
+
+class IndirectContributorLanguage
 {
     public $artistName;
     public $artistLanguage;
@@ -346,87 +341,3 @@ class Deal
     public $permanentDownload = true;
     public $takedown = false;
 }
-
-/*
-    MEMO: Genre IDs
-
-0    Alternative
-1    Alternative Rock
-2    Alternativo & Rock Latino
-3    Anime
-4    Baladas y Boleros
-5    Big Band
-6    Blues
-7    Brazilian
-8    C-Pop
-9    Cantopop/HK-Pop
-10    Children's
-11    Chinese
-12    Christian
-13    Classical
-14    Comedy
-15    Contemporary Latin
-16    Country
-17    Dance	
-18    Easy Listening
-19    Educational
-20    Electronic
-21    Enka
-22    Experimental
-23    Fitness & Workout
-24    Folk
-25    French Pop
-26    German Folk
-27    German Pop
-28    Hip-Hop/Rap
-29    Holiday
-30    Indo Pop
-31    Inspirational
-32    Instrumental
-33    J-Pop
-34    Jazz
-35    K-Pop
-36    Karaoke
-37    Kayokyoku
-38    Latin
-39    Latin Jazz
-40    Metal
-41    New Age
-42    Opera
-43    Original Pilipino Music
-44    Pop
-45    Pop Latino
-46    Punk
-47    R&B
-48    Raíces
-49    Reggae
-50    Reggaeton y Hip-Hop
-51    Regional Mexicano
-52    Rock
-53    Salsa y Tropical
-54    Singer/Songwriter
-55    Soul
-56    Soundtrack
-57    Spoken Word
-58    Tai-Pop
-59    Thai Pop
-60    Trot
-61    Vocal/Nostalgia
-62    World
-
-    MEMO: Artist Role IDs
-
-0   Main Artist
-1   Featured Artist
-2   Artist
-
-    MEMO: Indirect Contributor Role IDs
-
-0   Lyricist
-1   MusicPublisher
-2   Remixer
-3   Producer
-4   Composer
-
-
-*/
