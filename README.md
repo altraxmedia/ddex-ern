@@ -19,7 +19,7 @@ Currently NOT supported services:
  - FUGA Aggregation
  - YouTube CMS (YouTube Music/Art Tracks & Premium, YouTube Content ID)  
 
-We currently working for integration with these DSPs or delivery systems. CI (Consolidate Independent) not supported, because it uses old (DDEX ERN 3.1/3.1.2) standart.
+We are currently working for integration with these DSPs or delivery systems. CI (Consolidate Independent) not supported, because it uses old (DDEX ERN 3.1/3.1.2) standart.
 ## Licensing
 You can use this library in your own project without restrictions and free, but you shall include our copyright in your project.  
 >THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
