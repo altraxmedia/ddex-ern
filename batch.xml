@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/382" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" LanguageAndScriptCode="ru" MessageSchemaVersionId="ern/382" xs:schemaLocation="http://ddex.net/xml/ern/382 http://ddex.net/xml/ern/382/release-notification.xsd">
   <MessageHeader>
-    <MessageThreadId>69b4942828444aea9add9dbfa1194d5e</MessageThreadId>
-    <MessageId>c904adbe35c141078a8e36c30539f05f</MessageId>
+    <MessageThreadId>3fd810b659ed4bd9946633444b05dfaa</MessageThreadId>
+    <MessageId>70cc7b6eefde4f0bbc3a5dcd52049e01</MessageId>
     <MessageSender>
       <PartyId>aboba</PartyId>
       <PartyName>when the impostor</PartyName>
@@ -15,7 +15,7 @@
       <PartyId>amogus</PartyId>
       <PartyName>is sus</PartyName>
     </MessageRecipient>
-    <MessageCreatedDateTime>2022-03-01T20:52:09+00:00</MessageCreatedDateTime>
+    <MessageCreatedDateTime>2022-03-02T14:54:01+00:00</MessageCreatedDateTime>
     <MessageControlType>LiveMessage</MessageControlType>
   </MessageHeader>
   <UpdateIndicator>OriginalMessage</UpdateIndicator>
@@ -43,6 +43,18 @@
         <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
           <TitleText></TitleText>
         </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <ResourceContributor>
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ResourceContributorRole></ResourceContributorRole>
+        </ResourceContributor>
+        <IndirectResourceContributor>
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <IndirectResourceContributorRole></IndirectResourceContributorRole>
+        </IndirectResourceContributor>
         <LabelName></LabelName>
         <PLine>
           <Year>2022</Year>
@@ -89,6 +101,18 @@
         <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
           <TitleText></TitleText>
         </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <ResourceContributor>
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ResourceContributorRole></ResourceContributorRole>
+        </ResourceContributor>
+        <IndirectResourceContributor>
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <IndirectResourceContributorRole></IndirectResourceContributorRole>
+        </IndirectResourceContributor>
         <LabelName></LabelName>
         <PLine>
           <Year>2022</Year>
@@ -135,6 +159,18 @@
         <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
           <TitleText></TitleText>
         </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <ResourceContributor>
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ResourceContributorRole></ResourceContributorRole>
+        </ResourceContributor>
+        <IndirectResourceContributor>
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <IndirectResourceContributorRole></IndirectResourceContributorRole>
+        </IndirectResourceContributor>
         <LabelName></LabelName>
         <PLine>
           <Year>2022</Year>
@@ -181,6 +217,18 @@
         <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
           <TitleText></TitleText>
         </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <ResourceContributor>
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ResourceContributorRole></ResourceContributorRole>
+        </ResourceContributor>
+        <IndirectResourceContributor>
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <IndirectResourceContributorRole></IndirectResourceContributorRole>
+        </IndirectResourceContributor>
         <LabelName></LabelName>
         <PLine>
           <Year>2022</Year>
@@ -227,6 +275,18 @@
         <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
           <TitleText></TitleText>
         </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <ResourceContributor>
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ResourceContributorRole></ResourceContributorRole>
+        </ResourceContributor>
+        <IndirectResourceContributor>
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <IndirectResourceContributorRole></IndirectResourceContributorRole>
+        </IndirectResourceContributor>
         <LabelName></LabelName>
         <PLine>
           <Year>2022</Year>
@@ -305,6 +365,10 @@
           <TitleText></TitleText>
           <SubTitle></SubTitle>
         </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
         <ParentalWarningType>NotExplicit</ParentalWarningType>
         <Genre>
           <GenreText></GenreText>
@@ -350,6 +414,10 @@
           <TitleText></TitleText>
           <SubTitle></SubTitle>
         </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
         <ParentalWarningType>NotExplicit</ParentalWarningType>
         <Genre>
           <GenreText></GenreText>
@@ -395,6 +463,10 @@
           <TitleText></TitleText>
           <SubTitle></SubTitle>
         </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
         <ParentalWarningType>NotExplicit</ParentalWarningType>
         <Genre>
           <GenreText></GenreText>
@@ -440,6 +512,10 @@
           <TitleText></TitleText>
           <SubTitle></SubTitle>
         </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
         <ParentalWarningType>NotExplicit</ParentalWarningType>
         <Genre>
           <GenreText></GenreText>
@@ -485,6 +561,10 @@
           <TitleText></TitleText>
           <SubTitle></SubTitle>
         </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
         <ParentalWarningType>NotExplicit</ParentalWarningType>
         <Genre>
           <GenreText></GenreText>

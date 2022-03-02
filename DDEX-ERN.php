@@ -380,6 +380,54 @@ class DDEX
                 $DisplayArtist->appendChild ($ArtistRole);
             }
 
+            # Contributors
+
+            foreach ($trackData->trackContributors as $art)
+            {
+                ++$pointer;
+
+                $ResourceContributor = $this->xml->createElement ("ResourceContributor");
+                $DetailsForTerritory->appendChild ($ResourceContributor);
+
+                # Artist name
+
+                foreach ($art->artistName as $pName)
+                {
+                    $PartyName = $this->xml->createElement ("PartyName", $pName->artistName);
+                    $PartyName->setAttribute ('LanguageAndScriptCode', $pName->artistLanguage);
+                    $ResourceContributor->appendChild ($PartyName);
+                }
+
+                # Artist role
+
+                $ResourceContributorRole = $this->xml->createElement ("ResourceContributorRole", $art->artistRole);
+                $ResourceContributor->appendChild ($ResourceContributorRole);
+            }
+
+            # Indirect contributors
+
+            foreach ($trackData->trackIndirectContributors as $art)
+            {
+                ++$pointer;
+
+                $IndirectResourceContributor = $this->xml->createElement ("IndirectResourceContributor");
+                $DetailsForTerritory->appendChild ($IndirectResourceContributor);
+
+                # Artist name
+
+                foreach ($art->artistName as $pName)
+                {
+                    $PartyName = $this->xml->createElement ("PartyName", $pName->artistName);
+                    $PartyName->setAttribute ('LanguageAndScriptCode', $pName->artistLanguage);
+                    $IndirectResourceContributor->appendChild ($PartyName);
+                }
+
+                # Artist role
+
+                $IndirectResourceContributorRole = $this->xml->createElement ("IndirectResourceContributorRole", $art->artistRole);
+                $IndirectResourceContributor->appendChild ($IndirectResourceContributorRole);
+            }
+
             # Label name
 
             $LabelName = $this->xml->createElement ("LabelName", $this->release->releaseRecordLabel);
