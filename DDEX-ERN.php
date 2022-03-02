@@ -286,6 +286,72 @@ class DDEX
             $TitleText = $this->xml->createElement ("TitleText", $trackTitle);
             $Title->appendChild ($TitleText);
 
+            # MEAD
+
+            if ($trackData->trackMediaEnrichment instanceof MEAD)
+            {
+                # Bool variables
+
+                $mead = $trackData->trackMediaEnrichment;
+
+                $Var = $this->xml->createElement ("IsMedley", $mead->IsMedley ? 'true' : 'false');
+                $SoundRecording->appendChild ($Var);
+
+                $Var = $this->xml->createElement ("IsPotpourri", $mead->IsPotpourri ? 'true' : 'false');
+                $SoundRecording->appendChild ($Var);
+
+                $Var = $this->xml->createElement ("IsInstrumental", $mead->IsInstrumental ? 'true' : 'false');
+                $SoundRecording->appendChild ($Var);
+
+                $Var = $this->xml->createElement ("IsBackground", $mead->IsBackground ? 'true' : 'false');
+                $SoundRecording->appendChild ($Var);
+
+                $Var = $this->xml->createElement ("IsHiddenResource", $mead->IsHiddenResource ? 'true' : 'false');
+                $SoundRecording->appendChild ($Var);
+
+                $Var = $this->xml->createElement ("IsBonusResource", $mead->IsBonusResource ? 'true' : 'false');
+                $SoundRecording->appendChild ($Var);
+
+                $Var = $this->xml->createElement ("IsComputerGenerated", $mead->IsComputerGenerated ? 'true' : 'false');
+                $SoundRecording->appendChild ($Var);
+
+                $Var = $this->xml->createElement ("IsRemastered", $mead->IsRemastered ? 'true' : 'false');
+                $SoundRecording->appendChild ($Var);
+
+                $Var = $this->xml->createElement ("NoSilenceBefore", $mead->NoSilenceBefore ? 'true' : 'false');
+                $SoundRecording->appendChild ($Var);
+
+                $Var = $this->xml->createElement ("NoSilenceAfter", $mead->NoSilenceAfter ? 'true' : 'false');
+                $SoundRecording->appendChild ($Var);
+
+                # String variables
+
+                if ($mead->LanguageAndScriptCode != '')
+                {
+                    $Var = $this->xml->createElement ("LanguageAndScriptCode", $mead->LanguageAndScriptCode);
+                    $SoundRecording->appendChild ($Var);
+                }
+
+                if ($mead->CreationDate != '')
+                {
+                    $Var = $this->xml->createElement ("CreationDate", $mead->CreationDate);
+                    $SoundRecording->appendChild ($Var);
+                }
+
+                if ($mead->MasteredDate != '')
+                {
+                    $Var = $this->xml->createElement ("MasteredDate", $mead->MasteredDate);
+                    $SoundRecording->appendChild ($Var);
+                }
+
+                if ($mead->RemasteredDate != '')
+                {
+                    $Var = $this->xml->createElement ("RemasteredDate", $mead->RemasteredDate);
+                    $SoundRecording->appendChild ($Var);
+                }
+
+            }
+
             # Display artists
 
             $pointer = 0;

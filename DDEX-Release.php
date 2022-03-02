@@ -108,7 +108,6 @@ class Release
     public $releaseType = 'Album';
     public $releaseDisplayArtist = '';
     public $releaseNoData = false;
-    public $isUpdatedByLibrary = false; # No touch!
 
     public function getExplicit ()
     {
@@ -230,6 +229,7 @@ class Track
     public $trackOriginalReleaseDate = '';
     public $trackKeywords = '';
     public $trackDeal = [];
+    public $trackMediaEnrichment = null;
 
     public function getExplicit ()
     {
@@ -308,6 +308,26 @@ class ContributorLanguage
 {
     public $artistName;
     public $artistLanguage;
+}
+
+class MEAD
+{
+    public $IsMedley;
+    public $IsPotpourri;
+    public $IsInstrumental;
+    public $IsBackground;
+    public $IsHiddenResource;
+    public $IsBonusResource;
+    public $IsComputerGenerated;
+    public $IsRemastered;
+    public $NoSilenceBefore;
+    public $NoSilenceAfter;
+
+    public $LanguageOfPerformance = '';
+
+    public $CreationDate = '';
+    public $MasteredDate = '';
+    public $RemasteredDate = '';
 }
 
 /*
