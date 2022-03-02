@@ -23,6 +23,11 @@
     The resulting XML must be verified before sending to Merlin or delivery platform (ex. CI, FUGA or MCMS Yavin)
 */
 
+define ('ERN_NEW_MESSAGE', 0); # New release message
+define ('ERN_UPDATE_METADATA_MESSAGE', 1); # Update only metadata
+define ('ERN_UPDATE_FULL_MESSAGE', 2); # Update all resources
+define ('ERN_TAKEDOWN_MESSAGE', 3); # Takedown release (Deals with Takedown)
+
 /*
     CLASS: Party
 
@@ -102,6 +107,8 @@ class Release
     public $releaseDeal = [];
     public $releaseType = 'Album';
     public $releaseDisplayArtist = '';
+    public $releaseNoData = false;
+    public $isUpdatedByLibrary = false; # No touch!
 
     public function getExplicit ()
     {

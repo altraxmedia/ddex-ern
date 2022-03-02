@@ -346,35 +346,38 @@ class DDEX
 
             # File specifications
 
-            $WorldwideSoundRecordingDetails = $this->xml->createElement ("TechnicalSoundRecordingDetails");
-            $DetailsForTerritory->appendChild ($WorldwideSoundRecordingDetails);
+            if ($this->release->releaseNoData == false)
+            {
+                $WorldwideSoundRecordingDetails = $this->xml->createElement ("TechnicalSoundRecordingDetails");
+                $DetailsForTerritory->appendChild ($WorldwideSoundRecordingDetails);
 
-            $TechnicalID = $this->xml->createElement ("TechnicalResourceDetailsReference", $this->technicalReferences[$pos]);
-            $WorldwideSoundRecordingDetails->appendChild ($TechnicalID);
+                $TechnicalID = $this->xml->createElement ("TechnicalResourceDetailsReference", $this->technicalReferences[$pos]);
+                $WorldwideSoundRecordingDetails->appendChild ($TechnicalID);
 
-            $AudioCodecType = $this->xml->createElement ("AudioCodecType", $trackData->trackCodecType);
-            $WorldwideSoundRecordingDetails->appendChild ($AudioCodecType);
+                $AudioCodecType = $this->xml->createElement ("AudioCodecType", $trackData->trackCodecType);
+                $WorldwideSoundRecordingDetails->appendChild ($AudioCodecType);
 
-            $IsPreview = $this->xml->createElement ("IsPreview", $trackData->trackIsPreview);
-            $WorldwideSoundRecordingDetails->appendChild ($IsPreview);
+                $IsPreview = $this->xml->createElement ("IsPreview", $trackData->trackIsPreview);
+                $WorldwideSoundRecordingDetails->appendChild ($IsPreview);
 
-            $File = $this->xml->createElement ("File");
-            $WorldwideSoundRecordingDetails->appendChild ($File);
+                $File = $this->xml->createElement ("File");
+                $WorldwideSoundRecordingDetails->appendChild ($File);
 
-            $FileName = $this->xml->createElement ("FileName", $trackData->filename);
-            $File->appendChild ($FileName);
+                $FileName = $this->xml->createElement ("FileName", $trackData->filename);
+                $File->appendChild ($FileName);
 
-            $FilePath = $this->xml->createElement ("FilePath", $trackData->filepath);
-            $File->appendChild ($FilePath);
-            
-            $HashSum = $this->xml->createElement ("HashSum");
-            $File->appendChild ($HashSum);
+                $FilePath = $this->xml->createElement ("FilePath", $trackData->filepath);
+                $File->appendChild ($FilePath);
+                
+                $HashSum = $this->xml->createElement ("HashSum");
+                $File->appendChild ($HashSum);
 
-            $HashSum2 = $this->xml->createElement ("HashSum", $trackData->hash);
-            $HashSum->appendChild ($HashSum2);
+                $HashSum2 = $this->xml->createElement ("HashSum", $trackData->hash);
+                $HashSum->appendChild ($HashSum2);
 
-            $HashSumAlgorithmType = $this->xml->createElement ("HashSumAlgorithmType", $trackData->hashType);
-            $HashSum->appendChild ($HashSumAlgorithmType);
+                $HashSumAlgorithmType = $this->xml->createElement ("HashSumAlgorithmType", $trackData->hashType);
+                $HashSum->appendChild ($HashSumAlgorithmType);
+            }
         }
     }
 
@@ -404,40 +407,41 @@ class DDEX
         $Worldwide = $this->xml->createElement ("TerritoryCode", "Worldwide");
         $DetailsForTerritory->appendChild ($Worldwide);
 
-        $WorldwideImageDetails = $this->xml->createElement ("TechnicalImageDetails");
-        $DetailsForTerritory->appendChild ($WorldwideImageDetails);
+        if ($this->release->releaseNoData == false)
+        {
+            $WorldwideImageDetails = $this->xml->createElement ("TechnicalImageDetails");
+            $DetailsForTerritory->appendChild ($WorldwideImageDetails);
 
-        $TechnicalID = $this->xml->createElement ("TechnicalResourceDetailsReference", end ($this->technicalReferences));
-        $WorldwideImageDetails->appendChild ($TechnicalID);
+            $TechnicalID = $this->xml->createElement ("TechnicalResourceDetailsReference", end ($this->technicalReferences));
+            $WorldwideImageDetails->appendChild ($TechnicalID);
 
-        $ImageCodecType = $this->xml->createElement ("ImageCodecType", $this->release->releaseCoverArt->imageCodec);
-        $WorldwideImageDetails->appendChild ($ImageCodecType);
+            $ImageCodecType = $this->xml->createElement ("ImageCodecType", $this->release->releaseCoverArt->imageCodec);
+            $WorldwideImageDetails->appendChild ($ImageCodecType);
 
-        $ImageHeight = $this->xml->createElement ("ImageHeight", $this->release->releaseCoverArt->height);
-        $WorldwideImageDetails->appendChild ($ImageHeight);
-        
-        $ImageWidth = $this->xml->createElement ("ImageWidth", $this->release->releaseCoverArt->width);
-        $WorldwideImageDetails->appendChild ($ImageWidth);
+            $ImageHeight = $this->xml->createElement ("ImageHeight", $this->release->releaseCoverArt->height);
+            $WorldwideImageDetails->appendChild ($ImageHeight);
+            
+            $ImageWidth = $this->xml->createElement ("ImageWidth", $this->release->releaseCoverArt->width);
+            $WorldwideImageDetails->appendChild ($ImageWidth);
 
-        $File = $this->xml->createElement ("File");
-        $WorldwideImageDetails->appendChild ($File);
+            $File = $this->xml->createElement ("File");
+            $WorldwideImageDetails->appendChild ($File);
 
-        $FileName = $this->xml->createElement ("FileName", $this->release->releaseCoverArt->filename);
-        $File->appendChild ($FileName);
+            $FileName = $this->xml->createElement ("FileName", $this->release->releaseCoverArt->filename);
+            $File->appendChild ($FileName);
 
-        $FilePath = $this->xml->createElement ("FilePath", $this->release->releaseCoverArt->filepath);
-        $File->appendChild ($FilePath);
-        
-        $HashSum = $this->xml->createElement ("HashSum");
-        $File->appendChild ($HashSum);
+            $FilePath = $this->xml->createElement ("FilePath", $this->release->releaseCoverArt->filepath);
+            $File->appendChild ($FilePath);
+            
+            $HashSum = $this->xml->createElement ("HashSum");
+            $File->appendChild ($HashSum);
 
-        $HashSum2 = $this->xml->createElement ("HashSum", $this->release->releaseCoverArt->hash);
-        $HashSum->appendChild ($HashSum2);
+            $HashSum2 = $this->xml->createElement ("HashSum", $this->release->releaseCoverArt->hash);
+            $HashSum->appendChild ($HashSum2);
 
-        $HashSumAlgorithmType = $this->xml->createElement ("HashSumAlgorithmType", $this->release->releaseCoverArt->hashType);
-        $HashSum->appendChild ($HashSumAlgorithmType);
-
-
+            $HashSumAlgorithmType = $this->xml->createElement ("HashSumAlgorithmType", $this->release->releaseCoverArt->hashType);
+            $HashSum->appendChild ($HashSumAlgorithmType);
+        }
     }
 
     protected function writeTrackReleases ()
