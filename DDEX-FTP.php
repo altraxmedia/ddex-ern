@@ -24,8 +24,8 @@
 
 class DDEXFTP
 {
-	protected $ern;
-	protected $uploadSettings;
+	public $ern;
+	public $uploadSettings;
 
 	public function getDirectory ()
 	{
@@ -34,7 +34,30 @@ class DDEXFTP
 
 	public function uploadData ()
 	{
-		# To do
+		$batchDirectory = $this->getDirectory ();
+
+		$conn_id = ftp_connect ($this->uploadSettings->serverIp, $this->uploadSettings->port);
+		$login_result = ftp_login ($conn_id, $this->uploadSettings->login, $this->uploadSettings->password);
+		ftp_pasv ($conn_id, $this->uploadSettings->pasvFTP);
+
+		if ((!$conn_id) || (!$login_result))
+		{
+			throw new DomainException ('FTP uploader error: can\'t establish connection to this server. Please check settings and retry.');
+		}
+
+		ftp_mkdir ($conn_id, $batchDirectory);
+
+		ftp_chdir ($conn_id, $batchDirectory);
+
+		ftp_mkdir ($conn_id, "resources");
+
+		ftp_chdir ($conn_id, "resources");
+
+		foreach ($ern->releaseTracks as $trackData)
+		{
+			ftp_put ($conn_id, $trackData->fileName, $trackData->actualFileName, FTP_BINARY);
+		}
+
 	}
 
 }

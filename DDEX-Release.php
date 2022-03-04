@@ -218,6 +218,7 @@ class Track
     public $filename = '';
     public $hash;
     public $hashType = 'SHA1';
+    public $actualFilePath = '';
     public $trackProprietaryID = '';
     public $trackDisplayArtist = '';
     public $trackReleaseDate = '';
@@ -261,6 +262,7 @@ class Artwork
     public $filename = '';
     public $hash;
     public $hashType = 'SHA1';
+    public $actualFilePath = '';
     public $proprietaryId;
     public $imageCodec = 'JPEG';
 }
