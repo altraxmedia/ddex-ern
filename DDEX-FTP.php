@@ -36,6 +36,10 @@ class DDEXFTP
 	{
 		$batchDirectory = $this->getDirectory ();
 
+		$ernName = $ern->releaseICPN . '.xml';
+		$tName = hash ('sha512', microtime () . random_bytes (128)) . '_' . $ern->releaseICPN . '.xml';
+		$batchTName = hash ('sha512', microtime () . random_bytes (128)) . '_' . $ern->releaseICPN . '.batchSignal';
+
 		$conn_id = ftp_connect ($this->uploadSettings->serverIp, $this->uploadSettings->port);
 		$login_result = ftp_login ($conn_id, $this->uploadSettings->login, $this->uploadSettings->password);
 		ftp_pasv ($conn_id, $this->uploadSettings->pasvFTP);
@@ -57,6 +61,25 @@ class DDEXFTP
 		{
 			ftp_put ($conn_id, $trackData->fileName, $trackData->actualFileName, FTP_BINARY);
 		}
+
+		ftp_chdir ($conn_id, "..");
+
+		file_put_contents ($tName, $ern);
+
+		ftp_put ($conn_id, $ernName, $tName, FTP_TEXT);
+
+		if ($this->uploadSettings->confirmationFile instanceof ConfirmationFile)
+		{
+			file_put_contents ($batchTName, $this->uploadSettings->confirmationFile->fileContents);
+
+			ftp_put ($conn_id, $this->uploadSettings->confirmationFile->fileName, $batchTName, FTP_BINARY);
+
+			unlink ($batchTName);
+		}
+
+		ftp_chdir ($conn_id, "/");
+
+		ftp_close ($conn_id);
 
 	}
 
