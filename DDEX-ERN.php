@@ -1058,7 +1058,7 @@ class DDEX
         }
     }
 
-    public function __toString ()
+    public function gen ()
     {
 
         if (sizeof ($this->release->releaseTracks) < 1)

@@ -51,4 +51,4 @@ for ($i = 0; $i < 5; ++$i)
 	$ddex->release->releaseTracks[] = $track;
 }
 
-file_put_contents ('batch.xml', $ddex);
+file_put_contents ('batch.xml', $ddex->gen ());

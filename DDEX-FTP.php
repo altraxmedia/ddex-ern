@@ -69,7 +69,7 @@ class DDEXFTP
 			ftp_chdir ($conn_id, "..");
 		}
 
-		file_put_contents ($tName, $ern);
+		file_put_contents ($tName, $ern->gen ());
 
 		ftp_put ($conn_id, $ernName, $tName, FTP_TEXT);
 
