@@ -29,7 +29,7 @@ class DDEXFTP
 
 	public function getDirectory ()
 	{
-		return $ern->releaseICPN . "_" . date ("YmdHis");
+		return $ern->release->releaseICPN . "_" . date ("YmdHis");
 	}
 
 	public function uploadData ()
@@ -37,8 +37,8 @@ class DDEXFTP
 		$batchDirectory = $this->getDirectory ();
 
 		$ernName = $ern->releaseICPN . '.xml';
-		$tName = hash ('sha512', microtime () . random_bytes (128)) . '_' . $ern->releaseICPN . '.xml';
-		$batchTName = hash ('sha512', microtime () . random_bytes (128)) . '_' . $ern->releaseICPN . '.batchSignal';
+		$tName = hash ('sha512', microtime () . random_bytes (128)) . '_' . $ern->release->releaseICPN . '.xml';
+		$batchTName = hash ('sha512', microtime () . random_bytes (128)) . '_' . $ern->release->releaseICPN . '.batchSignal';
 
 		$conn_id = ftp_connect ($this->uploadSettings->serverIp, $this->uploadSettings->port);
 		$login_result = ftp_login ($conn_id, $this->uploadSettings->login, $this->uploadSettings->password);
