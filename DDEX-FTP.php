@@ -29,16 +29,16 @@ class DDEXFTP
 
 	public function getDirectory ()
 	{
-		return $ern->release->releaseICPN . "_" . date ("YmdHis");
+		return $this->ern->release->releaseICPN . "_" . date ("YmdHis");
 	}
 
 	public function uploadData ()
 	{
 		$batchDirectory = $this->getDirectory ();
 
-		$ernName = $ern->releaseICPN . '.xml';
-		$tName = hash ('sha512', microtime () . random_bytes (128)) . '_' . $ern->release->releaseICPN . '.xml';
-		$batchTName = hash ('sha512', microtime () . random_bytes (128)) . '_' . $ern->release->releaseICPN . '.batchSignal';
+		$ernName = $this->ern->release->releaseICPN . '.xml';
+		$tName = hash ('sha512', microtime () . random_bytes (128)) . '_' . $this->ern->release->releaseICPN . '.xml';
+		$batchTName = hash ('sha512', microtime () . random_bytes (128)) . '_' . $this->ern->release->releaseICPN . '.batchSignal';
 
 		$conn_id = ftp_connect ($this->uploadSettings->serverIp, $this->uploadSettings->port);
 		$login_result = ftp_login ($conn_id, $this->uploadSettings->login, $this->uploadSettings->password);
@@ -53,23 +53,23 @@ class DDEXFTP
 
 		ftp_chdir ($conn_id, $batchDirectory);
 
-		if ($ern->release->releaseNoData != false)
+		if ($this->ern->release->releaseNoData != false)
 		{
 			ftp_mkdir ($conn_id, "resources");
 
 			ftp_chdir ($conn_id, "resources");
 
-			foreach ($ern->release->releaseTracks as $trackData)
+			foreach ($this->ern->release->releaseTracks as $trackData)
 			{
 				ftp_put ($conn_id, $trackData->fileName, $trackData->actualFileName, FTP_BINARY);
 			}
 
-			ftp_put ($conn_id, $ern->release->releaseCoverArt->filename, $ern->release->releaseCoverArt->actualFilePath, FTP_BINARY);
+			ftp_put ($conn_id, $this->ern->release->releaseCoverArt->filename, $vern->release->releaseCoverArt->actualFilePath, FTP_BINARY);
 
 			ftp_chdir ($conn_id, "..");
 		}
 
-		file_put_contents ($tName, $ern->gen ());
+		file_put_contents ($tName, $this->ern->gen ());
 
 		ftp_put ($conn_id, $ernName, $tName, FTP_TEXT);
 
