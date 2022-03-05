@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__ . '/DDEX-ERN.php';
+require_once __DIR__ . '/DDEX-Settings.php';
 require_once __DIR__ . '/DDEX-FTP.php';
 
 $sender = new Party;
