@@ -53,16 +53,21 @@ class DDEXFTP
 
 		ftp_chdir ($conn_id, $batchDirectory);
 
-		ftp_mkdir ($conn_id, "resources");
-
-		ftp_chdir ($conn_id, "resources");
-
-		foreach ($ern->releaseTracks as $trackData)
+		if ($ern->release->releaseNoData != false)
 		{
-			ftp_put ($conn_id, $trackData->fileName, $trackData->actualFileName, FTP_BINARY);
-		}
+			ftp_mkdir ($conn_id, "resources");
 
-		ftp_chdir ($conn_id, "..");
+			ftp_chdir ($conn_id, "resources");
+
+			foreach ($ern->release->releaseTracks as $trackData)
+			{
+				ftp_put ($conn_id, $trackData->fileName, $trackData->actualFileName, FTP_BINARY);
+			}
+
+			ftp_put ($conn_id, $ern->release->releaseCoverArt->filename, $ern->release->releaseCoverArt->actualFilePath, FTP_BINARY);
+
+			ftp_chdir ($conn_id, "..");
+		}
 
 		file_put_contents ($tName, $ern);
 

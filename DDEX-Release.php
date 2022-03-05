@@ -84,7 +84,7 @@ class Release
     public $messageControl = 'LiveMessage';
     public $releaseTitle = "";
     public $releaseSubtitle = "";
-    public $releaseCoverArt = "";
+    public $releaseCoverArt = null;
     public $releaseTracks = [];
     public $releaseRecordLabel = "";
     public $releaseDate = "";
@@ -94,7 +94,7 @@ class Release
     public $releaseProprietaryId = '';
     public $releaseGenre = '';
     public $releaseArtists = [];
-    public $releaseExplicit = '';
+    public $releaseExplicit = 'unk';
     public $releasePLineYear = 2022;
     public $releasePLine = "";
     public $releaseCLineYear = 2022;
