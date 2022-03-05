@@ -53,7 +53,7 @@ class DDEXFTP
 
 		ftp_chdir ($conn_id, $batchDirectory);
 
-		if ($this->ern->release->releaseNoData != false)
+		if ($this->ern->release->releaseNoData != true)
 		{
 			ftp_mkdir ($conn_id, "resources");
 

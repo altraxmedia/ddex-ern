@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/ern/382" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" LanguageAndScriptCode="ru" MessageSchemaVersionId="ern/382" xs:schemaLocation="http://ddex.net/xml/ern/382 http://ddex.net/xml/ern/382/release-notification.xsd">
+  <MessageHeader>
+    <MessageThreadId>ca41cddd82b047f5bbc9d3f1c5995fdc</MessageThreadId>
+    <MessageId>10e663ec0d08460fb745a38ffbdebaf3</MessageId>
+    <MessageSender>
+      <PartyId>aboba</PartyId>
+      <PartyName>when the impostor</PartyName>
+    </MessageSender>
+    <SentOnBehalfOf>
+      <PartyId>when the impostor</PartyId>
+      <PartyName>is sus</PartyName>
+    </SentOnBehalfOf>
+    <MessageRecipient>
+      <PartyId>amogus</PartyId>
+      <PartyName>is sus</PartyName>
+    </MessageRecipient>
+    <MessageCreatedDateTime>2022-03-05T18:42:35+00:00</MessageCreatedDateTime>
+    <MessageControlType>LiveMessage</MessageControlType>
+  </MessageHeader>
+  <UpdateIndicator>OriginalMessage</UpdateIndicator>
+  <IsBackfill>false</IsBackfill>
+  <ResourceList>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC></ISRC>
+      </SoundRecordingId>
+      <ResourceReference>A1</ResourceReference>
+      <ReferenceTitle>
+        <TitleText></TitleText>
+        <SubTitle></SubTitle>
+      </ReferenceTitle>
+      <Duration></Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
+          <TitleText></TitleText>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="DisplayTitle">
+          <TitleText></TitleText>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
+          <TitleText></TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <ResourceContributor>
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ResourceContributorRole></ResourceContributorRole>
+        </ResourceContributor>
+        <IndirectResourceContributor>
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <IndirectResourceContributorRole></IndirectResourceContributorRole>
+        </IndirectResourceContributor>
+        <LabelName></LabelName>
+        <PLine>
+          <Year>2022</Year>
+          <PLineText></PLineText>
+        </PLine>
+        <Genre>
+          <GenreText></GenreText>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+      </SoundRecordingDetailsByTerritory>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC></ISRC>
+      </SoundRecordingId>
+      <ResourceReference>A2</ResourceReference>
+      <ReferenceTitle>
+        <TitleText></TitleText>
+        <SubTitle></SubTitle>
+      </ReferenceTitle>
+      <Duration></Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
+          <TitleText></TitleText>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="DisplayTitle">
+          <TitleText></TitleText>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
+          <TitleText></TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <ResourceContributor>
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ResourceContributorRole></ResourceContributorRole>
+        </ResourceContributor>
+        <IndirectResourceContributor>
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <IndirectResourceContributorRole></IndirectResourceContributorRole>
+        </IndirectResourceContributor>
+        <LabelName></LabelName>
+        <PLine>
+          <Year>2022</Year>
+          <PLineText></PLineText>
+        </PLine>
+        <Genre>
+          <GenreText></GenreText>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+      </SoundRecordingDetailsByTerritory>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC></ISRC>
+      </SoundRecordingId>
+      <ResourceReference>A3</ResourceReference>
+      <ReferenceTitle>
+        <TitleText></TitleText>
+        <SubTitle></SubTitle>
+      </ReferenceTitle>
+      <Duration></Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
+          <TitleText></TitleText>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="DisplayTitle">
+          <TitleText></TitleText>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
+          <TitleText></TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <ResourceContributor>
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ResourceContributorRole></ResourceContributorRole>
+        </ResourceContributor>
+        <IndirectResourceContributor>
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <IndirectResourceContributorRole></IndirectResourceContributorRole>
+        </IndirectResourceContributor>
+        <LabelName></LabelName>
+        <PLine>
+          <Year>2022</Year>
+          <PLineText></PLineText>
+        </PLine>
+        <Genre>
+          <GenreText></GenreText>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+      </SoundRecordingDetailsByTerritory>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC></ISRC>
+      </SoundRecordingId>
+      <ResourceReference>A4</ResourceReference>
+      <ReferenceTitle>
+        <TitleText></TitleText>
+        <SubTitle></SubTitle>
+      </ReferenceTitle>
+      <Duration></Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
+          <TitleText></TitleText>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="DisplayTitle">
+          <TitleText></TitleText>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
+          <TitleText></TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <ResourceContributor>
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ResourceContributorRole></ResourceContributorRole>
+        </ResourceContributor>
+        <IndirectResourceContributor>
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <IndirectResourceContributorRole></IndirectResourceContributorRole>
+        </IndirectResourceContributor>
+        <LabelName></LabelName>
+        <PLine>
+          <Year>2022</Year>
+          <PLineText></PLineText>
+        </PLine>
+        <Genre>
+          <GenreText></GenreText>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+      </SoundRecordingDetailsByTerritory>
+    </SoundRecording>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC></ISRC>
+      </SoundRecordingId>
+      <ResourceReference>A5</ResourceReference>
+      <ReferenceTitle>
+        <TitleText></TitleText>
+        <SubTitle></SubTitle>
+      </ReferenceTitle>
+      <Duration></Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
+          <TitleText></TitleText>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="DisplayTitle">
+          <TitleText></TitleText>
+        </Title>
+        <Title LanguageAndScriptCode="en" TitleType="AbbreviatedDisplayTitle">
+          <TitleText></TitleText>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <ResourceContributor>
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ResourceContributorRole></ResourceContributorRole>
+        </ResourceContributor>
+        <IndirectResourceContributor>
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <IndirectResourceContributorRole></IndirectResourceContributorRole>
+        </IndirectResourceContributor>
+        <LabelName></LabelName>
+        <PLine>
+          <Year>2022</Year>
+          <PLineText></PLineText>
+        </PLine>
+        <Genre>
+          <GenreText></GenreText>
+        </Genre>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+      </SoundRecordingDetailsByTerritory>
+    </SoundRecording>
+    <Image>
+      <ImageType>FrontCoverImage</ImageType>
+      <ImageId>
+        <ProprietaryId Namespace="DPID:aboba">qwertyuiopasdfghjklzxcvbnm</ProprietaryId>
+      </ImageId>
+      <ResourceReference>A6</ResourceReference>
+      <ImageDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+      </ImageDetailsByTerritory>
+    </Image>
+  </ResourceList>
+  <ReleaseList>
+    <Release>
+      <ReleaseId>
+        <ISRC></ISRC>
+        <ProprietaryId Namespace="DPID:aboba"></ProprietaryId>
+      </ReleaseId>
+      <ReleaseReference>R1</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText></TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A1</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName></DisplayArtistName>
+        <LabelName></LabelName>
+        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
+          <TitleText></TitleText>
+          <SubTitle></SubTitle>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText></TitleText>
+        </Title>
+        <Title TitleType="GroupingTitle">
+          <TitleText></TitleText>
+          <SubTitle></SubTitle>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <Genre>
+          <GenreText></GenreText>
+        </Genre>
+        <ReleaseDate></ReleaseDate>
+        <OriginalReleaseDate></OriginalReleaseDate>
+        <Keywords></Keywords>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2022</Year>
+        <PLineText></PLineText>
+      </PLine>
+      <CLine>
+        <Year>2022</Year>
+        <CLineText></CLineText>
+      </CLine>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC></ISRC>
+        <ProprietaryId Namespace="DPID:aboba"></ProprietaryId>
+      </ReleaseId>
+      <ReleaseReference>R2</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText></TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A2</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName></DisplayArtistName>
+        <LabelName></LabelName>
+        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
+          <TitleText></TitleText>
+          <SubTitle></SubTitle>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText></TitleText>
+        </Title>
+        <Title TitleType="GroupingTitle">
+          <TitleText></TitleText>
+          <SubTitle></SubTitle>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <Genre>
+          <GenreText></GenreText>
+        </Genre>
+        <ReleaseDate></ReleaseDate>
+        <OriginalReleaseDate></OriginalReleaseDate>
+        <Keywords></Keywords>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2022</Year>
+        <PLineText></PLineText>
+      </PLine>
+      <CLine>
+        <Year>2022</Year>
+        <CLineText></CLineText>
+      </CLine>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC></ISRC>
+        <ProprietaryId Namespace="DPID:aboba"></ProprietaryId>
+      </ReleaseId>
+      <ReleaseReference>R3</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText></TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A3</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName></DisplayArtistName>
+        <LabelName></LabelName>
+        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
+          <TitleText></TitleText>
+          <SubTitle></SubTitle>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText></TitleText>
+        </Title>
+        <Title TitleType="GroupingTitle">
+          <TitleText></TitleText>
+          <SubTitle></SubTitle>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <Genre>
+          <GenreText></GenreText>
+        </Genre>
+        <ReleaseDate></ReleaseDate>
+        <OriginalReleaseDate></OriginalReleaseDate>
+        <Keywords></Keywords>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2022</Year>
+        <PLineText></PLineText>
+      </PLine>
+      <CLine>
+        <Year>2022</Year>
+        <CLineText></CLineText>
+      </CLine>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC></ISRC>
+        <ProprietaryId Namespace="DPID:aboba"></ProprietaryId>
+      </ReleaseId>
+      <ReleaseReference>R4</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText></TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A4</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName></DisplayArtistName>
+        <LabelName></LabelName>
+        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
+          <TitleText></TitleText>
+          <SubTitle></SubTitle>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText></TitleText>
+        </Title>
+        <Title TitleType="GroupingTitle">
+          <TitleText></TitleText>
+          <SubTitle></SubTitle>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <Genre>
+          <GenreText></GenreText>
+        </Genre>
+        <ReleaseDate></ReleaseDate>
+        <OriginalReleaseDate></OriginalReleaseDate>
+        <Keywords></Keywords>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2022</Year>
+        <PLineText></PLineText>
+      </PLine>
+      <CLine>
+        <Year>2022</Year>
+        <CLineText></CLineText>
+      </CLine>
+    </Release>
+    <Release>
+      <ReleaseId>
+        <ISRC></ISRC>
+        <ProprietaryId Namespace="DPID:aboba"></ProprietaryId>
+      </ReleaseId>
+      <ReleaseReference>R5</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText></TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A5</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>TrackRelease</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName></DisplayArtistName>
+        <LabelName></LabelName>
+        <Title LanguageAndScriptCode="en" TitleType="FormalTitle">
+          <TitleText></TitleText>
+          <SubTitle></SubTitle>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText></TitleText>
+        </Title>
+        <Title TitleType="GroupingTitle">
+          <TitleText></TitleText>
+          <SubTitle></SubTitle>
+        </Title>
+        <DisplayArtist SequenceNumber="1">
+          <PartyName LanguageAndScriptCode="">MC Bebra</PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <ParentalWarningType>NotExplicit</ParentalWarningType>
+        <Genre>
+          <GenreText></GenreText>
+        </Genre>
+        <ReleaseDate></ReleaseDate>
+        <OriginalReleaseDate></OriginalReleaseDate>
+        <Keywords></Keywords>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2022</Year>
+        <PLineText></PLineText>
+      </PLine>
+      <CLine>
+        <Year>2022</Year>
+        <CLineText></CLineText>
+      </CLine>
+    </Release>
+    <Release isMainRelease="true">
+      <ReleaseId>
+        <ICPN isEan="true"></ICPN>
+        <CatalogNumber Namespace="DPID:aboba"></CatalogNumber>
+        <ProprietaryId Namespace="DPID:aboba"></ProprietaryId>
+      </ReleaseId>
+      <ReleaseReference>R0</ReleaseReference>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A1</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A2</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A3</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A4</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A5</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="SecondaryResource">A6</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>Album</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <DisplayArtistName></DisplayArtistName>
+        <LabelName></LabelName>
+        <ParentalWarningType>Unknown</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroup>
+            <SequenceNumber>1</SequenceNumber>
+            <ResourceGroupContentItem>
+              <SequenceNumber>1</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference>A1</ReleaseResourceReference>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>2</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference>A2</ReleaseResourceReference>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>3</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference>A3</ReleaseResourceReference>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>4</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference>A4</ReleaseResourceReference>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>5</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference>A5</ReleaseResourceReference>
+            </ResourceGroupContentItem>
+          </ResourceGroup>
+          <ResourceGroupContentItem>
+            <SequenceNumber>6</SequenceNumber>
+            <ResourceType>Image</ResourceType>
+            <ReleaseResourceReference>A6</ReleaseResourceReference>
+          </ResourceGroupContentItem>
+        </ResourceGroup>
+        <Genre>
+          <GenreText></GenreText>
+        </Genre>
+        <OriginalReleaseDate></OriginalReleaseDate>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2022</Year>
+        <PLineText></PLineText>
+      </PLine>
+      <CLine>
+        <Year>2022</Year>
+        <CLineText></CLineText>
+      </CLine>
+    </Release>
+  </ReleaseList>
+  <DealList>
+    <ReleaseDeal>
+      <DealReleaseReference>R0</DealReleaseReference>
+      <EffectiveDate></EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R1</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>PermanentDownload</UseType>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <ValidityPeriod>
+            <StartDate></StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate></EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R2</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>PermanentDownload</UseType>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <ValidityPeriod>
+            <StartDate></StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate></EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R3</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>PermanentDownload</UseType>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <ValidityPeriod>
+            <StartDate></StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate></EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R4</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>PermanentDownload</UseType>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <ValidityPeriod>
+            <StartDate></StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate></EffectiveDate>
+    </ReleaseDeal>
+    <ReleaseDeal>
+      <DealReleaseReference>R5</DealReleaseReference>
+      <Deal>
+        <DealTerms>
+          <CommercialModelType>SubscriptionModel</CommercialModelType>
+          <CommercialModelType>AdvertisementSupportedModel</CommercialModelType>
+          <CommercialModelType>PayAsYouGoModel</CommercialModelType>
+          <Usage>
+            <UseType>PermanentDownload</UseType>
+            <UseType>OnDemandStream</UseType>
+          </Usage>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <ValidityPeriod>
+            <StartDate></StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate></EffectiveDate>
+    </ReleaseDeal>
+  </DealList>
+</ern:NewReleaseMessage>
