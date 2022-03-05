@@ -480,7 +480,7 @@ class DDEX
                 $FileName = $this->xml->createElement ("FileName", $trackData->filename);
                 $File->appendChild ($FileName);
 
-                $FilePath = $this->xml->createElement ("FilePath", $trackData->filepath);
+                $FilePath = $this->xml->createElement ("FilePath", /* $this->release->releaseCoverArt->filepath */ "resources/");
                 $File->appendChild ($FilePath);
                 
                 $HashSum = $this->xml->createElement ("HashSum");
@@ -544,7 +544,7 @@ class DDEX
             $FileName = $this->xml->createElement ("FileName", $this->release->releaseCoverArt->filename);
             $File->appendChild ($FileName);
 
-            $FilePath = $this->xml->createElement ("FilePath", $this->release->releaseCoverArt->filepath);
+            $FilePath = $this->xml->createElement ("FilePath", /* $this->release->releaseCoverArt->filepath */ "resources/");
             $File->appendChild ($FilePath);
             
             $HashSum = $this->xml->createElement ("HashSum");

@@ -214,7 +214,7 @@ class Track
     public $trackGenre = '';
     public $trackCodecType = 'PCM';
     public $trackIsPreview = false;
-    public $filepath = '';
+    #public $filepath = '';
     public $filename = '';
     public $hash;
     public $hashType = 'SHA1';
@@ -258,7 +258,7 @@ class Artwork
 {
     public $width = 1080;
     public $height = 1080;
-    public $filepath = '';
+    #public $filepath = '';
     public $filename = '';
     public $hash;
     public $hashType = 'SHA1';

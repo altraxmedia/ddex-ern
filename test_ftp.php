@@ -59,6 +59,7 @@ $credentials->port = 21;
 $credentials->login = 'abobusddex';
 $credentials->password = '123456amogus';
 $credentials->serverIp = 'localhost';
+$credentials->confirmationFile = new MCMSConfirmationFile;
 
 $ftp = new DDEXFTP;
 $ftp->ern = $ddex;
