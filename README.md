@@ -15,7 +15,7 @@ Currently supported:
 Currently supported services: nothing... 
 
 Currently NOT supported services:  
- - MCMS Yavin
+ - MCMS Yavin (Testing...)
  - FUGA Aggregation
  - YouTube CMS (YouTube Music/Art Tracks & Premium, YouTube Content ID)  
 
