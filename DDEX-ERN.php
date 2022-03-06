@@ -435,14 +435,17 @@ class DDEX
 
             # P-Line (Phonogram or Producer)
 
-            $PLine = $this->xml->createElement ("PLine");
-            $DetailsForTerritory->appendChild ($PLine);
+            if (isset ($trackData->trackPLineYear) && $trackData->trackPLineYear != '')
+            {
+                $PLine = $this->xml->createElement ("PLine");
+                $DetailsForTerritory->appendChild ($PLine);
 
-            $Year = $this->xml->createElement ("Year", strval ($trackData->trackPLineYear));
-            $PLineText = $this->xml->createElement ("PLineText", $trackData->trackPLine);
+                $Year = $this->xml->createElement ("Year", strval ($trackData->trackPLineYear));
+                $PLineText = $this->xml->createElement ("PLineText", $trackData->trackPLine);
 
-            $PLine->appendChild ($Year);
-            $PLine->appendChild ($PLineText);
+                $PLine->appendChild ($Year);
+                $PLine->appendChild ($PLineText);
+            }
 
             # Genre text
 
@@ -580,11 +583,14 @@ class DDEX
 
             # Proprietary ID
 
-            $ProprietaryId = $this->xml->createElement ("ProprietaryId", $trackData->trackProprietaryID);
+            if ($trackData->trackProprietaryID != '')
+            {
+                $ProprietaryId = $this->xml->createElement ("ProprietaryId", $trackData->trackProprietaryID);
 
-            $ProprietaryId->setAttribute ('Namespace', 'DPID:' . $this->getSenderDPID ());
+                $ProprietaryId->setAttribute ('Namespace', 'DPID:' . $this->getSenderDPID ());
 
-            $ReleaseId->appendChild ($ProprietaryId);
+                $ReleaseId->appendChild ($ProprietaryId);
+            }
 
             # Release Reference
 
@@ -718,40 +724,55 @@ class DDEX
 
             # Release Date (NOT A DEAL)
 
-            $ReleaseDate = $this->xml->createElement ("ReleaseDate", $trackData->trackReleaseDate);
-            $DetailsForTerritory->appendChild ($ReleaseDate);
+            if ($trackData->trackReleaseDate != '')
+            {
+                $ReleaseDate = $this->xml->createElement ("ReleaseDate", $trackData->trackReleaseDate);
+                $DetailsForTerritory->appendChild ($ReleaseDate);
+            }
 
             # Original release date (NOT A DEAL)
 
-            $OriginalReleaseDate = $this->xml->createElement ("OriginalReleaseDate", $trackData->trackOriginalReleaseDate);
-            $DetailsForTerritory->appendChild ($OriginalReleaseDate);
+            if ($trackData->trackOriginalReleaseDate != '')
+            {
+                $OriginalReleaseDate = $this->xml->createElement ("OriginalReleaseDate", $trackData->trackOriginalReleaseDate);
+                $DetailsForTerritory->appendChild ($OriginalReleaseDate);
+            }
 
             # Keywords (SEO)
 
-            $Keywords = $this->xml->createElement ("Keywords", $trackData->trackKeywords);
-            $DetailsForTerritory->appendChild ($Keywords);
+            if ($trackData->trackKeywords != '')
+            {
+                $Keywords = $this->xml->createElement ("Keywords", $trackData->trackKeywords);
+                $DetailsForTerritory->appendChild ($Keywords);
+            }
 
             # P-Line (Phonogram or Producer)
 
-            $PLine = $this->xml->createElement ("PLine");
-            $Release->appendChild ($PLine);
+            if ($trackData->trackPLine != '' && isset ($trackData->trackPLineYear))
+            {
+                $PLine = $this->xml->createElement ("PLine");
+                $Release->appendChild ($PLine);
 
-            $Year = $this->xml->createElement ("Year", strval ($trackData->trackPLineYear));
-            $PLineText = $this->xml->createElement ("PLineText", $trackData->trackPLine);
+                $Year = $this->xml->createElement ("Year", strval ($trackData->trackPLineYear));
+                $PLineText = $this->xml->createElement ("PLineText", $trackData->trackPLine);
 
-            $PLine->appendChild ($Year);
-            $PLine->appendChild ($PLineText);
+                $PLine->appendChild ($Year);
+                $PLine->appendChild ($PLineText);
+            }
 
             # C-Line (Copyright)
 
-            $CLine = $this->xml->createElement ("CLine");
-            $Release->appendChild ($CLine);
+            if ($trackData->trackCLine != '' && isset ($trackData->trackCLineYear))
+            {
+                $CLine = $this->xml->createElement ("CLine");
+                $Release->appendChild ($CLine);
 
-            $Year = $this->xml->createElement ("Year", strval ($trackData->trackCLineYear));
-            $CLineText = $this->xml->createElement ("CLineText", $trackData->trackCLine);
+                $Year = $this->xml->createElement ("Year", strval ($trackData->trackCLineYear));
+                $CLineText = $this->xml->createElement ("CLineText", $trackData->trackCLine);
 
-            $CLine->appendChild ($Year);
-            $CLine->appendChild ($CLineText);
+                $CLine->appendChild ($Year);
+                $CLine->appendChild ($CLineText);
+            }
         }
     }
 
@@ -774,15 +795,21 @@ class DDEX
 
         # Catalog ID
 
-        $CatalogNumber = $this->xml->createElement ("CatalogNumber", $this->release->releaseCatalogNo);
-        $CatalogNumber->setAttribute ('Namespace', 'DPID:' . $this->getSenderDPID ());
-        $ReleaseId->appendChild ($CatalogNumber);
+        if ($this->release->releaseCatalogNo != '')
+        {
+            $CatalogNumber = $this->xml->createElement ("CatalogNumber", $this->release->releaseCatalogNo);
+            $CatalogNumber->setAttribute ('Namespace', 'DPID:' . $this->getSenderDPID ());
+            $ReleaseId->appendChild ($CatalogNumber);
+        }
 
         # Proprietary ID
 
-        $ProprietaryId = $this->xml->createElement ("ProprietaryId", $this->release->releaseProprietaryId);
-        $ProprietaryId->setAttribute ('Namespace', 'DPID:' . $this->getSenderDPID ());
-        $ReleaseId->appendChild ($ProprietaryId);
+        if ($this->release->releaseProprietaryId != '')
+        {
+            $ProprietaryId = $this->xml->createElement ("ProprietaryId", $this->release->releaseProprietaryId);
+            $ProprietaryId->setAttribute ('Namespace', 'DPID:' . $this->getSenderDPID ());
+            $ReleaseId->appendChild ($ProprietaryId);
+        }
 
         # Release Reference
 
@@ -831,8 +858,11 @@ class DDEX
 
         # Label name
 
-        $LabelName = $this->xml->createElement ("LabelName", $this->release->releaseRecordLabel);
-        $DetailsForTerritory->appendChild ($LabelName);
+        if ($this->release->releaseRecordLabel != '')
+        {
+            $LabelName = $this->xml->createElement ("LabelName", $this->release->releaseRecordLabel);
+            $DetailsForTerritory->appendChild ($LabelName);
+        }
 
         # DisplayArtist
 
@@ -920,30 +950,39 @@ class DDEX
 
         # Original release date (NOT A DEAL)
 
-        $OriginalReleaseDate = $this->xml->createElement ("OriginalReleaseDate", $this->release->releaseDate);
-        $DetailsForTerritory->appendChild ($OriginalReleaseDate);
+        if ($this->release->releaseDate != '')
+        {
+            $OriginalReleaseDate = $this->xml->createElement ("OriginalReleaseDate", $this->release->releaseDate);
+            $DetailsForTerritory->appendChild ($OriginalReleaseDate);
+        }
 
         # P-Line (Phonogram or Producer)
 
-        $PLine = $this->xml->createElement ("PLine");
-        $Release->appendChild ($PLine);
+        if ($this->release->releasePLine != '' && isset ($this->release->releasePLineYear))
+        {
+            $PLine = $this->xml->createElement ("PLine");
+            $Release->appendChild ($PLine);
 
-        $Year = $this->xml->createElement ("Year", strval ($this->release->releasePLineYear));
-        $PLineText = $this->xml->createElement ("PLineText", $this->release->releasePLine);
+            $Year = $this->xml->createElement ("Year", strval ($this->release->releasePLineYear));
+            $PLineText = $this->xml->createElement ("PLineText", $this->release->releasePLine);
 
-        $PLine->appendChild ($Year);
-        $PLine->appendChild ($PLineText);
+            $PLine->appendChild ($Year);
+            $PLine->appendChild ($PLineText);
+        }
 
         # C-Line (Copyright)
 
-        $CLine = $this->xml->createElement ("CLine");
-        $Release->appendChild ($CLine);
+        if ($this->release->releaseCLine != '' && isset ($this->release->releaseCLineYear))
+        {
+            $CLine = $this->xml->createElement ("CLine");
+            $Release->appendChild ($CLine);
 
-        $Year = $this->xml->createElement ("Year", strval ($this->release->releaseCLineYear));
-        $CLineText = $this->xml->createElement ("CLineText", $this->release->releaseCLine);
+            $Year = $this->xml->createElement ("Year", strval ($this->release->releaseCLineYear));
+            $CLineText = $this->xml->createElement ("CLineText", $this->release->releaseCLine);
 
-        $CLine->appendChild ($Year);
-        $CLine->appendChild ($CLineText);
+            $CLine->appendChild ($Year);
+            $CLine->appendChild ($CLineText);
+        }
     }
 
     public function enumDeals ()

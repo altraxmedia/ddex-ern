@@ -86,19 +86,19 @@ class Release
     public $releaseSubtitle = "";
     public $releaseCoverArt = null;
     public $releaseTracks = [];
-    public $releaseRecordLabel = "";
-    public $releaseDate = "";
+    public $releaseRecordLabel = ""; # Not necessary
+    public $releaseDate = ""; # Not necessary
     public $releaseICPN = "";
     public $releaseICPNIsEan = true;
-    public $releaseCatalogNo = "";
-    public $releaseProprietaryId = '';
+    public $releaseCatalogNo = ""; # Not necessary
+    public $releaseProprietaryId = '';  # Not necessary
     public $releaseGenre = '';
     public $releaseArtists = [];
     public $releaseExplicit = 'unk';
-    public $releasePLineYear = 2022;
-    public $releasePLine = "";
-    public $releaseCLineYear = 2022;
-    public $releaseCLine = "";
+    public $releasePLineYear = 2022; # Not necessary (if releasePLineYear or releasePLine is empty, this property will not be displayed)
+    public $releasePLine = ""; # Not necessary (if releasePLineYear or releasePLine is empty, this property will not be displayed)
+    public $releaseCLineYear = 2022; # Not necessary (if releaseCLineYear or releaseCLine is empty, this property will not be displayed)
+    public $releaseCLine = ""; # Not necessary (if releaseCLineYear or releaseCLine is empty, this property will not be displayed)
     public $releaseDeal = [];
     public $releaseType = 'Album';
     public $releaseDisplayArtist = '';
@@ -200,16 +200,16 @@ class Track
     public $trackTitle = "";
     public $trackSubtitle = "";
     public $trackDuration = "";
-    public $trackContributors = [];
-    public $trackIndirectContributors = [];
-    public $trackExplicit = 'no';
+    public $trackContributors = []; # Not necessary
+    public $trackIndirectContributors = []; # Not necessary
+    public $trackExplicit = 'unk';
     public $trackPreviewTime = 30;
     public $trackSHA1hashsum = "";
     public $trackFilename = "";
-    public $trackPLineYear = 2022;
-    public $trackPLine = "";
-    public $trackCLineYear = 2022;
-    public $trackCLine = "";
+    public $trackPLineYear = 2022; # Not necessary (if trackPLineYear or trackPLine is empty, this property will not be displayed)
+    public $trackPLine = ""; # Not necessary (if trackPLineYear or trackPLine is empty, this property will not be displayed)
+    public $trackCLineYear = 2022; # Not necessary (if trackCLineYear or trackCLine is empty, this property will not be displayed)
+    public $trackCLine = ""; # Not necessary (if trackCLineYear or trackCLine is empty, this property will not be displayed)
     public $trackTitleLang = 'en';
     public $trackGenre = '';
     public $trackCodecType = 'PCM';
@@ -219,13 +219,13 @@ class Track
     public $hash;
     public $hashType = 'SHA1';
     public $actualFilePath = '';
-    public $trackProprietaryID = '';
+    public $trackProprietaryID = ''; # Not necessary
     public $trackDisplayArtist = '';
-    public $trackReleaseDate = '';
-    public $trackOriginalReleaseDate = '';
-    public $trackKeywords = '';
+    public $trackReleaseDate = ''; # Not necessary
+    public $trackOriginalReleaseDate = ''; # Not necessary
+    public $trackKeywords = ''; # Not necessary
     public $trackDeal = [];
-    public $trackMediaEnrichment = null;
+    public $trackMediaEnrichment = null; # Not necessary
 
     public function getExplicit ()
     {
