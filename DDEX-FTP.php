@@ -64,7 +64,7 @@ class DDEXFTP
 				ftp_put ($conn_id, $trackData->fileName, $trackData->actualFileName, FTP_BINARY);
 			}
 
-			ftp_put ($conn_id, $this->ern->release->releaseCoverArt->filename, $vern->release->releaseCoverArt->actualFilePath, FTP_BINARY);
+			ftp_put ($conn_id, $this->ern->release->releaseCoverArt->filename, $this->ern->release->releaseCoverArt->actualFilePath, FTP_BINARY);
 
 			ftp_chdir ($conn_id, "..");
 		}

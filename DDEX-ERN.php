@@ -400,7 +400,7 @@ class DDEX
 
                 # Artist role
 
-                $ResourceContributorRole = $this->xml->createElement ("ResourceContributorRole", $art->artistRole);
+                $ResourceContributorRole = $this->xml->createElement ("ResourceContributorRole", $art->getRole ());
                 $ResourceContributor->appendChild ($ResourceContributorRole);
             }
 
@@ -424,7 +424,7 @@ class DDEX
 
                 # Artist role
 
-                $IndirectResourceContributorRole = $this->xml->createElement ("IndirectResourceContributorRole", $art->artistRole);
+                $IndirectResourceContributorRole = $this->xml->createElement ("IndirectResourceContributorRole", $art->getRole ());
                 $IndirectResourceContributor->appendChild ($IndirectResourceContributorRole);
             }
 
