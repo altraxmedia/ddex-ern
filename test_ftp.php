@@ -30,17 +30,20 @@ $ddex->release->releaseCoverArt = $cover;
 $bebra = new Artist;
 $bebra->artistName[] = new ArtistLanguage;
 $bebra->artistName[0]->artistName = 'MC Bebra';
-$bebra->artistName[0]->artistRole = 0;
+$bebra->artistName[0]->artistLanguage = 'en';
+$bebra->artistRole = 26;
 
 $bebra1 = new Contributor;
 $bebra1->artistName[] = new ContributorLanguage;
 $bebra1->artistName[0]->artistName = 'MC Bebra';
-$bebra1->artistName[0]->artistRole = 'Composer';
+$bebra1->artistName[0]->artistLanguage = 'en';
+$bebra1->artistRole = 4;
 
 $bebra2 = new IndirectContributor;
 $bebra2->artistName[] = new IndirectContributorLanguage;
 $bebra2->artistName[0]->artistName = 'MC Bebra';
-$bebra2->artistName[0]->artistRole = 'Composer';
+$bebra2->artistName[0]->artistLanguage = 'en';
+$bebra2->artistRole = 4;
 
 for ($i = 0; $i < 5; ++$i)
 {
