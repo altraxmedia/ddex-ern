@@ -816,6 +816,17 @@ class DDEX
         $ReleaseReference = $this->xml->createElement ("ReleaseReference", $this->releaseReferences[0]);
         $Release->appendChild ($ReleaseReference);
 
+        # Release Title
+
+        $ReferenceTitle = $this->xml->createElement ("ReferenceTitle");
+        $Release->appendChild ($ReferenceTitle);
+
+        $Title = $this->xml->createElement ("Title", $this->release->releaseTitle);
+        $ReferenceTitle->appendChild ($Title);
+
+        $SubTitle = $this->xml->createElement ("SubTitle", $this->release->releaseSubtitle);
+        $ReferenceTitle->appendChild ($SubTitle);
+
         # Resource Reference
 
         $ReleaseResourceReferenceList = $this->xml->createElement ("ReleaseResourceReferenceList");
