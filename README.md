@@ -17,7 +17,7 @@ Currently supported services: nothing...
 Currently NOT supported services:  
  - MCMS Yavin (Testing...)
  - FUGA Aggregation
- - YouTube CMS (YouTube Music/Art Tracks & Premium, YouTube Content ID)  
+ - YouTube CMS (YouTube Music/Art Tracks & Premium, YouTube Content ID, Creators Music)  
 
 We are currently working for integration with these DSPs or delivery systems. CI (Consolidate Independent) not supported, because it uses old (DDEX ERN 3.1/3.1.2) standart.
 ## Licensing
